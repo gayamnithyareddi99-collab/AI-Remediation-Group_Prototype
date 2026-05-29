@@ -550,7 +550,7 @@ kbd{display:inline-flex;align-items:center;justify-content:center;padding:1px 5p
   .home-badges{justify-content:flex-start;flex-wrap:wrap;}
   .home-stats{flex-wrap:wrap;gap:4px 14px;}
 
-  /* ===== ALL BUTTONS — MOBILE FRIENDLY ===== */
+  /* ===== ALL BUTTONS  MOBILE FRIENDLY ===== */
   /* Full-width stacked CTA buttons */
   .home-cta-btns{flex-direction:column;width:100%;}
   .home-cta-btns button{width:100%;min-height:48px;font-size:.92rem;justify-content:center;}
@@ -594,11 +594,11 @@ kbd{display:inline-flex;align-items:center;justify-content:center;padding:1px 5p
   button.sb-cta,button.dr-cta,.tb-btn,
   [onclick]{touch-action:manipulation;}
 
-  /* Cards — comfortable tap targets */
+  /* Cards  comfortable tap targets */
   .card,.mod,.stat,.pc{padding:18px 16px;}
   .stat{padding:16px;}
 
-  /* Tables — horizontal scroll */
+  /* Tables  horizontal scroll */
   .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
 
   /* Command center */
@@ -606,7 +606,7 @@ kbd{display:inline-flex;align-items:center;justify-content:center;padding:1px 5p
   .cmd-nav{display:none;}
   .kpi-r{grid-template-columns:1fr 1fr;}
 
-  /* Risk rows — stack */
+  /* Risk rows  stack */
   .risk-row{grid-template-columns:1fr;gap:6px;}
 
   /* Pricing */
@@ -1138,7 +1138,7 @@ var origNav = typeof nav === 'function' ? nav : null;
     <div>
       <span class="ew" style="color:var(--tn);">Business Overview · 2026</span>
       <h1 style="color:#fff;margin-bottom:13px;">Intelligent Remediation.<br><span style="color:var(--tn);">Stronger Systems.</span><br>Confident Future.</h1>
-      <p style="color:rgba(220,210,255,0.8);line-height:1.78;margin-bottom:14px;font-size:.9rem;"><strong style="color:#fff;">Business Name:</strong> AI Remediation Group &nbsp;|&nbsp; <strong style="color:#fff;">Founder:</strong>Ginukuntla Swathi &nbsp;|&nbsp; <strong style="color:#fff;">Year:</strong> 2026</p>
+      <p style="color:rgba(220,210,255,0.8);line-height:1.78;margin-bottom:14px;font-size:.9rem;"><strong style="color:#fff;">Business Name:</strong> AI Remediation Group &nbsp;|&nbsp; <strong style="color:#fff;">Founder:</strong>Ginukuntla Swathi&nbsp;|&nbsp; <strong style="color:#fff;">Year:</strong> 2026</p>
       <p style="color:rgba(220,210,255,0.72);font-size:.84rem;line-height:1.76;margin-bottom:14px;">AI Remediation is an AI-based IT service management (ITSM) infrastructure platform tailored toward UK enterprise and Managed Service Provider (MSP) industries. It targets the "Orchestration Gap"  where modern IT support is still dominated by manual monitoring, ticket black-box opacity, and fragmented logs leading to system-wide blindness.</p>
       <p style="color:rgba(220,210,255,0.72);font-size:.84rem;line-height:1.76;margin-bottom:20px;">The platform uses a "Ticket-to-Resolution" engine to ingest real-time system telemetry and incident data, parse infrastructure state constraints, and map them into a machine-executable Incident Intermediate Representation (IIR). Pilot deployments showed a 42% MTTR reduction and 30% Level-1 ticket volume reduction.</p>
       <div style="display:flex;flex-wrap:wrap;gap:7px;">
@@ -1348,33 +1348,367 @@ var origNav = typeof nav === 'function' ? nav : null;
 </div><!-- /technology -->
 
 <!-- PAGE: HOW IT WORKS -->
+<style>
+/* ── HOW IT WORKS – enhanced styles ── */
+.hiw-hero{background:linear-gradient(160deg,var(--blue-dk) 0%,var(--blue-dkr) 55%,#1a0540 100%);border-radius:var(--rxl);padding:48px 40px 40px;margin-bottom:32px;position:relative;overflow:hidden;}
+.hiw-hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237C4FC0' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none;}
+.hiw-hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;}
+@media(max-width:768px){.hiw-hero-inner{grid-template-columns:1fr;}.hiw-hero{padding:28px 20px 24px;}}
+.hiw-hero-lft{}
+.hiw-hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(167,139,250,0.12);border:1px solid rgba(167,139,250,0.24);border-radius:20px;padding:4px 12px;font-family:var(--fm);font-size:.42rem;color:#c4b5fd;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;}
+.hiw-hero-badge .ld{width:5px;height:5px;}
+.hiw-hero h2{color:#fff;font-size:clamp(1.2rem,2vw,1.8rem);margin-bottom:10px;line-height:1.2;}
+.hiw-hero p{color:rgba(220,210,255,0.72);font-size:.82rem;line-height:1.7;max-width:420px;}
+.hiw-stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:24px;}
+@media(max-width:900px){.hiw-stats-row{grid-template-columns:repeat(2,1fr);}}
+.hiw-stat{background:rgba(255,255,255,0.06);border:1px solid rgba(167,139,250,0.18);border-radius:var(--r);padding:13px 10px;text-align:center;}
+.hiw-stat-v{font-family:var(--fh);font-size:1.4rem;font-weight:800;color:#a78bfa;line-height:1;}
+.hiw-stat-l{font-size:.6rem;color:rgba(196,181,253,0.6);margin-top:4px;line-height:1.3;}
+.hiw-hero-rgt{}
+.hiw-ticket{background:rgba(255,255,255,0.05);border:1px solid rgba(167,139,250,0.2);border-radius:var(--rl);padding:16px;font-family:var(--fm);font-size:.68rem;}
+.hiw-ticket-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid rgba(167,139,250,0.12);}
+.hiw-ticket-id{color:#a78bfa;font-weight:700;font-size:.6rem;}
+.hiw-ticket-status{background:rgba(22,163,74,0.15);border:1px solid rgba(22,163,74,0.3);border-radius:10px;padding:2px 8px;font-size:.44rem;color:#4ade80;letter-spacing:.08em;}
+.hiw-ticket-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);font-size:.6rem;}
+.hiw-ticket-row:last-child{border:none;}
+.hiw-ticket-key{color:rgba(196,181,253,0.45);font-size:.52rem;}
+.hiw-ticket-val{color:rgba(220,210,255,0.82);}
+.hiw-ticket-val.ok{color:#4ade80;}
+.hiw-ticket-val.warn{color:#fbbf24;}
+.hiw-ticket-val.blue{color:#a78bfa;}
+/* Pipeline */
+.hiw-pipeline{position:relative;margin:0 0 32px;}
+.hiw-pipe-title{font-family:var(--fm);font-size:.48rem;font-weight:700;color:var(--blue);letter-spacing:.14em;text-transform:uppercase;text-align:center;margin-bottom:20px;}
+.hiw-pipe-track{display:flex;align-items:stretch;gap:0;position:relative;}
+.hiw-pipe-step{flex:1;position:relative;}
+.hiw-pipe-step:not(:last-child)::after{content:'';position:absolute;top:32px;right:-1px;width:2px;height:20px;background:linear-gradient(180deg,var(--blue-l),transparent);z-index:2;}
+/* arrow connector */
+.hiw-pipe-arrow{width:28px;flex-shrink:0;display:flex;align-items:center;justify-content:center;padding-top:24px;}
+.hiw-pipe-arrow svg{color:var(--blue-l);opacity:.55;}
+.hiw-pipe-node{background:var(--bg-card);border:1px solid var(--bd);border-radius:var(--rl);padding:16px 14px;height:100%;display:flex;flex-direction:column;gap:8px;transition:box-shadow .2s,border-color .2s;cursor:default;}
+.hiw-pipe-node:hover{box-shadow:var(--sh-l);border-color:rgba(107,63,160,0.5);}
+.hiw-pipe-num{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--blue-l),var(--blue));display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:.72rem;font-weight:800;color:#fff;flex-shrink:0;}
+.hiw-pipe-top{display:flex;align-items:center;gap:8px;}
+.hiw-pipe-icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.hiw-pipe-icon.v{background:rgba(107,63,160,0.12);border:1px solid rgba(107,63,160,0.22);}
+.hiw-pipe-icon.g{background:rgba(22,163,74,0.1);border:1px solid rgba(22,163,74,0.22);}
+.hiw-pipe-icon.w{background:rgba(180,83,9,0.08);border:1px solid rgba(180,83,9,0.22);}
+.hiw-pipe-icon.r{background:rgba(220,38,38,0.08);border:1px solid rgba(220,38,38,0.22);}
+.hiw-pipe-icon.i{background:rgba(67,56,202,0.08);border:1px solid rgba(67,56,202,0.22);}
+.hiw-pipe-label{font-family:var(--fh);font-size:.78rem;font-weight:700;color:var(--t1);line-height:1.2;}
+.hiw-pipe-mod{font-family:var(--fm);font-size:.42rem;font-weight:700;color:var(--blue-l);letter-spacing:.08em;text-transform:uppercase;}
+.hiw-pipe-desc{font-size:.7rem;color:var(--tm);line-height:1.6;}
+.hiw-pipe-tag{display:inline-block;background:var(--acc-l);border:1px solid var(--pu-b);border-radius:6px;padding:2px 7px;font-family:var(--fm);font-size:.42rem;color:var(--blue);margin-top:auto;}
+
+/* Decision fork */
+.hiw-fork{background:var(--bg-card);border:1px solid var(--bd);border-radius:var(--rl);padding:24px;margin-bottom:32px;box-shadow:var(--sh);}
+.hiw-fork-title{font-family:var(--fm);font-size:.48rem;font-weight:700;color:var(--blue);letter-spacing:.14em;text-transform:uppercase;text-align:center;margin-bottom:18px;}
+.hiw-fork-center{display:flex;flex-direction:column;align-items:center;gap:0;}
+.hiw-fork-gate{background:linear-gradient(135deg,var(--blue),var(--blue-d));border-radius:var(--rl);padding:14px 24px;text-align:center;box-shadow:var(--sh);width:280px;}
+.hiw-fork-gate-label{font-family:var(--fm);font-size:.44rem;color:rgba(196,181,253,0.6);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;}
+.hiw-fork-gate-name{font-family:var(--fh);font-size:.9rem;font-weight:700;color:#fff;}
+.hiw-fork-conn{display:flex;align-items:center;gap:0;width:100%;justify-content:center;margin:0;}
+.hiw-fork-line-v{width:2px;height:28px;background:linear-gradient(180deg,var(--blue-l),rgba(107,63,160,0.2));margin:0 auto;}
+.hiw-fork-branch-row{display:grid;grid-template-columns:1fr auto 1fr;gap:0;width:100%;align-items:flex-start;margin-top:0;}
+.hiw-fork-branch-line{height:2px;background:linear-gradient(90deg,rgba(107,63,160,0.15),rgba(107,63,160,0.5));margin-top:20px;}
+.hiw-fork-branch-line.r{background:linear-gradient(270deg,rgba(107,63,160,0.15),rgba(107,63,160,0.5));}
+.hiw-fork-mid-dot{width:10px;height:10px;border-radius:50%;background:var(--blue-l);box-shadow:0 0 12px rgba(107,63,160,0.6);margin-top:15px;flex-shrink:0;}
+.hiw-fork-out{border-radius:var(--rl);padding:16px;text-align:center;}
+.hiw-fork-out.green{background:rgba(22,163,74,0.08);border:1px solid rgba(22,163,74,0.25);}
+.hiw-fork-out.amber{background:rgba(180,83,9,0.07);border:1px solid rgba(180,83,9,0.22);}
+.hiw-fork-out-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;}
+.hiw-fork-out.green .hiw-fork-out-icon{background:rgba(22,163,74,0.12);}
+.hiw-fork-out.amber .hiw-fork-out-icon{background:rgba(180,83,9,0.1);}
+.hiw-fork-out-title{font-family:var(--fh);font-size:.82rem;font-weight:700;color:var(--t1);margin-bottom:4px;}
+.hiw-fork-out.green .hiw-fork-out-title{color:var(--ok);}
+.hiw-fork-out.amber .hiw-fork-out-title{color:var(--wn);}
+.hiw-fork-out-desc{font-size:.68rem;color:var(--tm);line-height:1.55;}
+.hiw-fork-badge{font-family:var(--fm);font-size:.44rem;padding:3px 8px;border-radius:8px;font-weight:700;margin-top:7px;display:inline-block;}
+.hiw-fork-badge.g{background:rgba(22,163,74,0.1);color:var(--ok);border:1px solid rgba(22,163,74,0.24);}
+.hiw-fork-badge.w{background:rgba(180,83,9,0.08);color:var(--wn);border:1px solid rgba(180,83,9,0.2);}
+
+/* Module row */
+.hiw-mods{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:32px;}
+@media(max-width:900px){.hiw-mods{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:600px){.hiw-mods{grid-template-columns:1fr;}}
+.hiw-mod{background:var(--bg-card);border:1px solid var(--bd);border-radius:var(--rl);padding:18px;box-shadow:var(--sh-xs);transition:box-shadow .2s,transform .2s;}
+.hiw-mod:hover{box-shadow:var(--sh-l);transform:translateY(-2px);}
+.hiw-mod-ac{font-family:var(--fh);font-size:1.05rem;font-weight:800;color:var(--blue);margin-bottom:2px;}
+.hiw-mod-nm{font-family:var(--fb);font-size:.68rem;font-weight:600;color:var(--t2);margin-bottom:8px;line-height:1.3;}
+.hiw-mod-desc{font-size:.7rem;color:var(--tm);line-height:1.62;margin-bottom:10px;}
+.hiw-mod-pill{display:inline-flex;align-items:center;gap:5px;background:var(--acc-l);border:1px solid var(--pu-b);border-radius:6px;padding:3px 8px;font-family:var(--fm);font-size:.42rem;color:var(--blue);}
+.hiw-mod-pill svg{width:8px;height:8px;}
+
+/* Transformation row */
+.hiw-transform{display:grid;grid-template-columns:1fr 60px 1fr;gap:0;align-items:center;background:linear-gradient(135deg,var(--acc-l),#f0ebff);border:1px solid var(--pu-b);border-radius:var(--rl);overflow:hidden;margin-bottom:32px;}
+@media(max-width:768px){.hiw-transform{grid-template-columns:1fr;}}
+.hiw-tr-before{padding:24px;border-right:1px solid var(--pu-b);}
+@media(max-width:768px){.hiw-tr-before{border-right:none;border-bottom:1px solid var(--pu-b);}}
+.hiw-tr-arrow{display:flex;align-items:center;justify-content:center;padding:10px;}
+@media(max-width:768px){.hiw-tr-arrow{transform:rotate(90deg);padding:8px;}}
+.hiw-tr-after{padding:24px;border-left:1px solid var(--pu-b);}
+@media(max-width:768px){.hiw-tr-after{border-left:none;border-top:1px solid var(--pu-b);}}
+.hiw-tr-label{font-family:var(--fm);font-size:.44rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px;}
+.hiw-tr-title{font-family:var(--fh);font-size:.96rem;font-weight:700;color:var(--t1);margin-bottom:8px;}
+.hiw-tr-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:5px;}
+.hiw-tr-list li{display:flex;align-items:flex-start;gap:7px;font-size:.7rem;color:var(--tm);line-height:1.5;}
+.hiw-tr-list li svg{flex-shrink:0;margin-top:2px;}
+
+/* Capability cards */
+.hiw-caps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+@media(max-width:900px){.hiw-caps{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.hiw-caps{grid-template-columns:1fr;}}
+.hiw-cap{background:var(--bg-card);border:1px solid var(--bd);border-radius:var(--rl);padding:18px;box-shadow:var(--sh-xs);}
+.hiw-cap-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:11px;}
+.hiw-cap h4{font-size:.84rem;margin-bottom:5px;color:var(--t1);}
+.hiw-cap p{font-size:.71rem;color:var(--tm);line-height:1.62;margin:0;}
+</style>
+
 <div class="page" id="page-howitworks">
+
+<!-- HERO BANNER -->
 <div class="sec">
-  <div class="sec-hd" style="text-align:center;max-width:620px;margin:0 auto 42px;"><span class="ew">Process Innovation</span><h2>From Ticket to Triage to Resolution</h2><p>Five evidence-governed steps transform every IT incident into a governed, auditable resolution  automatically. Shifting the Service Desk Boundary from Monitoring to Orchestration.</p></div>
-  <div class="steps">
-    <div class="step"><div class="step-n">1</div><div class="step-t">Ingest and Parse</div><div class="step-d">Real-time telemetry, logs, and incident data ingested from all connected ITSM tools into the IIR engine. Infrastructure state constraints parsed into machine-executable format immediately.</div></div>
-    <div class="step"><div class="step-n">2</div><div class="step-t">Evidence Gate</div><div class="step-d">EGREE triangulates multi-source evidence to verify incident ground truth. DCP-CLM independently checks model confidence AND policy-based execution permission before any action proceeds.</div></div>
-    <div class="step"><div class="step-n">3</div><div class="step-t">Risk Partition</div><div class="step-d">PS-RPF classifies action risk level. High-privilege actions (firewall changes, admin access) routed to AOGM human governance queue. Low-risk actions cleared for autonomous execution.</div></div>
-    <div class="step"><div class="step-n">4</div><div class="step-t">Execute and Govern</div><div class="step-d">Approved actions executed autonomously with full INAGOE reasoning trail generated. High-risk actions resolved after human AOGM approval with complete audit chain. 100% auditable.</div></div>
-    <div class="step"><div class="step-n">5</div><div class="step-t">Learn and Improve</div><div class="step-d">AOGM captures override reasoning to build corporate risk-appetite models. CGN feeds anonymised sector benchmarks. Platform grows more intelligent with every action governed.</div></div>
+  <div class="hiw-hero">
+    <div class="hiw-hero-inner">
+      <div class="hiw-hero-lft">
+        <div class="hiw-hero-badge"><div class="ld"></div>Process Innovation · 2026</div>
+        <h2>From Ticket to Governed Resolution  Automatically</h2>
+        <p>Five evidence-governed stages transform every IT incident into a safe, auditable, autonomous resolution. No black-box guesswork. No hallucinated fixes. Every action proven before it executes.</p>
+        <div class="hiw-stats-row">
+          <div class="hiw-stat"><div class="hiw-stat-v">42%</div><div class="hiw-stat-l">MTTR Reduction</div></div>
+          <div class="hiw-stat"><div class="hiw-stat-v">96.4%</div><div class="hiw-stat-l">Remediation Accuracy</div></div>
+          <div class="hiw-stat"><div class="hiw-stat-v">100%</div><div class="hiw-stat-l">Audit Trail Coverage</div></div>
+          <div class="hiw-stat"><div class="hiw-stat-v">&lt;1%</div><div class="hiw-stat-l">False Positive Rate</div></div>
+        </div>
+      </div>
+      <div class="hiw-hero-rgt">
+        <div class="hiw-ticket">
+          <div class="hiw-ticket-hd">
+            <span class="hiw-ticket-id">#T-4820 · VPN Credential Lock</span>
+            <span class="hiw-ticket-status">AUTO-RESOLVED</span>
+          </div>
+          <div class="hiw-ticket-row"><span class="hiw-ticket-key">IIR Parse</span><span class="hiw-ticket-val blue">machine-executable ✓</span></div>
+          <div class="hiw-ticket-row"><span class="hiw-ticket-key">EGREE Evidence</span><span class="hiw-ticket-val ok">3/3 sources verified</span></div>
+          <div class="hiw-ticket-row"><span class="hiw-ticket-key">DCP-CLM Gate</span><span class="hiw-ticket-val ok">EXECUTE cleared</span></div>
+          <div class="hiw-ticket-row"><span class="hiw-ticket-key">PS-RPF Risk</span><span class="hiw-ticket-val ok">Low  auto-path</span></div>
+          <div class="hiw-ticket-row"><span class="hiw-ticket-key">INAGOE Audit</span><span class="hiw-ticket-val ok">trail generated</span></div>
+          <div class="hiw-ticket-row"><span class="hiw-ticket-key">Resolution Time</span><span class="hiw-ticket-val ok">7 min (vs 45 min avg)</span></div>
+          <div class="hiw-ticket-row"><span class="hiw-ticket-key">AOGM Learning</span><span class="hiw-ticket-val blue">pattern stored</span></div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<div class="sec sec-alt">
-  <div class="sec-hd"><span class="ew">Process Innovation</span><h2>Transforming Troubleshooters into Governance Governors</h2></div>
-  <div class="g3">
-    <div class="card"><div class="cicon v"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div><h4>Proactive Shadow-IT Detection</h4><p>By continuously monitoring telemetry patterns, the agentic system predicts and remediates issues like unauthorised application usage before they trigger a user-generated ticket  preventing problems rather than just solving them reactively.</p></div>
-    <div class="card"><div class="cicon g"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><h4>Automated Root Cause Mapping</h4><p>Uses agentic reasoning to link disparate symptoms across different silos  for example connecting a slow VPN and a cloud server spike  to identify a single root cause in seconds rather than hours of manual cross-silo investigation.</p></div>
-    <div class="card"><div class="cicon v"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div><h4>Digital Resiliency Ledger</h4><p>A composite measure tracking the Health of Autonomy within an organisation  continuously assessing risk scores and identifying automation-ready vs risk-heavy segments of the entire IT estate. Provides strategic visibility into governance maturity.</p></div>
+
+  <!-- 5-STEP PIPELINE -->
+  <div class="hiw-pipeline">
+    <div class="hiw-pipe-title">The 5-Stage Ticket-to-Resolution Pipeline</div>
+    <div style="display:grid;grid-template-columns:1fr 22px 1fr 22px 1fr 22px 1fr 22px 1fr;gap:0;align-items:flex-start;">
+
+      <!-- Step 1 -->
+      <div class="hiw-pipe-node">
+        <div class="hiw-pipe-top">
+          <div class="hiw-pipe-num">1</div>
+          <div class="hiw-pipe-icon v"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="var(--blue)" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        </div>
+        <div class="hiw-pipe-label">Ingest &amp; Parse</div>
+        <div class="hiw-pipe-mod">IIR Engine</div>
+        <div class="hiw-pipe-desc">Real-time telemetry, logs, and incident data from all ITSM tools ingested and parsed into machine-executable IIR format instantly.</div>
+        <span class="hiw-pipe-tag">ServiceNow · Jira · Azure</span>
+      </div>
+
+      <!-- Arrow -->
+      <div class="hiw-pipe-arrow"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
+
+      <!-- Step 2 -->
+      <div class="hiw-pipe-node">
+        <div class="hiw-pipe-top">
+          <div class="hiw-pipe-num">2</div>
+          <div class="hiw-pipe-icon g"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="var(--ok)" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+        </div>
+        <div class="hiw-pipe-label">Evidence Gate</div>
+        <div class="hiw-pipe-mod">EGREE + DCP-CLM</div>
+        <div class="hiw-pipe-desc">Multi-source triangulation verifies incident ground truth. Confidence AND permission checked independently  both must clear before any action.</div>
+        <span class="hiw-pipe-tag">3-source triangulation</span>
+      </div>
+
+      <!-- Arrow -->
+      <div class="hiw-pipe-arrow"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
+
+      <!-- Step 3 -->
+      <div class="hiw-pipe-node">
+        <div class="hiw-pipe-top">
+          <div class="hiw-pipe-num">3</div>
+          <div class="hiw-pipe-icon w"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="var(--wn)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        </div>
+        <div class="hiw-pipe-label">Risk Partition</div>
+        <div class="hiw-pipe-mod">PS-RPF</div>
+        <div class="hiw-pipe-desc">Action risk level classified. High-privilege tasks (firewall, admin credentials) routed to the AOGM human queue. Low-risk cleared for autonomous execution.</div>
+        <span class="hiw-pipe-tag">Secure DMZ routing</span>
+      </div>
+
+      <!-- Arrow -->
+      <div class="hiw-pipe-arrow"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
+
+      <!-- Step 4 -->
+      <div class="hiw-pipe-node">
+        <div class="hiw-pipe-top">
+          <div class="hiw-pipe-num">4</div>
+          <div class="hiw-pipe-icon i"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="#4338ca" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        </div>
+        <div class="hiw-pipe-label">Execute &amp; Govern</div>
+        <div class="hiw-pipe-mod">AOGM + INAGOE</div>
+        <div class="hiw-pipe-desc">Approved actions execute autonomously. INAGOE auto-generates a full reasoning trail. High-risk actions resolve after AOGM human approval  100% auditable.</div>
+        <span class="hiw-pipe-tag">EU AI Act Art. 12 &amp; 13</span>
+      </div>
+
+      <!-- Arrow -->
+      <div class="hiw-pipe-arrow"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></div>
+
+      <!-- Step 5 -->
+      <div class="hiw-pipe-node">
+        <div class="hiw-pipe-top">
+          <div class="hiw-pipe-num">5</div>
+          <div class="hiw-pipe-icon v"><svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="var(--blue)" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+        </div>
+        <div class="hiw-pipe-label">Learn &amp; Improve</div>
+        <div class="hiw-pipe-mod">AOGM + CGN</div>
+        <div class="hiw-pipe-desc">Override reasoning captured to build your Corporate Risk Appetite model. CGN feeds anonymised sector benchmarks. Platform grows smarter with every action governed.</div>
+        <span class="hiw-pipe-tag">Institutional memory</span>
+      </div>
+
+    </div>
   </div>
-  <div style="background:linear-gradient(135deg,var(--acc-l),#f0ebff);border:1px solid var(--pu-b);border-radius:var(--rl);padding:24px;margin-top:20px;">
-    <div style="text-align:center;margin-bottom:18px;"><span class="ew">Key Differentiator</span><h3>Service Desk Role Transformation</h3></div>
-    <div class="g3">
-      <div style="text-align:center;padding:18px;background:var(--bg-card);border-radius:var(--rl);border:1px solid var(--bd);box-shadow:var(--sh-xs);"><div style="font-family:var(--fm);font-size:.5rem;color:var(--rd);font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;">Before AI Remediation</div><div style="font-family:var(--fh);font-size:.9rem;font-weight:700;color:var(--t1);margin-bottom:6px;">Manual Troubleshooter</div><p style="font-size:.72rem;color:var(--tm);margin:0;">Reactive, ticket-by-ticket handling. 18–22% time on L1 zombie tasks. High burnout and staff turnover (35% annually).</p></div>
-      <div style="text-align:center;padding:18px;background:linear-gradient(135deg,var(--blue),var(--blue-d));border-radius:var(--rl);box-shadow:var(--sh);"><div style="font-family:var(--fm);font-size:.5rem;color:rgba(196,181,253,0.6);font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;">AI Remediation Bridge</div><div style="font-family:var(--fh);font-size:.9rem;font-weight:700;color:#fff;margin-bottom:6px;">Evidence-Gated Platform</div><p style="font-size:.72rem;color:rgba(220,210,255,0.72);margin:0;">Automated low-risk actions. Human oversight for high-privilege tasks. Full audit trail generation. 42% MTTR reduction.</p></div>
-      <div style="text-align:center;padding:18px;background:var(--bg-card);border-radius:var(--rl);border:1px solid var(--ok-b);background:var(--ok-d);box-shadow:var(--sh-xs);"><div style="font-family:var(--fm);font-size:.5rem;color:var(--ok);font-weight:700;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;">After AI Remediation</div><div style="font-family:var(--fh);font-size:.9rem;font-weight:700;color:var(--t1);margin-bottom:6px;">Governance Governor</div><p style="font-size:.72rem;color:var(--tm);margin:0;">Strategic oversight of AI actions. High-value governance work. Reduced burnout. 14 hours per week saved per support agent.</p></div>
+
+  <!-- DECISION FORK -->
+  <div class="hiw-fork">
+    <div class="hiw-fork-title">DCP-CLM Decision Fork  What Happens at the Gate</div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <div class="hiw-fork-gate">
+        <div class="hiw-fork-gate-label">DCP-CLM Evidence Gate</div>
+        <div class="hiw-fork-gate-name">Confidence + Permission Check</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 2px 1fr;width:60%;max-width:500px;">
+        <div style="height:28px;border-right:2px solid rgba(107,63,160,0.35);"></div>
+        <div></div>
+        <div style="height:28px;"></div>
+      </div>
+      <div style="width:60%;max-width:500px;height:2px;background:linear-gradient(90deg,rgba(22,163,74,0.4),rgba(107,63,160,0.35),rgba(180,83,9,0.4));margin-bottom:0;"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;width:60%;max-width:500px;gap:16px;margin-top:0;">
+        <div style="height:20px;border-left:2px solid rgba(22,163,74,0.4);"></div>
+        <div style="height:20px;border-left:2px solid rgba(180,83,9,0.4);margin-left:auto;border-left:none;border-right:2px solid rgba(180,83,9,0.4);"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;width:100%;max-width:560px;">
+        <div class="hiw-fork-out green">
+          <div class="hiw-fork-out-icon"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="var(--ok)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="hiw-fork-out-title">EXECUTE</div>
+          <div class="hiw-fork-out-desc">Evidence verified across ≥3 sources. Confidence ≥70%. Policy gates cleared. Action executes autonomously with full audit trail.</div>
+          <div class="hiw-fork-badge g">Low-risk auto-path · 7 min avg</div>
+        </div>
+        <div class="hiw-fork-out amber">
+          <div class="hiw-fork-out-icon"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="var(--wn)" stroke-width="2"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg></div>
+          <div class="hiw-fork-out-title">AOGM REVIEW</div>
+          <div class="hiw-fork-out-desc">High-privilege action or insufficient evidence. Routed to human governance queue with full reasoning context for informed approval.</div>
+          <div class="hiw-fork-badge w">High-risk human gate · HARD BLOCK if unresolved</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<!-- MODULE SECTION -->
+<div class="sec sec-alt">
+  <div class="sec-hd"><span class="ew">Platform Modules</span><h2>Six Proprietary Modules  One Unbreakable Governance Architecture</h2><p>Each module addresses a specific failure point in current ITSM automation. Together they form a structural competitive moat no competitor can replicate with simple programming changes.</p></div>
+
+  <div class="hiw-mods">
+    <div class="hiw-mod">
+      <div class="hiw-mod-ac">EGREE</div>
+      <div class="hiw-mod-nm">Evidence-Gated Remediation Execution Engine</div>
+      <div class="hiw-mod-desc">Synthesises multi-source evidence  real-time telemetry, system logs, and CMDB data  to validate the ground truth of every incident before executing any fix. No action without verified proof from three independent sources.</div>
+      <span class="hiw-mod-pill"><svg fill="none" viewBox="0 0 24 24" stroke="var(--blue)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Zero hallucination execution</span>
+    </div>
+    <div class="hiw-mod">
+      <div class="hiw-mod-ac">DCP-CLM</div>
+      <div class="hiw-mod-nm">Decoupled Confidence-Permission Control Logic Module</div>
+      <div class="hiw-mod-desc">The world's first architectural gate separating AI Confidence from Execution Permission. Even a 99%-confident model cannot act without policy clearance. Patent-pending novel logic prevents all hallucinated resolutions from touching live systems.</div>
+      <span class="hiw-mod-pill"><svg fill="none" viewBox="0 0 24 24" stroke="var(--blue)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Patent pending · unique moat</span>
+    </div>
+    <div class="hiw-mod">
+      <div class="hiw-mod-ac">AOGM</div>
+      <div class="hiw-mod-nm">Analyst Override Governance Memory</div>
+      <div class="hiw-mod-desc">Records the governance reasoning behind every human override  not just the fix. Builds a growing Corporate Risk Appetite model unique to each client. This proprietary institutional dataset cannot be copied or replicated by any competitor.</div>
+      <span class="hiw-mod-pill"><svg fill="none" viewBox="0 0 24 24" stroke="var(--blue)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Client-specific moat</span>
+    </div>
+    <div class="hiw-mod">
+      <div class="hiw-mod-ac">INAGOE</div>
+      <div class="hiw-mod-nm">Intentional Non-Automation Governance Output Engine</div>
+      <div class="hiw-mod-desc">Auto-generates human-readable Reasoning Trails for every action and every refusal. EU AI Act Article 12 (Traceability) and Article 13 (Transparency) compliance built-in. Compliance becomes a background process, not an audit burden.</div>
+      <span class="hiw-mod-pill"><svg fill="none" viewBox="0 0 24 24" stroke="var(--blue)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>EU AI Act Art. 12 &amp; 13</span>
+    </div>
+    <div class="hiw-mod">
+      <div class="hiw-mod-ac">PS-RPF</div>
+      <div class="hiw-mod-nm">Privilege-Sensitive Resolution Partitioning Framework</div>
+      <div class="hiw-mod-desc">Creates a secure DMZ for high-stakes actions. Admin credentials, firewall rules, and security policies are physically isolated from general triage agents with stricter evidence-clearance workflows. Defends against social engineering attacks on help desks.</div>
+      <span class="hiw-mod-pill"><svg fill="none" viewBox="0 0 24 24" stroke="var(--blue)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Secure DMZ isolation</span>
+    </div>
+    <div class="hiw-mod">
+      <div class="hiw-mod-ac">CGN</div>
+      <div class="hiw-mod-nm">Community Governance Network</div>
+      <div class="hiw-mod-desc">Provides anonymised benchmarking on how peer firms in the same sector govern similar incidents  without exposing any sensitive infrastructure data. Creates a data flywheel: governance rules learned in UK finance safely adapted across healthcare, legal, and public sector.</div>
+      <span class="hiw-mod-pill"><svg fill="none" viewBox="0 0 24 24" stroke="var(--blue)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Federated sector intelligence</span>
+    </div>
+  </div>
+
+  <!-- ROLE TRANSFORMATION -->
+  <div style="margin-bottom:18px;"><span class="ew">Key Differentiator</span><h3 style="margin-top:4px;">Service Desk Role Transformation</h3></div>
+  <div class="hiw-transform">
+    <div class="hiw-tr-before">
+      <div class="hiw-tr-label" style="color:var(--rd);">Before AI Remediation</div>
+      <div class="hiw-tr-title">Manual Troubleshooter</div>
+      <ul class="hiw-tr-list">
+        <li><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="var(--rd)" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Reactive, ticket-by-ticket handling</li>
+        <li><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="var(--rd)" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>18–22% time lost on L1 zombie tasks</li>
+        <li><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="var(--rd)" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>35% annual staff turnover from burnout</li>
+        <li><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="var(--rd)" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>No 24/7 coverage possible</li>
+        <li><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="var(--rd)" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Institutional knowledge lost on departure</li>
+      </ul>
+    </div>
+    <div class="hiw-tr-arrow">
+      <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="var(--blue-l)" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+    </div>
+    <div class="hiw-tr-after">
+      <div class="hiw-tr-label" style="color:var(--ok);">After AI Remediation</div>
+      <div class="hiw-tr-title">Governance Governor</div>
+      <ul class="hiw-tr-list">
+        <li><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="var(--ok)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Strategic oversight of AI-governed actions</li>
+        <li><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="var(--ok)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>14 hours saved per agent per week</li>
+        <li><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="var(--ok)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>High-value governance and escalation work</li>
+        <li><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="var(--ok)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>42% reduction in Mean Time to Resolution</li>
+        <li><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="var(--ok)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>AOGM preserves institutional knowledge permanently</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CAPABILITIES -->
+  <div class="sec-hd" style="margin-bottom:18px;"><span class="ew">Advanced Capabilities</span><h3>What Sets AI Remediation Apart</h3></div>
+  <div class="hiw-caps">
+    <div class="hiw-cap">
+      <div class="hiw-cap-icon" style="background:rgba(107,63,160,0.1);border:1px solid rgba(107,63,160,0.22);"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="var(--blue)" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+      <h4>Proactive Shadow-IT Detection</h4>
+      <p>Continuously monitors telemetry patterns to predict and remediate unauthorised application usage before it triggers a user ticket  preventing incidents rather than reacting to them.</p>
+    </div>
+    <div class="hiw-cap">
+      <div class="hiw-cap-icon" style="background:rgba(22,163,74,0.08);border:1px solid rgba(22,163,74,0.22);"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="var(--ok)" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      <h4>Automated Root Cause Mapping</h4>
+      <p>Links disparate symptoms across silos  connecting a slow VPN and a cloud server spike  to identify a single root cause in seconds rather than hours of manual cross-silo investigation.</p>
+    </div>
+    <div class="hiw-cap">
+      <div class="hiw-cap-icon" style="background:rgba(67,56,202,0.08);border:1px solid rgba(67,56,202,0.22);"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#4338ca" stroke-width="2"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+      <h4>Digital Resiliency Ledger</h4>
+      <p>A composite health-of-autonomy score that continuously assesses risk across your entire IT estate, identifying automation-ready vs risk-heavy segments for strategic governance decisions.</p>
+    </div>
+  </div>
+</div>
+
 </div><!-- /howitworks -->
 
 <!-- PAGE: COMPETITORS -->
@@ -2164,7 +2498,8 @@ input[type=range].d-sl::-webkit-slider-thumb{-webkit-appearance:none;width:20px;
     <button class="d-tab" onclick="dTab('roi',this)">ROI Calculator</button>
     <button class="d-tab" onclick="dTab('modules',this)">Module Explorer</button>
     <button class="d-tab" onclick="dTab('compete',this)">Competitor Analysis</button>
-    <button class="d-tab" onclick="dTab('hiw',this)">How It Works</button>
+  
+    <button class="d-tab" onclick="dTab('process',this)">Company Process</button>
   </div>
 </div>
 
@@ -2442,15 +2777,15 @@ input[type=range].d-sl::-webkit-slider-thumb{-webkit-appearance:none;width:20px;
 
 
 <div class="d-panel" id="dp-hiw">
-  <div class="d-ptag">How It Works — Complete Platform Walkthrough</div>
+  <div class="d-ptag">How It Works  Complete Platform Walkthrough</div>
   <div class="d-ph2">From One IT Ticket to a Fully Governed Resolution</div>
-  <p class="d-pdesc">This tab explains exactly how AI Remediation Group works — in plain English — from the moment an IT ticket arrives to the moment the action is completed and the audit trail is generated. No technical background needed.</p>
+  <p class="d-pdesc">This tab explains exactly how AI Remediation Group works  in plain English  from the moment an IT ticket arrives to the moment the action is completed and the audit trail is generated. No technical background needed.</p>
 
   <!-- PDF DOWNLOAD BANNER -->
   <div style="background:linear-gradient(135deg,#3D1A6E,#6B3FA0);border-radius:14px;padding:20px 24px;margin-bottom:28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;">
     <div>
       <div style="font-family:IBM Plex Mono,monospace;font-size:10px;font-weight:700;color:rgba(196,181,253,0.6);letter-spacing:.14em;text-transform:uppercase;margin-bottom:5px;">Complete Demo Reference</div>
-      <div style="font-family:Sora,sans-serif;font-size:16px;font-weight:800;color:#fff;margin-bottom:4px;">AI Remediation Group — Demo Guide PDF</div>
+      <div style="font-family:Sora,sans-serif;font-size:16px;font-weight:800;color:#fff;margin-bottom:4px;">AI Remediation Group  Demo Guide PDF</div>
       <div style="font-size:12px;color:rgba(220,210,255,0.75);line-height:1.5;">All 7 tabs explained in detail &bull; Pilot data &bull; Competitor analysis &bull; ROI benchmarks &bull; Regulatory coverage</div>
     </div>
     <a id="pdf-dl-btn" download="AI-Remediation-Group-Demo-Guide.pdf"
@@ -2467,11 +2802,11 @@ input[type=range].d-sl::-webkit-slider-thumb{-webkit-appearance:none;width:20px;
       <div class="hiw-step-num">1</div>
       <div class="hiw-step-body">
         <div class="hiw-step-title">IT Ticket Arrives</div>
-        <p class="hiw-step-desc">An IT incident is submitted via any connected ITSM tool — ServiceNow, Jira Service Management, Freshservice, or a custom integration. The EGREE engine immediately ingests the ticket and converts it into a machine-executable <strong>Incident Intermediate Representation (IIR)</strong> — a structured data object containing all relevant fields: user identity, affected systems, error codes, timestamps, and environmental context.</p>
+        <p class="hiw-step-desc">An IT incident is submitted via any connected ITSM tool  ServiceNow, Jira Service Management, Freshservice, or a custom integration. The EGREE engine immediately ingests the ticket and converts it into a machine-executable <strong>Incident Intermediate Representation (IIR)</strong>  a structured data object containing all relevant fields: user identity, affected systems, error codes, timestamps, and environmental context.</p>
         <div class="hiw-detail-box">
           <div class="hiw-detail-row"><span class="hiw-detail-label">What the IIR captures:</span><span class="hiw-detail-val">user_id, source_ip, affected_systems, error_code, priority, geo_risk, failed_login_count, last_change_timestamp</span></div>
-          <div class="hiw-detail-row"><span class="hiw-detail-label">Time taken:</span><span class="hiw-detail-val">Under 1 second — fully automated, no agent involvement</span></div>
-          <div class="hiw-detail-row"><span class="hiw-detail-label">Demo tab to try:</span><span class="hiw-detail-val">Tab 1 — EGREE Simulator, Step 1: IIR Ingestion</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Time taken:</span><span class="hiw-detail-val">Under 1 second  fully automated, no agent involvement</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Demo tab to try:</span><span class="hiw-detail-val">Tab 1  EGREE Simulator, Step 1: IIR Ingestion</span></div>
         </div>
       </div>
     </div>
@@ -2481,15 +2816,15 @@ input[type=range].d-sl::-webkit-slider-thumb{-webkit-appearance:none;width:20px;
     <div class="hiw-step">
       <div class="hiw-step-num">2</div>
       <div class="hiw-step-body">
-        <div class="hiw-step-title">Evidence Gate Opens — Multi-Source Triangulation</div>
-        <p class="hiw-step-desc">The EGREE evidence gate simultaneously queries <strong>3 or more independent data sources</strong> to verify the incident ground truth. No single source is trusted alone. This multi-source triangulation is what eliminates the hallucination risk that plagues traditional AI ITSM tools — the AI cannot act on a belief, only on verified evidence.</p>
+        <div class="hiw-step-title">Evidence Gate Opens  Multi-Source Triangulation</div>
+        <p class="hiw-step-desc">The EGREE evidence gate simultaneously queries <strong>3 or more independent data sources</strong> to verify the incident ground truth. No single source is trusted alone. This multi-source triangulation is what eliminates the hallucination risk that plagues traditional AI ITSM tools  the AI cannot act on a belief, only on verified evidence.</p>
         <div class="hiw-detail-box">
           <div class="hiw-detail-row"><span class="hiw-detail-label">CMDB check:</span><span class="hiw-detail-val">Is the configuration state what it should be? Is this a privileged system?</span></div>
           <div class="hiw-detail-row"><span class="hiw-detail-label">Telemetry check:</span><span class="hiw-detail-val">Does the live system data corroborate the reported incident?</span></div>
           <div class="hiw-detail-row"><span class="hiw-detail-label">Identity logs:</span><span class="hiw-detail-val">Are there anomalous login patterns, unusual source IPs, or Tor exit nodes?</span></div>
           <div class="hiw-detail-row"><span class="hiw-detail-label">Policy database:</span><span class="hiw-detail-val">What actions are pre-approved for this resource type? Is a change window active?</span></div>
-          <div class="hiw-detail-row"><span class="hiw-detail-label">Pilot result:</span><span class="hiw-detail-val">False positive rate below 1% — industry benchmark is 15–20%</span></div>
-          <div class="hiw-detail-row"><span class="hiw-detail-label">Demo tab to try:</span><span class="hiw-detail-val">Tab 1 — EGREE Simulator, Step 2: Evidence Triangulation</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Pilot result:</span><span class="hiw-detail-val">False positive rate below 1%  industry benchmark is 15–20%</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Demo tab to try:</span><span class="hiw-detail-val">Tab 1  EGREE Simulator, Step 2: Evidence Triangulation</span></div>
         </div>
       </div>
     </div>
@@ -2499,8 +2834,8 @@ input[type=range].d-sl::-webkit-slider-thumb{-webkit-appearance:none;width:20px;
     <div class="hiw-step">
       <div class="hiw-step-num">3</div>
       <div class="hiw-step-body">
-        <div class="hiw-step-title">DCP-CLM Gate — Confidence vs Permission Decision</div>
-        <p class="hiw-step-desc">This is the <strong>core innovation</strong> that no competitor currently offers. The AI model generates a confidence score for its proposed action. But the DCP-CLM module evaluates permission separately — based purely on evidence clearances, not on AI confidence. A 99% confident AI is still hard-blocked if the evidence gates are not cleared. This prevents all hallucination-driven actions regardless of model quality.</p>
+        <div class="hiw-step-title">DCP-CLM Gate  Confidence vs Permission Decision</div>
+        <p class="hiw-step-desc">This is the <strong>core innovation</strong> that no competitor currently offers. The AI model generates a confidence score for its proposed action. But the DCP-CLM module evaluates permission separately  based purely on evidence clearances, not on AI confidence. A 99% confident AI is still hard-blocked if the evidence gates are not cleared. This prevents all hallucination-driven actions regardless of model quality.</p>
         <div class="hiw-outcome-row">
           <div class="hiw-outcome hiw-outcome-green">
             <div class="hiw-outcome-icon">&#10003;</div>
@@ -2515,12 +2850,12 @@ input[type=range].d-sl::-webkit-slider-thumb{-webkit-appearance:none;width:20px;
           <div class="hiw-outcome hiw-outcome-red">
             <div class="hiw-outcome-icon">&#10007;</div>
             <div class="hiw-outcome-name">HARD BLOCK</div>
-            <div class="hiw-outcome-cond">Gates failed — confidence irrelevant</div>
+            <div class="hiw-outcome-cond">Gates failed  confidence irrelevant</div>
           </div>
         </div>
         <div class="hiw-detail-box" style="margin-top:12px;">
-          <div class="hiw-detail-row"><span class="hiw-detail-label">Patent status:</span><span class="hiw-detail-val">Filed — novel confidence-permission decoupling architecture for IT remediation</span></div>
-          <div class="hiw-detail-row"><span class="hiw-detail-label">Demo tab to try:</span><span class="hiw-detail-val">Tab 2 — DCP-CLM Gate (set 99% confidence, leave all gates unticked — it still blocks)</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Patent status:</span><span class="hiw-detail-val">Filed  novel confidence-permission decoupling architecture for IT remediation</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Demo tab to try:</span><span class="hiw-detail-val">Tab 2  DCP-CLM Gate (set 99% confidence, leave all gates unticked  it still blocks)</span></div>
         </div>
       </div>
     </div>
@@ -2530,8 +2865,8 @@ input[type=range].d-sl::-webkit-slider-thumb{-webkit-appearance:none;width:20px;
     <div class="hiw-step">
       <div class="hiw-step-num">4</div>
       <div class="hiw-step-body">
-        <div class="hiw-step-title">PS-RPF — Privilege Risk Classification</div>
-        <p class="hiw-step-desc">Every proposed action is classified by privilege risk level across <strong>47 categories</strong>. This creates a secure separation between routine low-risk actions and high-stakes privileged operations. High-privilege actions are physically isolated from general triage workflows — even if the DCP-CLM gate clears them, they are routed through a dedicated human approval workflow via AOGM.</p>
+        <div class="hiw-step-title">PS-RPF  Privilege Risk Classification</div>
+        <p class="hiw-step-desc">Every proposed action is classified by privilege risk level across <strong>47 categories</strong>. This creates a secure separation between routine low-risk actions and high-stakes privileged operations. High-privilege actions are physically isolated from general triage workflows  even if the DCP-CLM gate clears them, they are routed through a dedicated human approval workflow via AOGM.</p>
         <div class="hiw-priv-grid">
           <div class="hiw-priv-card hiw-priv-low">
             <div class="hiw-priv-title">LOW PRIVILEGE</div>
@@ -2546,7 +2881,7 @@ input[type=range].d-sl::-webkit-slider-thumb{-webkit-appearance:none;width:20px;
           <div class="hiw-priv-card hiw-priv-high">
             <div class="hiw-priv-title">HIGH / CRITICAL</div>
             <div class="hiw-priv-examples">Admin account changes &bull; Firewall rule changes &bull; Production server access &bull; Domain controller actions</div>
-            <div class="hiw-priv-action">Always escalated to AOGM — no exceptions</div>
+            <div class="hiw-priv-action">Always escalated to AOGM  no exceptions</div>
           </div>
         </div>
         <div class="hiw-detail-box" style="margin-top:12px;">
@@ -2562,7 +2897,7 @@ input[type=range].d-sl::-webkit-slider-thumb{-webkit-appearance:none;width:20px;
       <div class="hiw-step-num">5</div>
       <div class="hiw-step-body">
         <div class="hiw-step-title">Execute and Generate INAGOE Audit Trail</div>
-        <p class="hiw-step-desc">The approved action executes. Simultaneously, <strong>INAGOE generates a full EU AI Act-compliant reasoning trail</strong> — every evidence source queried, every gate clearance decision, every confidence score, every human approval — all logged automatically with timestamps. Zero manual audit work required. The trail satisfies EU AI Act Articles 12 and 13, UK GDPR Article 22, ISO 42001, and Cyber Essentials Plus in a single auto-generated document.</p>
+        <p class="hiw-step-desc">The approved action executes. Simultaneously, <strong>INAGOE generates a full EU AI Act-compliant reasoning trail</strong>  every evidence source queried, every gate clearance decision, every confidence score, every human approval  all logged automatically with timestamps. Zero manual audit work required. The trail satisfies EU AI Act Articles 12 and 13, UK GDPR Article 22, ISO 42001, and Cyber Essentials Plus in a single auto-generated document.</p>
         <div class="hiw-compliance-row">
           <div class="hiw-comp-badge">EU AI Act Art.12</div>
           <div class="hiw-comp-badge">EU AI Act Art.13</div>
@@ -2571,9 +2906,9 @@ input[type=range].d-sl::-webkit-slider-thumb{-webkit-appearance:none;width:20px;
           <div class="hiw-comp-badge">Cyber Essentials+</div>
         </div>
         <div class="hiw-detail-box" style="margin-top:12px;">
-          <div class="hiw-detail-row"><span class="hiw-detail-label">Coverage:</span><span class="hiw-detail-val">100% of all actions — both autonomous and human-governed — logged automatically</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Coverage:</span><span class="hiw-detail-val">100% of all actions  both autonomous and human-governed  logged automatically</span></div>
           <div class="hiw-detail-row"><span class="hiw-detail-label">Pilot saving:</span><span class="hiw-detail-val">Clients saved an average of 10 hours of manual audit work per quarter</span></div>
-          <div class="hiw-detail-row"><span class="hiw-detail-label">Demo tab to try:</span><span class="hiw-detail-val">Tab 3 — INAGOE Audit Trail (click Generate to stream a live trail)</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Demo tab to try:</span><span class="hiw-detail-val">Tab 3  INAGOE Audit Trail (click Generate to stream a live trail)</span></div>
         </div>
       </div>
     </div>
@@ -2585,11 +2920,11 @@ input[type=range].d-sl::-webkit-slider-thumb{-webkit-appearance:none;width:20px;
       <div class="hiw-step-num" style="background:linear-gradient(135deg,#d97706,#b45309);">&#8635;</div>
       <div class="hiw-step-body">
         <div class="hiw-step-title">When Escalated: AOGM Human Governance Loop</div>
-        <p class="hiw-step-desc">When the DCP-CLM gate routes an action to AOGM, a named senior approver receives an alert with the full evidence package and reasoning trace. Their decision — approve or deny — is captured by AOGM along with the <strong>governance reasoning</strong> behind it. Over time this builds a per-client institutional knowledge model unique to each organisation, so the platform learns the risk appetite of each business.</p>
+        <p class="hiw-step-desc">When the DCP-CLM gate routes an action to AOGM, a named senior approver receives an alert with the full evidence package and reasoning trace. Their decision  approve or deny  is captured by AOGM along with the <strong>governance reasoning</strong> behind it. Over time this builds a per-client institutional knowledge model unique to each organisation, so the platform learns the risk appetite of each business.</p>
         <div class="hiw-detail-box">
-          <div class="hiw-detail-row"><span class="hiw-detail-label">AOGM captures:</span><span class="hiw-detail-val">Not just the decision (approve/deny) but the full reasoning — "this was denied because it was outside a change window on a production server"</span></div>
-          <div class="hiw-detail-row"><span class="hiw-detail-label">Data ownership:</span><span class="hiw-detail-val">All AOGM data is fully client-owned — never shared with or used by other organisations</span></div>
-          <div class="hiw-detail-row"><span class="hiw-detail-label">IPR classification:</span><span class="hiw-detail-val">Trade secret — creates a proprietary per-client institutional knowledge dataset</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">AOGM captures:</span><span class="hiw-detail-val">Not just the decision (approve/deny) but the full reasoning  "this was denied because it was outside a change window on a production server"</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Data ownership:</span><span class="hiw-detail-val">All AOGM data is fully client-owned  never shared with or used by other organisations</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">IPR classification:</span><span class="hiw-detail-val">Trade secret  creates a proprietary per-client institutional knowledge dataset</span></div>
         </div>
       </div>
     </div>
@@ -2649,6 +2984,478 @@ input[type=range].d-sl::-webkit-slider-thumb{-webkit-appearance:none;width:20px;
 
 </div>
 </div>
+
+<!-- ══════════════════════════════════════════════════════════
+     COMPANY PROCESS TAB  How AI Remediation Group Operates
+     ══════════════════════════════════════════════════════════ -->
+<style>
+/* ── Company Process Panel ── */
+#dp-process{display:none;max-width:1100px;margin:0 auto;padding:36px 28px 64px;}
+#dp-process.on{display:block;}
+
+/* Hero strip */
+.cp-hero{background:linear-gradient(145deg,#08011a 0%,#1c0650 55%,#08011a 100%);border-radius:20px;padding:44px 40px 38px;position:relative;overflow:hidden;margin-bottom:36px;}
+.cp-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 50% 50%,rgba(124,79,192,0.2) 0%,transparent 70%);pointer-events:none;}
+.cp-hero-in{position:relative;z-index:1;text-align:center;}
+.cp-hero-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 14px;border-radius:20px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:rgba(74,222,128,0.12);border:1px solid rgba(74,222,128,0.28);color:#4ade80;margin-bottom:16px;}
+.cp-hero h2{font-family:'Sora',sans-serif;font-size:clamp(20px,3vw,36px);font-weight:800;color:#fff;line-height:1.15;margin-bottom:10px;}
+.cp-hero h2 span{color:#a78bfa;}
+.cp-hero p{font-size:14px;color:rgba(220,210,255,0.72);max-width:580px;margin:0 auto;line-height:1.72;}
+.cp-kpis{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:22px;}
+.cp-kpi{background:rgba(255,255,255,0.06);border:1px solid rgba(167,139,250,0.2);border-radius:10px;padding:11px 18px;text-align:center;}
+.cp-kpi-v{font-family:'Sora',sans-serif;font-size:22px;font-weight:800;color:#a78bfa;line-height:1;}
+.cp-kpi-l{font-size:10px;color:rgba(196,181,253,0.6);margin-top:3px;font-family:'IBM Plex Mono',monospace;}
+
+/* Section label */
+.cp-sec-lbl{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;color:#7C4FC0;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px;}
+.cp-sec-title{font-family:'Sora',sans-serif;font-size:clamp(16px,2vw,22px);font-weight:800;color:#1a0a30;margin-bottom:6px;}
+.cp-sec-sub{font-size:13px;color:#6b4a90;line-height:1.65;margin-bottom:28px;}
+
+/* ── ANIMATED PROCESS PIPELINE ── */
+.cp-pipeline{display:flex;flex-direction:column;gap:0;margin-bottom:40px;position:relative;}
+.cp-pipeline::before{content:'';position:absolute;left:36px;top:0;bottom:0;width:3px;background:linear-gradient(180deg,#7C4FC0 0%,#4338ca 33%,#16a34a 66%,#d97706 100%);border-radius:2px;opacity:.25;z-index:0;}
+@media(max-width:600px){.cp-pipeline::before{left:20px;}}
+
+.cp-step-row{display:flex;align-items:flex-start;gap:0;position:relative;padding-bottom:0;}
+.cp-step-left{width:75px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;position:relative;z-index:1;}
+@media(max-width:600px){.cp-step-left{width:44px;}}
+.cp-step-circle{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Sora',sans-serif;font-size:18px;font-weight:800;color:#fff;flex-shrink:0;box-shadow:0 4px 18px rgba(0,0,0,0.18);position:relative;z-index:2;}
+@media(max-width:600px){.cp-step-circle{width:36px;height:36px;font-size:13px;}}
+.cp-step-vline{width:3px;flex:1;min-height:24px;margin:0 auto;}
+
+.cp-step-content{flex:1;background:#fff;border-radius:16px;padding:22px 24px;margin-left:18px;margin-bottom:20px;box-shadow:0 3px 18px rgba(107,63,160,0.09);border:1px solid rgba(107,63,160,0.12);position:relative;transition:box-shadow .2s,transform .2s;}
+.cp-step-content:hover{box-shadow:0 8px 32px rgba(107,63,160,0.18);transform:translateX(3px);}
+@media(max-width:600px){.cp-step-content{margin-left:10px;padding:16px;}}
+
+.cp-step-tag{font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:5px;}
+.cp-step-name{font-family:'Sora',sans-serif;font-size:16px;font-weight:800;color:#1a0a30;margin-bottom:6px;line-height:1.25;}
+.cp-step-desc{font-size:13px;color:#5a3a80;line-height:1.68;margin-bottom:12px;}
+.cp-step-details{display:flex;flex-direction:column;gap:6px;}
+.cp-step-detail{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:#7b5ab0;line-height:1.5;}
+.cp-step-detail svg{flex-shrink:0;margin-top:2px;opacity:.7;}
+.cp-step-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:8px;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:700;margin-top:10px;}
+.cp-step-badge.ok{background:rgba(22,163,74,0.1);border:1px solid rgba(22,163,74,0.22);color:#16a34a;}
+.cp-step-badge.warn{background:rgba(180,83,9,0.08);border:1px solid rgba(180,83,9,0.2);color:#b45309;}
+.cp-step-badge.blue{background:rgba(67,56,202,0.08);border:1px solid rgba(67,56,202,0.2);color:#4338ca;}
+.cp-step-badge.pu{background:rgba(107,63,160,0.1);border:1px solid rgba(107,63,160,0.24);color:#7c4fc0;}
+
+/* Arrow between groups */
+.cp-group-arrow{display:flex;align-items:center;justify-content:center;margin:6px 0 18px 36px;gap:8px;}
+.cp-group-arrow-line{flex:1;height:2px;background:linear-gradient(90deg,rgba(107,63,160,0.15),rgba(107,63,160,0.5));}
+.cp-group-arrow-icon{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#7C4FC0,#9d6fe0);display:flex;align-items:center;justify-content:center;box-shadow:0 3px 12px rgba(124,79,192,0.3);flex-shrink:0;}
+
+/* ── RESULT OUTCOME CARDS ── */
+.cp-outcomes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:36px;}
+@media(max-width:640px){.cp-outcomes{grid-template-columns:1fr;}}
+.cp-outcome{border-radius:14px;padding:20px;border:1px solid;}
+.cp-outcome.ok{background:rgba(22,163,74,0.07);border-color:rgba(22,163,74,0.22);}
+.cp-outcome.warn{background:rgba(180,83,9,0.06);border-color:rgba(180,83,9,0.2);}
+.cp-outcome-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:11px;}
+.cp-outcome.ok .cp-outcome-icon{background:rgba(22,163,74,0.1);}
+.cp-outcome.warn .cp-outcome-icon{background:rgba(180,83,9,0.08);}
+.cp-outcome-title{font-family:'Sora',sans-serif;font-size:15px;font-weight:800;margin-bottom:5px;}
+.cp-outcome.ok .cp-outcome-title{color:#16a34a;}
+.cp-outcome.warn .cp-outcome-title{color:#b45309;}
+.cp-outcome-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:5px;}
+.cp-outcome-list li{display:flex;align-items:flex-start;gap:7px;font-size:12px;line-height:1.5;color:#5a3a80;}
+
+/* ── TECH STACK GRID ── */
+.cp-tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:36px;}
+@media(max-width:700px){.cp-tech-grid{grid-template-columns:1fr 1fr;}}
+.cp-tech-card{background:#fff;border:1px solid rgba(107,63,160,0.14);border-radius:14px;padding:18px;box-shadow:0 2px 12px rgba(107,63,160,0.08);}
+.cp-tech-ac{font-family:'Sora',sans-serif;font-size:17px;font-weight:800;color:#7c4fc0;margin-bottom:2px;}
+.cp-tech-nm{font-size:11.5px;font-weight:600;color:#3d1a6e;margin-bottom:7px;line-height:1.3;}
+.cp-tech-desc{font-size:11.5px;color:#7b5ab0;line-height:1.58;}
+.cp-tech-role{display:inline-block;margin-top:8px;font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.1em;padding:2px 8px;border-radius:6px;background:rgba(107,63,160,0.1);color:#7c4fc0;border:1px solid rgba(107,63,160,0.2);text-transform:uppercase;}
+
+/* ── BUSINESS MODEL FLOW ── */
+.cp-biz-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#fff;border:1px solid rgba(107,63,160,0.14);border-radius:16px;overflow:hidden;box-shadow:0 3px 18px rgba(107,63,160,0.09);margin-bottom:36px;}
+@media(max-width:700px){.cp-biz-flow{grid-template-columns:1fr 1fr;}}
+.cp-biz-col{padding:20px 16px;position:relative;}
+.cp-biz-col:not(:last-child){border-right:1px solid rgba(107,63,160,0.1);}
+@media(max-width:700px){.cp-biz-col:nth-child(2n){border-right:none;}
+.cp-biz-col:nth-child(n+3){border-top:1px solid rgba(107,63,160,0.1);}}
+.cp-biz-hd{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(107,63,160,0.45);margin-bottom:6px;}
+.cp-biz-title{font-family:'Sora',sans-serif;font-size:13px;font-weight:800;color:#1a0a30;margin-bottom:8px;}
+.cp-biz-items{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:4px;}
+.cp-biz-items li{font-size:11.5px;color:#6b4a90;line-height:1.4;padding-left:12px;position:relative;}
+.cp-biz-items li::before{content:'→';position:absolute;left:0;color:#a78bfa;font-size:10px;}
+
+/* ── STAT STRIP ── */
+.cp-stat-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:36px;}
+@media(max-width:600px){.cp-stat-strip{grid-template-columns:repeat(2,1fr);}}
+.cp-stat{background:#fff;border:1px solid rgba(107,63,160,0.14);border-radius:12px;padding:16px;text-align:center;box-shadow:0 2px 10px rgba(107,63,160,0.07);}
+.cp-stat-v{font-family:'Sora',sans-serif;font-size:28px;font-weight:800;line-height:1;}
+.cp-stat-l{font-size:11px;color:#6b4a90;font-weight:600;margin-top:4px;}
+.cp-stat-s{font-family:'IBM Plex Mono',monospace;font-size:9px;color:#9b7ab0;margin-top:2px;}
+
+/* ── CTA STRIP ── */
+.cp-cta-strip{background:linear-gradient(135deg,#3D1A6E,#6B3FA0);border-radius:16px;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;}
+.cp-cta-strip h3{font-family:'Sora',sans-serif;font-size:18px;font-weight:800;color:#fff;margin-bottom:5px;}
+.cp-cta-strip p{font-size:13px;color:rgba(220,210,255,0.75);margin:0;}
+.cp-cta-btns{display:flex;gap:10px;flex-wrap:wrap;}
+.cp-cta-btn{padding:11px 22px;border-radius:10px;font-family:'Sora',sans-serif;font-size:13px;font-weight:700;border:none;cursor:pointer;transition:all .18s;}
+.cp-cta-btn.primary{background:#fff;color:#6B3FA0;}
+.cp-cta-btn.secondary{background:rgba(255,255,255,0.12);color:#fff;border:1px solid rgba(255,255,255,0.28);}
+.cp-cta-btn:hover{transform:translateY(-2px);}
+</style>
+
+<div class="d-panel" id="dp-process">
+
+  <!-- HERO -->
+  <div class="cp-hero">
+    <div class="cp-hero-in">
+      <div class="cp-hero-badge"><svg width="8" height="8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5"/></svg>Company Operating Model · 2026</div>
+      <h2>How AI Remediation Group <span>Works as a Business</span></h2>
+      <p>From the moment a client signs up to the moment their IT estate runs autonomously  every process, every module, every governance checkpoint explained in one place.</p>
+      <div class="cp-kpis">
+        <div class="cp-kpi"><div class="cp-kpi-v">14-Day</div><div class="cp-kpi-l">Shadow Pilot</div></div>
+        <div class="cp-kpi"><div class="cp-kpi-v">£50/mo</div><div class="cp-kpi-l">Starter Plan</div></div>
+        <div class="cp-kpi"><div class="cp-kpi-v">3 Tiers</div><div class="cp-kpi-l">SaaS + GaaS</div></div>
+        <div class="cp-kpi"><div class="cp-kpi-v">100%</div><div class="cp-kpi-l">Audit Coverage</div></div>
+        <div class="cp-kpi"><div class="cp-kpi-v">5 LOIs</div><div class="cp-kpi-l">Pre-Launch</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STAT STRIP -->
+  <div class="cp-stat-strip">
+    <div class="cp-stat"><div class="cp-stat-v" style="color:#16a34a;">96.4%</div><div class="cp-stat-l">Remediation Accuracy</div><div class="cp-stat-s">10-week UK pilot</div></div>
+    <div class="cp-stat"><div class="cp-stat-v" style="color:#7c4fc0;">42%</div><div class="cp-stat-l">MTTR Reduction</div><div class="cp-stat-s">vs manual avg</div></div>
+    <div class="cp-stat"><div class="cp-stat-v" style="color:#4338ca;">&lt;1%</div><div class="cp-stat-l">False Positive Rate</div><div class="cp-stat-s">Industry: 15–20%</div></div>
+    <div class="cp-stat"><div class="cp-stat-v" style="color:#d97706;">£82K</div><div class="cp-stat-l">Annual Client Saving</div><div class="cp-stat-s">UK example · 46× ROI</div></div>
+  </div>
+
+  <!-- ── STEP-BY-STEP PROCESS ── -->
+  <div class="cp-sec-lbl">End-to-End Operating Model</div>
+  <div class="cp-sec-title">Step-by-Step: How AI Remediation Runs</div>
+  <div class="cp-sec-sub">Every stage from client onboarding to autonomous resolution, with the exact module responsible at each point.</div>
+
+  <div class="cp-pipeline">
+
+    <!-- PHASE A: ONBOARDING -->
+    <div class="cp-step-row">
+      <div class="cp-step-left">
+        <div class="cp-step-circle" style="background:linear-gradient(135deg,#4338ca,#6366f1);">1</div>
+        <div class="cp-step-vline" style="background:linear-gradient(180deg,#6366f1,#7c4fc0);"></div>
+      </div>
+      <div class="cp-step-content">
+        <div class="cp-step-tag" style="color:#4338ca;">Phase 1  Onboarding</div>
+        <div class="cp-step-name">Client Connects Their ITSM Stack</div>
+        <div class="cp-step-desc">The client installs the AI Remediation API connector into their existing tools  ServiceNow, Jira Service Management, Freshservice, Azure DevOps, or a custom stack. No rip-and-replace. No downtime. The integration is read-only in the first 14 days (Shadow Pilot mode).</div>
+        <div class="cp-step-details">
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Plug-and-Play API integration  under 4 hours for standard ITSM stacks</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Shadow Pilot: AI maps tickets to evidence in the background  zero risk to live systems</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Client receives a "Governance Baseline Report" after 14 days showing projected MTTR reduction</div>
+        </div>
+        <span class="cp-step-badge blue">SaaS API-First · No Infrastructure Required</span>
+      </div>
+    </div>
+
+    <div class="cp-step-row">
+      <div class="cp-step-left">
+        <div class="cp-step-circle" style="background:linear-gradient(135deg,#4338ca,#6366f1);">2</div>
+        <div class="cp-step-vline" style="background:linear-gradient(180deg,#6366f1,#7c4fc0);"></div>
+      </div>
+      <div class="cp-step-content">
+        <div class="cp-step-tag" style="color:#4338ca;">Phase 1  Onboarding</div>
+        <div class="cp-step-name">Evidence Gates Are Configured</div>
+        <div class="cp-step-desc">The client's IT policy team works with the AI Remediation onboarding team to define the initial Evidence Gate thresholds  which actions require what level of evidence, which systems are classified as high-privilege, and which change windows apply. This config becomes the client's unique governance logic.</div>
+        <div class="cp-step-details">
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>PS-RPF privilege classification: 47 categories pre-loaded, client can customise</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>DCP-CLM confidence thresholds set per action class (default: 70% for low-risk, 85%+ for mid-risk)</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>AOGM approvers named: who gets notified for high-privilege escalations</div>
+        </div>
+        <span class="cp-step-badge pu">Governance Logic Configured · AOGM Approvers Set</span>
+      </div>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="cp-group-arrow">
+      <div class="cp-group-arrow-line"></div>
+      <div class="cp-group-arrow-icon"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="cp-group-arrow-line"></div>
+    </div>
+
+    <!-- PHASE B: LIVE OPERATION -->
+    <div class="cp-step-row">
+      <div class="cp-step-left">
+        <div class="cp-step-circle" style="background:linear-gradient(135deg,#7C4FC0,#9d6fe0);">3</div>
+        <div class="cp-step-vline" style="background:linear-gradient(180deg,#7c4fc0,#059669);"></div>
+      </div>
+      <div class="cp-step-content">
+        <div class="cp-step-tag" style="color:#7c4fc0;">Phase 2  Live Operation</div>
+        <div class="cp-step-name">Ticket Arrives → IIR Engine Ingests It</div>
+        <div class="cp-step-desc">A real IT ticket comes in  from a user, a monitoring alert, or a proactive shadow-IT detection. Within under 1 second, the EGREE engine's IIR parser converts the raw ticket into a machine-executable Incident Intermediate Representation containing all structured context fields needed for evidence evaluation.</div>
+        <div class="cp-step-details">
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>IIR fields: user_id, geo_location, source_ip, affected_system, error_code, change_window_status, risk_score</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Proactive detection: EGREE also picks up anomalies from telemetry before a ticket is raised</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Time: under 1 second  fully automated, no human agent involved at this stage</div>
+        </div>
+        <span class="cp-step-badge pu">Module: EGREE · IIR Ingestion Layer</span>
+      </div>
+    </div>
+
+    <div class="cp-step-row">
+      <div class="cp-step-left">
+        <div class="cp-step-circle" style="background:linear-gradient(135deg,#7C4FC0,#9d6fe0);">4</div>
+        <div class="cp-step-vline" style="background:linear-gradient(180deg,#7c4fc0,#059669);"></div>
+      </div>
+      <div class="cp-step-content">
+        <div class="cp-step-tag" style="color:#7c4fc0;">Phase 2  Live Operation</div>
+        <div class="cp-step-name">EGREE Triangulates Evidence from 3+ Sources</div>
+        <div class="cp-step-desc">The Evidence Gate simultaneously queries the CMDB, system telemetry, identity logs, and policy database. All 3+ sources must corroborate the incident. No single source is trusted. This is the core mechanism that eliminates hallucinations  the AI only acts on verified, multi-source ground truth.</div>
+        <div class="cp-step-details">
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>CMDB: Is the configuration state correct? Is this a privileged system?</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Telemetry: Does live system data corroborate the reported incident?</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Identity logs: Anomalous IPs? Tor exit nodes? Suspicious geo-location patterns?</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Policy DB: Is this action pre-approved? Is a change window active?</div>
+        </div>
+        <span class="cp-step-badge ok">Result: Evidence verdict produced · &lt;1% false positive rate</span>
+      </div>
+    </div>
+
+    <div class="cp-step-row">
+      <div class="cp-step-left">
+        <div class="cp-step-circle" style="background:linear-gradient(135deg,#7C4FC0,#9d6fe0);">5</div>
+        <div class="cp-step-vline" style="background:linear-gradient(180deg,#7c4fc0,#059669);"></div>
+      </div>
+      <div class="cp-step-content">
+        <div class="cp-step-tag" style="color:#7c4fc0;">Phase 2  Live Operation</div>
+        <div class="cp-step-name">DCP-CLM Gate Decides: Execute, Escalate, or Block</div>
+        <div class="cp-step-desc">The Decoupled Confidence-Permission Control Logic Module runs its patent-pending gate. AI confidence score is evaluated separately from evidence clearances. Even 99% AI confidence is hard-blocked if the evidence gates aren't cleared. This decoupling is the architectural innovation no competitor currently offers.</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:10px 0;">
+          <div style="background:rgba(22,163,74,0.08);border:1px solid rgba(22,163,74,0.22);border-radius:10px;padding:12px;text-align:center;">
+            <div style="font-size:18px;margin-bottom:4px;">✅</div>
+            <div style="font-family:'Sora',sans-serif;font-size:12px;font-weight:800;color:#16a34a;">EXECUTE</div>
+            <div style="font-size:10px;color:#5a3a80;margin-top:3px;">Confidence ≥70% + all gates cleared</div>
+          </div>
+          <div style="background:rgba(180,83,9,0.07);border:1px solid rgba(180,83,9,0.2);border-radius:10px;padding:12px;text-align:center;">
+            <div style="font-size:18px;margin-bottom:4px;">🔄</div>
+            <div style="font-family:'Sora',sans-serif;font-size:12px;font-weight:800;color:#b45309;">AOGM REVIEW</div>
+            <div style="font-size:10px;color:#5a3a80;margin-top:3px;">Partial gates or high-privilege action</div>
+          </div>
+          <div style="background:rgba(220,38,38,0.07);border:1px solid rgba(220,38,38,0.2);border-radius:10px;padding:12px;text-align:center;">
+            <div style="font-size:18px;margin-bottom:4px;">🚫</div>
+            <div style="font-family:'Sora',sans-serif;font-size:12px;font-weight:800;color:#dc2626;">HARD BLOCK</div>
+            <div style="font-size:10px;color:#5a3a80;margin-top:3px;">Gates failed  confidence irrelevant</div>
+          </div>
+        </div>
+        <span class="cp-step-badge pu">Module: DCP-CLM · Patent Pending</span>
+      </div>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="cp-group-arrow">
+      <div class="cp-group-arrow-line"></div>
+      <div class="cp-group-arrow-icon"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="cp-group-arrow-line"></div>
+    </div>
+
+    <!-- PHASE C: RESOLUTION PATHS -->
+    <div class="cp-step-row">
+      <div class="cp-step-left">
+        <div class="cp-step-circle" style="background:linear-gradient(135deg,#059669,#10b981);">6a</div>
+        <div class="cp-step-vline" style="background:linear-gradient(180deg,#10b981,#7c4fc0);"></div>
+      </div>
+      <div class="cp-step-content">
+        <div class="cp-step-tag" style="color:#059669;">Path A  Low Risk · Auto-Resolution</div>
+        <div class="cp-step-name">PS-RPF Clears Action → Autonomous Execution</div>
+        <div class="cp-step-desc">For low and mid-privilege actions, the PS-RPF framework gives final clearance. The action executes autonomously  a VPN config patch applied in 2 seconds, a batch password reset completed in 30 seconds, a certificate reloaded without human involvement. INAGOE simultaneously generates the full audit trail.</div>
+        <div class="cp-step-details">
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Resolution time: 2 seconds to 7 minutes depending on action complexity</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>INAGOE generates full EU AI Act Art.12 + 13 audit trail automatically</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Pilot example: #T-4820 VPN drop resolved in 7 min vs 45 min manual average</div>
+        </div>
+        <span class="cp-step-badge ok">Modules: PS-RPF + INAGOE · Zero Human Involvement</span>
+      </div>
+    </div>
+
+    <div class="cp-step-row">
+      <div class="cp-step-left">
+        <div class="cp-step-circle" style="background:linear-gradient(135deg,#d97706,#f59e0b);">6b</div>
+        <div class="cp-step-vline" style="background:linear-gradient(180deg,#f59e0b,#7c4fc0);"></div>
+      </div>
+      <div class="cp-step-content">
+        <div class="cp-step-tag" style="color:#d97706;">Path B  High Risk · Human Governance Loop</div>
+        <div class="cp-step-name">AOGM Routes to Named Approver with Evidence Package</div>
+        <div class="cp-step-desc">High-privilege actions  firewall changes, admin access grants, security policy modifications  are physically routed to AOGM. The named senior approver receives a structured evidence package: all source data, risk score, confidence level, and recommended action. They approve or deny with a reason. AOGM captures that governance reasoning permanently.</div>
+        <div class="cp-step-details">
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#d97706" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Approver sees: full evidence set, risk classification, AI confidence, policy cross-reference</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#d97706" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>AOGM captures: not just the decision but the governance reasoning behind it</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#d97706" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Over time this builds a per-client Corporate Risk Appetite model  unique institutional knowledge</div>
+        </div>
+        <span class="cp-step-badge warn">Module: AOGM · Governance Reasoning Captured</span>
+      </div>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="cp-group-arrow">
+      <div class="cp-group-arrow-line"></div>
+      <div class="cp-group-arrow-icon"><svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></div>
+      <div class="cp-group-arrow-line"></div>
+    </div>
+
+    <!-- PHASE D: LEARN & IMPROVE -->
+    <div class="cp-step-row">
+      <div class="cp-step-left">
+        <div class="cp-step-circle" style="background:linear-gradient(135deg,#7C4FC0,#a78bfa);">7</div>
+        <div class="cp-step-vline" style="background:linear-gradient(180deg,#a78bfa,transparent);"></div>
+      </div>
+      <div class="cp-step-content">
+        <div class="cp-step-tag" style="color:#7c4fc0;">Phase 3  Learning & Improvement</div>
+        <div class="cp-step-name">Platform Learns  CGN Benchmarks  AOGM Deepens</div>
+        <div class="cp-step-desc">Every resolved and escalated action feeds back into the platform. AOGM governance reasoning grows the client's institutional knowledge. CGN anonymously benchmarks how peer companies in the same sector are governing similar incidents  giving clients sector intelligence without exposing any sensitive data. The platform gets smarter and more defensible with every action.</div>
+        <div class="cp-step-details">
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>AOGM: per-client governance model grows  future similar high-risk tickets auto-escalated correctly</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>CGN: anonymised sector benchmarks  "how are UK law firms governing MFA resets this quarter?"</div>
+          <div class="cp-step-detail"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="#7c4fc0" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Data flywheel: more clients → better governance data → more defensible moat for all</div>
+        </div>
+        <span class="cp-step-badge pu">Modules: AOGM + CGN · Institutional Knowledge Grows</span>
+      </div>
+    </div>
+
+  </div><!-- /cp-pipeline -->
+
+  <!-- ── 6-MODULE TECH OVERVIEW ── -->
+  <div class="cp-sec-lbl" style="margin-top:8px;">Proprietary Technology Stack</div>
+  <div class="cp-sec-title">The 6 Modules That Power Every Step</div>
+  <div class="cp-sec-sub">Each module addresses a specific failure point in current ITSM automation. Together they form an architectural moat no competitor can replicate with simple programming.</div>
+
+  <div class="cp-tech-grid">
+    <div class="cp-tech-card">
+      <div class="cp-tech-ac">EGREE</div>
+      <div class="cp-tech-nm">Evidence-Gated Remediation Execution Engine</div>
+      <div class="cp-tech-desc">The core engine. Synthesises multi-source evidence to verify incident ground truth before any action. No action without proof from 3+ independent sources.</div>
+      <span class="cp-tech-role">Used in Steps 3–4</span>
+    </div>
+    <div class="cp-tech-card">
+      <div class="cp-tech-ac">DCP-CLM</div>
+      <div class="cp-tech-nm">Decoupled Confidence-Permission Control Logic</div>
+      <div class="cp-tech-desc">Patent-pending gate separating AI confidence from execution permission. Even 99%-confident AI is blocked without policy clearance. Prevents all hallucinated actions.</div>
+      <span class="cp-tech-role">Used in Step 5 · Patent Pending</span>
+    </div>
+    <div class="cp-tech-card">
+      <div class="cp-tech-ac">PS-RPF</div>
+      <div class="cp-tech-nm">Privilege-Sensitive Resolution Partitioning Framework</div>
+      <div class="cp-tech-desc">Creates a secure DMZ for high-stakes actions. 47 privilege categories. High-privilege actions physically isolated  impossible to accidentally auto-execute.</div>
+      <span class="cp-tech-role">Used in Steps 5–6</span>
+    </div>
+    <div class="cp-tech-card">
+      <div class="cp-tech-ac">AOGM</div>
+      <div class="cp-tech-nm">Analyst Override Governance Memory</div>
+      <div class="cp-tech-desc">Records not just human decisions but the governance reasoning behind them. Builds a per-client corporate risk appetite model  institutional knowledge that grows over time.</div>
+      <span class="cp-tech-role">Used in Steps 6b–7</span>
+    </div>
+    <div class="cp-tech-card">
+      <div class="cp-tech-ac">INAGOE</div>
+      <div class="cp-tech-nm">Intentional Non-Automation Governance Output Engine</div>
+      <div class="cp-tech-desc">Auto-generates EU AI Act Art.12 + 13 compliant audit trails for every single action. 100% coverage. Zero manual audit work. Saves clients 10+ hours per quarter.</div>
+      <span class="cp-tech-role">Used in Steps 6a–6b</span>
+    </div>
+    <div class="cp-tech-card">
+      <div class="cp-tech-ac">CGN</div>
+      <div class="cp-tech-nm">Community Governance Network</div>
+      <div class="cp-tech-desc">Anonymised sector benchmarking across all clients. Governance rules learned in finance safely applied in healthcare. Creates a data flywheel  more clients = smarter platform for all.</div>
+      <span class="cp-tech-role">Used in Step 7</span>
+    </div>
+  </div>
+
+  <!-- ── BUSINESS MODEL FLOW ── -->
+  <div class="cp-sec-lbl">Commercial Model</div>
+  <div class="cp-sec-title">How the Business Generates Revenue</div>
+  <div class="cp-sec-sub">Three SaaS tiers plus services revenue  all linked to the governance value delivered.</div>
+
+  <div class="cp-biz-flow">
+    <div class="cp-biz-col">
+      <div class="cp-biz-hd">Tier 1 · Starter</div>
+      <div class="cp-biz-title">£50/mo</div>
+      <ul class="cp-biz-items">
+        <li>Small MSPs and IT teams</li>
+        <li>Multi-agent ticket classification</li>
+        <li>Triage dashboards</li>
+        <li>Basic evidence gathering</li>
+        <li>EGREE read-only mode</li>
+      </ul>
+    </div>
+    <div class="cp-biz-col">
+      <div class="cp-biz-hd">Tier 2 · Professional</div>
+      <div class="cp-biz-title">£150/mo</div>
+      <ul class="cp-biz-items">
+        <li>Mid-market IT operations</li>
+        <li>Full EGREE evidence gate</li>
+        <li>Jira + ServiceNow integration</li>
+        <li>PS-RPF privilege partitioning</li>
+        <li>DCP-CLM gate active</li>
+      </ul>
+    </div>
+    <div class="cp-biz-col">
+      <div class="cp-biz-hd">Tier 3 · Enterprise</div>
+      <div class="cp-biz-title">£300/mo</div>
+      <ul class="cp-biz-items">
+        <li>Finance, Legal, Healthcare</li>
+        <li>AOGM governance memory</li>
+        <li>INAGOE EU AI Act audit trails</li>
+        <li>Custom privilege gates</li>
+        <li>CGN benchmarking access</li>
+      </ul>
+    </div>
+    <div class="cp-biz-col" style="background:rgba(107,63,160,0.04);">
+      <div class="cp-biz-hd">Services Revenue</div>
+      <div class="cp-biz-title">£500–£15K</div>
+      <ul class="cp-biz-items">
+        <li>Governance Logic Audits</li>
+        <li>Custom agent development</li>
+        <li>Implementation services</li>
+        <li>Compliance pack reports</li>
+        <li>Partner/referral commissions</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ── TWO OUTCOME PATHS ── -->
+  <div class="cp-sec-lbl">Resolution Outcomes</div>
+  <div class="cp-sec-title">Every Ticket Exits Through One of Two Paths</div>
+  <div class="cp-outcomes">
+    <div class="cp-outcome ok">
+      <div class="cp-outcome-icon"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="var(--ok)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+      <div class="cp-outcome-title">Path A  Autonomous Resolution</div>
+      <ul class="cp-outcome-list">
+        <li><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>DCP-CLM EXECUTE decision issued</li>
+        <li><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>PS-RPF classifies as LOW or MID privilege</li>
+        <li><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Action executes autonomously in 2–7 minutes</li>
+        <li><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>INAGOE generates full audit trail automatically</li>
+        <li><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Client gets real-time resolution notification</li>
+        <li><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="#059669" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>42% average MTTR reduction vs manual</li>
+      </ul>
+    </div>
+    <div class="cp-outcome warn">
+      <div class="cp-outcome-icon"><svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#b45309" stroke-width="2"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg></div>
+      <div class="cp-outcome-title">Path B  AOGM Governed Resolution</div>
+      <ul class="cp-outcome-list">
+        <li><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="#b45309" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>DCP-CLM AOGM REVIEW or HARD BLOCK issued</li>
+        <li><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="#b45309" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Named senior approver alerted with evidence package</li>
+        <li><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="#b45309" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Human reviews: evidence, risk score, AI recommendation</li>
+        <li><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="#b45309" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Approve/deny + governance reason captured by AOGM</li>
+        <li><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="#b45309" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>INAGOE generates Art.12 + 13 compliant audit trail</li>
+        <li><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="#b45309" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Corporate risk model updated  future tickets learn from this</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cp-cta-strip">
+    <div>
+      <h3>See the Full Process in Action</h3>
+      <p>Run a live ticket through the EGREE simulator  watch every step execute in real time with actual pilot data.</p>
+    </div>
+    <div class="cp-cta-btns">
+      <button class="cp-cta-btn primary" onclick="dTab('egree',document.querySelector('.d-tab'))">Try EGREE Simulator</button>
+      <button class="cp-cta-btn secondary" onclick="nav('contact')">Book a Free Pilot</button>
+    </div>
+  </div>
+
+</div><!-- /dp-process -->
 
 </div>
 </div><!-- /main -->
