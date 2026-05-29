@@ -769,6 +769,7 @@ kbd{display:inline-flex;align-items:center;justify-content:center;padding:1px 5p
     <button class="sb-it" onclick="nav('founder')"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 20a6.5 6.5 0 0113 0H5.5z"/></svg>Founder Fit</button>
     <button class="sb-it" onclick="nav('esg')"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>ESG &amp; Jobs</button>
     <button class="sb-it" onclick="nav('contact')"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Contact &amp; Demo</button>
+    <button class="sb-it" style="background:rgba(107,63,160,0.15);border:1px solid rgba(107,63,160,0.35);" onclick="nav('demo')"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Live Demo<span class="sb-bd" style="background:rgba(74,222,128,0.15);color:#16a34a;border-color:rgba(74,222,128,0.3);">NEW</span></button>
   </nav>
   <div class="sb-ft">
     <button class="sb-cta" onclick="nav('contact')">Book a Free Demo</button>
@@ -804,6 +805,7 @@ kbd{display:inline-flex;align-items:center;justify-content:center;padding:1px 5p
     <button class="dr-it" onclick="nav('founder');toggleDrawer()"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="15" height="15"><circle cx="12" cy="7" r="4"/><path d="M5.5 20a6.5 6.5 0 0113 0H5.5z"/></svg>Founder Fit</button>
     <button class="dr-it" onclick="nav('esg');toggleDrawer()"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>ESG &amp; Jobs</button>
     <button class="dr-it" onclick="nav('contact');toggleDrawer()"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Contact &amp; Demo</button>
+    <button class="dr-it" style="color:#16a34a;" onclick="nav('demo');toggleDrawer()"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="15" height="15"><polygon points="5 3 19 12 5 21 5 3"/></svg>Live Demo</button>
   </div>
   <div class="dr-ft"><button class="dr-cta" onclick="nav('contact');toggleDrawer()">Book a Free Demo</button></div>
 </div>
@@ -814,7 +816,8 @@ kbd{display:inline-flex;align-items:center;justify-content:center;padding:1px 5p
   <button class="m-tab" id="mbt-technology" onclick="nav('technology')"><div class="m-tab-iw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2"/></svg></div><span class="m-tab-lb">Tech</span></button>
   <button class="m-tab" id="mbt-pricing" onclick="nav('pricing')"><div class="m-tab-iw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12V22H4V12M22 7H2v5h20V7z"/></svg></div><span class="m-tab-lb">Pricing</span></button>
   <button class="m-tab" id="mbt-financials" onclick="nav('financials')"><div class="m-tab-iw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><span class="m-tab-lb">Finance</span></button>
-  <button class="m-tab" id="mbt-contact" onclick="nav('contact')"><div class="m-tab-iw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><span class="m-tab-lb">Demo</span></button>
+  <button class="m-tab" id="mbt-contact" onclick="nav('contact')"><div class="m-tab-iw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><span class="m-tab-lb">Contact</span></button>
+  <button class="m-tab" id="mbt-demo" onclick="nav('demo')"><div class="m-tab-iw"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div><span class="m-tab-lb">Demo</span></button>
 </nav>
 
 <!-- MAIN -->
@@ -837,6 +840,7 @@ kbd{display:inline-flex;align-items:center;justify-content:center;padding:1px 5p
       <button class="tn-lk" onclick="nav('financials')">Financials</button>
       <button class="tn-lk" onclick="nav('market')">Market</button>
       <button class="tn-lk" onclick="nav('contact')">Contact</button>
+      <button class="tn-lk" style="background:linear-gradient(135deg,#7C4FC0,#9D6FE0);color:#fff;border-radius:8px;" onclick="nav('demo')">Live Demo</button>
     </div>
     <div class="tn-right">
       <div class="tn-live"><div class="ld"></div><span>UK Live 2026</span></div>
@@ -1134,7 +1138,7 @@ var origNav = typeof nav === 'function' ? nav : null;
     <div>
       <span class="ew" style="color:var(--tn);">Business Overview · 2026</span>
       <h1 style="color:#fff;margin-bottom:13px;">Intelligent Remediation.<br><span style="color:var(--tn);">Stronger Systems.</span><br>Confident Future.</h1>
-      <p style="color:rgba(220,210,255,0.8);line-height:1.78;margin-bottom:14px;font-size:.9rem;"><strong style="color:#fff;">Business Name:</strong> AI Remediation &nbsp;|&nbsp; <strong style="color:#fff;">Founder:</strong> Swathi (Ginukuntla Swathi) &nbsp;|&nbsp; <strong style="color:#fff;">Year:</strong> 2026</p>
+      <p style="color:rgba(220,210,255,0.8);line-height:1.78;margin-bottom:14px;font-size:.9rem;"><strong style="color:#fff;">Business Name:</strong> AI Remediation Group &nbsp;|&nbsp; <strong style="color:#fff;">Founder:</strong>Ginukuntla Swathi &nbsp;|&nbsp; <strong style="color:#fff;">Year:</strong> 2026</p>
       <p style="color:rgba(220,210,255,0.72);font-size:.84rem;line-height:1.76;margin-bottom:14px;">AI Remediation is an AI-based IT service management (ITSM) infrastructure platform tailored toward UK enterprise and Managed Service Provider (MSP) industries. It targets the "Orchestration Gap"  where modern IT support is still dominated by manual monitoring, ticket black-box opacity, and fragmented logs leading to system-wide blindness.</p>
       <p style="color:rgba(220,210,255,0.72);font-size:.84rem;line-height:1.76;margin-bottom:20px;">The platform uses a "Ticket-to-Resolution" engine to ingest real-time system telemetry and incident data, parse infrastructure state constraints, and map them into a machine-executable Incident Intermediate Representation (IIR). Pilot deployments showed a 42% MTTR reduction and 30% Level-1 ticket volume reduction.</p>
       <div style="display:flex;flex-wrap:wrap;gap:7px;">
@@ -1848,8 +1852,8 @@ var origNav = typeof nav === 'function' ? nav : null;
       <div style="background:linear-gradient(145deg,var(--blue-dk),var(--blue-dkr));border-radius:var(--rl);padding:22px;box-shadow:var(--sh);">
         <div style="font-family:var(--fm);font-size:.48rem;letter-spacing:.14em;color:var(--tn);text-transform:uppercase;margin-bottom:12px;font-weight:600;">Get in Touch Directly</div>
         <div style="display:flex;flex-direction:column;gap:10px;">
-          <div style="display:flex;align-items:center;gap:10px;font-size:.78rem;color:rgba(220,210,255,0.78);"><svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="rgba(167,139,250,0.7)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hello@airemediation.co.uk</div>
-          <div style="display:flex;align-items:center;gap:10px;font-size:.78rem;color:rgba(220,210,255,0.78);"><svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="rgba(167,139,250,0.7)" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+44 (0) 20 7946 0958</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:.78rem;color:rgba(220,210,255,0.78);"><svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="rgba(167,139,250,0.7)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>airemediationgroup@outlook.com</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:.78rem;color:rgba(220,210,255,0.78);"><svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="rgba(167,139,250,0.7)" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+44 7767 808602</div>
           <div style="display:flex;align-items:center;gap:10px;font-size:.78rem;color:rgba(220,210,255,0.78);"><svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="rgba(167,139,250,0.7)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>AI Remediation Group Ltd  London, UK</div>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;">
@@ -1878,6 +1882,775 @@ var origNav = typeof nav === 'function' ? nav : null;
 </div>
 </div><!-- /contact -->
 
+
+
+<style>
+#page-demo .d-hero{background:linear-gradient(145deg,#08011a 0%,#180540 55%,#08011a 100%);padding:64px 40px 44px;text-align:center;position:relative;overflow:hidden;}
+#page-demo .d-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 65% at 50% 50%,rgba(124,79,192,0.22) 0%,transparent 68%);pointer-events:none;}
+#page-demo .d-hero-in{position:relative;z-index:1;}
+#page-demo .d-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 14px;border-radius:20px;font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px;background:rgba(74,222,128,0.12);border:1px solid rgba(74,222,128,0.3);color:#4ade80;}
+#page-demo h1.d-h1{font-family:"Sora",sans-serif;font-size:clamp(26px,4vw,50px);font-weight:800;color:#fff;line-height:1.1;margin-bottom:12px;}
+#page-demo h1.d-h1 span{color:#A78BFA;}
+#page-demo .d-sub{font-size:clamp(13px,1.4vw,17px);color:rgba(220,210,255,0.75);max-width:600px;margin:0 auto 24px;line-height:1.75;}
+#page-demo .d-proofs{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;}
+#page-demo .d-proof{display:inline-flex;align-items:center;gap:5px;padding:4px 12px;border-radius:20px;font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;}
+#page-demo .d-proof.g{background:rgba(74,222,128,0.12);border:1px solid rgba(74,222,128,0.28);color:#4ade80;}
+#page-demo .d-proof.v{background:rgba(124,79,192,0.2);border:1px solid rgba(167,139,250,0.3);color:#d8b4fe;}
+#page-demo .d-proof.b{background:rgba(96,165,250,0.12);border:1px solid rgba(96,165,250,0.28);color:#93c5fd;}
+#page-demo .d-proof.a{background:rgba(251,191,36,0.12);border:1px solid rgba(251,191,36,0.28);color:#fbbf24;}
+#page-demo .d-tabs-wrap{background:#fff;border-bottom:2px solid rgba(107,63,160,0.12);position:sticky;top:0;z-index:300;}
+#page-demo .d-tabs{display:flex;max-width:1100px;margin:0 auto;overflow-x:auto;scrollbar-width:none;}
+#page-demo .d-tabs::-webkit-scrollbar{display:none;}
+#page-demo .d-tab{flex-shrink:0;padding:14px 20px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;color:rgba(107,63,160,0.45);border:none;background:transparent;cursor:pointer;border-bottom:3px solid transparent;transition:all .2s;white-space:nowrap;}
+#page-demo .d-tab.on{color:#7C4FC0;border-bottom-color:#7C4FC0;background:rgba(124,79,192,0.04);}
+#page-demo .d-tab:hover:not(.on){color:#7C4FC0;background:rgba(124,79,192,0.04);}
+#page-demo .d-panel{display:none;max-width:1100px;margin:0 auto;padding:36px 28px 56px;}
+#page-demo .d-panel.on{display:block;}
+#page-demo .d-ptag{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#7C4FC0;margin-bottom:6px;}
+#page-demo .d-ph2{font-family:"Sora",sans-serif;font-size:clamp(19px,2vw,26px);font-weight:800;color:#2a0d5e;margin-bottom:8px;}
+#page-demo .d-pdesc{font-size:14px;color:#6b3fa0;line-height:1.68;margin-bottom:26px;}
+#page-demo .dk{background:#060112;border-radius:16px;overflow:hidden;box-shadow:0 18px 56px rgba(0,0,0,0.42);}
+#page-demo .dk-bar{background:rgba(255,255,255,0.03);border-bottom:1px solid rgba(124,79,192,0.12);padding:11px 20px;display:flex;align-items:center;justify-content:space-between;}
+#page-demo .dk-dots{display:flex;gap:5px;}
+#page-demo .dk-dot{width:10px;height:10px;border-radius:50%;}
+#page-demo .dk-dot:nth-child(1){background:#f87171;}#page-demo .dk-dot:nth-child(2){background:#fbbf24;}#page-demo .dk-dot:nth-child(3){background:#4ade80;}
+#page-demo .dk-title{font-family:"IBM Plex Mono",monospace;font-size:11px;color:rgba(196,181,253,0.4);letter-spacing:.1em;}
+#page-demo .dk-live{display:flex;align-items:center;gap:5px;font-family:"IBM Plex Mono",monospace;font-size:11px;color:#4ade80;}
+#page-demo .dk-body{padding:22px;}
+#page-demo .d-lbl{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(167,139,250,0.45);margin-bottom:9px;}
+#page-demo .tkt-g{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:22px;}
+#page-demo .tkt{background:rgba(255,255,255,0.04);border:1.5px solid rgba(124,79,192,0.2);border-radius:10px;padding:12px 13px;cursor:pointer;transition:all .2s;text-align:left;}
+#page-demo .tkt:hover,#page-demo .tkt.sel{background:rgba(124,79,192,0.18);border-color:rgba(167,139,250,0.5);}
+#page-demo .tkt-id{font-family:"IBM Plex Mono",monospace;font-size:10px;color:rgba(196,181,253,0.45);margin-bottom:3px;}
+#page-demo .tkt-nm{font-size:12px;font-weight:700;color:#e9d5ff;margin-bottom:5px;line-height:1.35;}
+#page-demo .tkt-sv{font-family:"IBM Plex Mono",monospace;font-size:10px;padding:2px 7px;border-radius:20px;display:inline-block;}
+#page-demo .tkt-sv.H{background:rgba(220,38,38,0.15);color:#f87171;border:1px solid rgba(220,38,38,0.28);}
+#page-demo .tkt-sv.M{background:rgba(217,119,6,0.15);color:#fbbf24;border:1px solid rgba(217,119,6,0.28);}
+#page-demo .tkt-sv.L{background:rgba(22,163,74,0.12);color:#4ade80;border:1px solid rgba(22,163,74,0.24);}
+#page-demo .d-run{width:100%;padding:13px;border-radius:10px;background:linear-gradient(135deg,#7C4FC0,#9D6FE0);color:#fff;font-family:"Sora",sans-serif;font-size:14px;font-weight:700;border:none;cursor:pointer;transition:all .2s;box-shadow:0 4px 18px rgba(124,79,192,0.42);margin-bottom:22px;}
+#page-demo .d-run:hover{transform:translateY(-2px);}
+#page-demo .d-run:disabled{opacity:.5;cursor:not-allowed;transform:none;}
+#page-demo .pipeline{display:flex;flex-direction:column;}
+#page-demo .pipe{display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid rgba(124,79,192,0.08);opacity:.28;transition:all .4s;}
+#page-demo .pipe.active,#page-demo .pipe.done{opacity:1;}
+#page-demo .p-ic{width:34px;height:34px;border-radius:9px;background:rgba(255,255,255,0.04);border:1px solid rgba(124,79,192,0.18);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s;}
+#page-demo .p-ic.active{background:rgba(124,79,192,0.24);border-color:rgba(167,139,250,0.5);}
+#page-demo .p-ic.done{background:rgba(22,163,74,0.14);border-color:rgba(22,163,74,0.34);}
+#page-demo .p-ic svg{width:14px;height:14px;color:rgba(196,181,253,0.35);}
+#page-demo .p-ic.active svg{color:#A78BFA;}#page-demo .p-ic.done svg{color:#4ade80;}
+#page-demo .p-lbl{font-family:"Sora",sans-serif;font-size:12px;font-weight:700;color:rgba(196,181,253,0.38);margin-bottom:3px;transition:color .3s;}
+#page-demo .pipe.active .p-lbl,#page-demo .pipe.done .p-lbl{color:#e9d5ff;}
+#page-demo .p-det{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:rgba(196,181,253,0.3);line-height:1.6;transition:color .3s;}
+#page-demo .pipe.active .p-det,#page-demo .pipe.done .p-det{color:rgba(196,181,253,0.65);}
+#page-demo .p-tag{font-family:"IBM Plex Mono",monospace;font-size:10px;padding:2px 7px;border-radius:20px;display:inline-block;margin-top:3px;}
+#page-demo .p-tag.run{background:rgba(124,79,192,0.22);color:#c4b5fd;border:1px solid rgba(124,79,192,0.4);}
+#page-demo .p-tag.ok{background:rgba(22,163,74,0.14);color:#4ade80;border:1px solid rgba(22,163,74,0.3);}
+#page-demo .p-tag.blk{background:rgba(220,38,38,0.12);color:#f87171;border:1px solid rgba(220,38,38,0.28);}
+#page-demo .p-tag.wt{background:rgba(217,119,6,0.12);color:#fbbf24;border:1px solid rgba(217,119,6,0.28);}
+#page-demo .spin{width:11px;height:11px;border:2px solid rgba(167,139,250,0.2);border-top-color:#A78BFA;border-radius:50%;display:inline-block;animation:dspin .7s linear infinite;vertical-align:middle;margin-right:4px;}
+@keyframes dspin{to{transform:rotate(360deg);}}
+#page-demo .d-res{background:rgba(255,255,255,0.04);border:1px solid rgba(124,79,192,0.22);border-radius:12px;padding:18px;margin-top:18px;display:none;}
+#page-demo .d-res.on{display:block;}
+#page-demo .d-res.res{border-color:rgba(22,163,74,0.38);background:rgba(22,163,74,0.05);}
+#page-demo .d-res.esc{border-color:rgba(217,119,6,0.38);background:rgba(217,119,6,0.05);}
+#page-demo .d-rt{font-family:"Sora",sans-serif;font-size:14px;font-weight:800;margin-bottom:8px;}
+#page-demo .d-rt.ok{color:#4ade80;}#page-demo .d-rt.wt{color:#fbbf24;}
+#page-demo .d-rlog{font-family:"IBM Plex Mono",monospace;font-size:11px;color:rgba(196,181,253,0.75);line-height:1.85;}
+#page-demo .d-rlog .ok{color:#4ade80;}#page-demo .d-rlog .wt{color:#fbbf24;}#page-demo .d-rlog .vt{color:#A78BFA;}
+#page-demo .d-mttr{font-family:"Sora",sans-serif;font-size:30px;font-weight:800;color:#4ade80;line-height:1;margin-top:10px;}
+#page-demo .d-mttr span{font-size:13px;font-weight:500;color:rgba(196,181,253,0.55);font-family:"IBM Plex Mono",monospace;}
+#page-demo .gate-g{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+#page-demo .gate-c{background:#fff;border:1px solid rgba(107,63,160,0.16);border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(107,63,160,0.1);}
+#page-demo .gate-ct{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7C4FC0;margin-bottom:14px;}
+#page-demo .sl-hdr{display:flex;justify-content:space-between;margin-bottom:8px;font-size:13px;color:#4a208a;font-weight:600;}
+#page-demo .sl-val{font-family:"Sora",sans-serif;font-size:28px;font-weight:800;color:#7C4FC0;}
+input[type=range].d-sl{-webkit-appearance:none;width:100%;height:7px;border-radius:4px;background:linear-gradient(90deg,#7C4FC0 var(--pct,60%),rgba(124,79,192,0.15) var(--pct,60%));outline:none;cursor:pointer;margin-bottom:6px;}
+input[type=range].d-sl::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#7C4FC0;border:3px solid #fff;box-shadow:0 2px 8px rgba(124,79,192,0.4);cursor:pointer;}
+#page-demo .perm-list{display:flex;flex-direction:column;gap:9px;margin-bottom:18px;}
+#page-demo .perm-row{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:9px;background:rgba(107,63,160,0.04);border:1px solid rgba(107,63,160,0.12);cursor:pointer;user-select:none;transition:all .18s;}
+#page-demo .perm-row.ck{background:rgba(22,163,74,0.07);border-color:rgba(22,163,74,0.26);}
+#page-demo .perm-cb{width:18px;height:18px;border-radius:5px;border:2px solid rgba(107,63,160,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .18s;}
+#page-demo .perm-row.ck .perm-cb{background:#4ade80;border-color:#4ade80;}
+#page-demo .perm-cb svg{width:11px;height:11px;color:#fff;opacity:0;}
+#page-demo .perm-row.ck .perm-cb svg{opacity:1;}
+#page-demo .perm-lbl{font-size:13px;color:#4a208a;font-weight:500;}
+#page-demo .gate-dec{border-radius:10px;padding:13px 16px;text-align:center;font-family:"Sora",sans-serif;font-size:14px;font-weight:700;transition:all .3s;}
+#page-demo .gate-dec.allow{background:rgba(22,163,74,0.1);border:1px solid rgba(22,163,74,0.3);color:#16a34a;}
+#page-demo .gate-dec.block{background:rgba(220,38,38,0.08);border:1px solid rgba(220,38,38,0.28);color:#dc2626;}
+#page-demo .gate-dec.review{background:rgba(217,119,6,0.08);border:1px solid rgba(217,119,6,0.28);color:#d97706;}
+#page-demo .gate-dec.idle{background:rgba(107,63,160,0.05);border:1px solid rgba(107,63,160,0.15);color:#7C4FC0;}
+#page-demo .trace-box{background:rgba(107,63,160,0.04);border:1px solid rgba(107,63,160,0.1);border-radius:10px;padding:14px;margin-top:16px;font-family:"IBM Plex Mono",monospace;font-size:11px;color:#4a208a;line-height:1.85;}
+#page-demo .audit-wrap{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+#page-demo .audit-log{background:#05000f;border-radius:14px;padding:18px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;line-height:1.92;max-height:430px;overflow-y:auto;}
+#page-demo .audit-log::-webkit-scrollbar{width:4px;}#page-demo .audit-log::-webkit-scrollbar-thumb{background:rgba(124,79,192,0.3);border-radius:2px;}
+#page-demo .al{display:flex;gap:9px;}
+#page-demo .al-t{color:rgba(196,181,253,0.3);flex-shrink:0;width:66px;}
+#page-demo .al-m{flex-shrink:0;width:76px;font-weight:700;}
+#page-demo .al-m.eg{color:#A78BFA;}#page-demo .al-m.dc{color:#60a5fa;}#page-demo .al-m.ag{color:#fbbf24;}#page-demo .al-m.in{color:#4ade80;}#page-demo .al-m.ps{color:#fb923c;}#page-demo .al-m.sy{color:rgba(196,181,253,0.38);}
+#page-demo .al-x{color:rgba(220,210,255,0.75);}
+#page-demo .al-x .hi{color:#4ade80;font-weight:700;}#page-demo .al-x .wn{color:#fbbf24;}#page-demo .al-x .er{color:#f87171;}#page-demo .al-x .pu{color:#A78BFA;}
+#page-demo .a-gen{width:100%;padding:12px;border-radius:10px;background:linear-gradient(135deg,#7C4FC0,#9D6FE0);color:#fff;font-family:"Sora",sans-serif;font-size:13px;font-weight:700;border:none;cursor:pointer;margin-bottom:14px;transition:all .2s;}
+#page-demo .a-sc-list{display:flex;flex-direction:column;gap:8px;margin-bottom:14px;}
+#page-demo .a-sc{display:flex;align-items:flex-start;gap:9px;padding:10px 12px;border-radius:9px;background:rgba(107,63,160,0.05);border:1px solid rgba(107,63,160,0.14);cursor:pointer;transition:all .18s;}
+#page-demo .a-sc.sel{background:rgba(22,163,74,0.07);border-color:rgba(22,163,74,0.26);}
+#page-demo .a-sc-cb{width:16px;height:16px;border-radius:4px;border:2px solid rgba(107,63,160,0.28);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;transition:all .18s;}
+#page-demo .a-sc.sel .a-sc-cb{background:#4ade80;border-color:#4ade80;}
+#page-demo .a-sc-cb svg{width:10px;height:10px;color:#fff;opacity:0;}
+#page-demo .a-sc.sel .a-sc-cb svg{opacity:1;}
+#page-demo .a-sc-lbl{font-size:13px;color:#4a208a;font-weight:500;line-height:1.4;}
+#page-demo .roi-g{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+#page-demo .roi-calc{background:rgba(107,63,160,0.05);border:1px solid rgba(107,63,160,0.14);border-radius:16px;padding:24px;}
+#page-demo .roi-calc-t{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7C4FC0;margin-bottom:18px;}
+#page-demo .roi-row{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:12px;margin-bottom:14px;}
+#page-demo .roi-row label{font-size:13px;color:#4a208a;font-weight:600;}
+#page-demo .roi-row input[type=range]{width:130px;height:5px;border-radius:3px;background:rgba(107,63,160,0.18);accent-color:#7C4FC0;cursor:pointer;}
+#page-demo .roi-row span{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:700;color:#7C4FC0;min-width:58px;text-align:right;}
+#page-demo .roi-total{background:linear-gradient(135deg,#7C4FC0,#9D6FE0);border-radius:12px;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;margin-top:16px;}
+#page-demo .roi-total-l{font-family:"Sora",sans-serif;font-size:13px;font-weight:700;color:rgba(255,255,255,0.85);}
+#page-demo .roi-total-v{font-family:"Sora",sans-serif;font-size:27px;font-weight:800;color:#fff;}
+#page-demo .roi-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px;}
+#page-demo .roi-card{background:#fff;border:1px solid rgba(107,63,160,0.14);border-radius:14px;padding:18px;box-shadow:0 3px 14px rgba(107,63,160,0.09);text-align:center;}
+#page-demo .roi-card-v{font-family:"Sora",sans-serif;font-size:32px;font-weight:800;line-height:1;margin-bottom:6px;}
+#page-demo .roi-card-v.g{color:#16a34a;}#page-demo .roi-card-v.v{color:#7C4FC0;}#page-demo .roi-card-v.o{color:#d97706;}
+#page-demo .roi-card-l{font-size:13px;color:#6b3fa0;font-weight:600;margin-bottom:3px;}
+#page-demo .roi-card-s{font-family:"IBM Plex Mono",monospace;font-size:11px;color:#8b60c0;}
+#page-demo .bench-box{background:rgba(107,63,160,0.04);border:1px solid rgba(107,63,160,0.12);border-radius:14px;padding:18px;}
+#page-demo .bench-t{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#7C4FC0;margin-bottom:10px;}
+#page-demo .bench-row{display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:#fff;border-radius:8px;border:1px solid rgba(107,63,160,0.1);margin-bottom:6px;}
+#page-demo .bench-l{font-size:13px;color:#4a208a;font-weight:600;}
+#page-demo .bench-v{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:700;color:#16a34a;}
+#page-demo .mod-g{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+#page-demo .mod-c{background:#fff;border:1px solid rgba(107,63,160,0.16);border-radius:14px;padding:20px;box-shadow:0 3px 14px rgba(107,63,160,0.08);cursor:pointer;transition:all .24s;position:relative;overflow:hidden;}
+#page-demo .mod-c::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#7C4FC0,#A78BFA);}
+#page-demo .mod-c:hover,#page-demo .mod-c.open{transform:translateY(-2px);box-shadow:0 8px 28px rgba(107,63,160,0.18);border-color:rgba(107,63,160,0.36);}
+#page-demo .mod-ac{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:700;color:#7C4FC0;letter-spacing:.1em;margin-bottom:4px;}
+#page-demo .mod-nm{font-family:"Sora",sans-serif;font-size:13.5px;font-weight:700;color:#2a0d5e;margin-bottom:8px;line-height:1.25;}
+#page-demo .mod-ds{font-size:12px;color:#6b3fa0;line-height:1.6;margin-bottom:10px;}
+#page-demo .mod-hint{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:#7C4FC0;font-weight:600;}
+#page-demo .mod-det{display:none;border-top:1px solid rgba(107,63,160,0.1);padding-top:11px;margin-top:4px;}
+#page-demo .mod-c.open .mod-det{display:block;}
+#page-demo .mod-di{display:flex;align-items:flex-start;gap:6px;font-size:12px;color:#4a208a;margin-bottom:6px;line-height:1.5;}
+#page-demo .mod-di svg{width:10px;height:10px;color:#7C4FC0;flex-shrink:0;margin-top:2px;}
+#page-demo .comp-wrap{overflow-x:auto;border-radius:14px;border:1px solid rgba(107,63,160,0.16);box-shadow:0 4px 20px rgba(107,63,160,0.1);}
+#page-demo .comp-tbl{width:100%;border-collapse:collapse;background:#fff;}
+#page-demo .comp-tbl th{background:linear-gradient(135deg,#7C4FC0,#6338A8);color:#fff;font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:13px 16px;text-align:left;}
+#page-demo .comp-tbl td{padding:12px 16px;font-size:13px;color:#4a208a;border-bottom:1px solid rgba(107,63,160,0.1);}
+#page-demo .comp-tbl tr:nth-child(even) td{background:rgba(107,63,160,0.03);}
+#page-demo .comp-tbl tr:hover td{background:rgba(107,63,160,0.06);}
+#page-demo .cx{color:#dc2626;font-weight:700;}#page-demo .co{color:#d97706;font-weight:600;}#page-demo .ck{color:#16a34a;font-weight:700;}
+#page-demo .win-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;}
+#page-demo .win-b{display:inline-flex;align-items:center;gap:5px;padding:5px 13px;border-radius:20px;font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:700;background:rgba(22,163,74,0.1);border:1px solid rgba(22,163,74,0.3);color:#16a34a;}
+@media(max-width:900px){
+  #page-demo .d-hero{padding:48px 18px 32px;}
+  #page-demo .d-panel{padding:22px 16px 40px;}
+  #page-demo .d-tab{padding:12px 14px;font-size:11px;}
+  #page-demo .tkt-g{grid-template-columns:1fr 1fr;}
+  #page-demo .gate-g{grid-template-columns:1fr;}
+  #page-demo .audit-wrap{grid-template-columns:1fr;}
+  #page-demo .roi-g{grid-template-columns:1fr;}
+  #page-demo .roi-cards{grid-template-columns:1fr 1fr;}
+  #page-demo .mod-g{grid-template-columns:1fr 1fr;}
+  #page-demo .roi-row{grid-template-columns:1fr auto;}
+  #page-demo .roi-row input[type=range]{width:100%;grid-column:1/-1;}
+}
+@media(max-width:600px){
+  #page-demo .tkt-g{grid-template-columns:1fr;}
+  #page-demo .roi-cards{grid-template-columns:1fr;}
+  #page-demo .mod-g{grid-template-columns:1fr;}
+}
+
+/* How It Works tab */
+#page-demo .hiw-steps{display:flex;flex-direction:column;gap:0;}
+#page-demo .hiw-step{display:flex;align-items:flex-start;gap:18px;}
+#page-demo .hiw-step-num{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#6B3FA0,#8B5CC8);color:#fff;font-family:"Sora",sans-serif;font-size:18px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 14px rgba(107,63,160,0.38);margin-top:2px;}
+#page-demo .hiw-step-body{flex:1;padding-bottom:4px;}
+#page-demo .hiw-step-title{font-family:"Sora",sans-serif;font-size:16px;font-weight:800;color:#1A0A30;margin-bottom:8px;line-height:1.25;}
+#page-demo .hiw-step-desc{font-size:13.5px;color:#3D2060;line-height:1.72;margin-bottom:10px;}
+#page-demo .hiw-connector{width:2px;background:linear-gradient(to bottom,#8B5CC8,rgba(107,63,160,0.2));min-height:24px;margin-left:21px;flex-shrink:0;}
+#page-demo .hiw-detail-box{background:rgba(107,63,160,0.04);border:1px solid rgba(107,63,160,0.14);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;}
+#page-demo .hiw-detail-row{display:flex;gap:10px;font-size:12.5px;line-height:1.5;}
+#page-demo .hiw-detail-label{font-family:"IBM Plex Mono",monospace;font-weight:700;color:#6B3FA0;flex-shrink:0;min-width:120px;}
+#page-demo .hiw-detail-val{color:#3D2060;}
+#page-demo .hiw-outcome-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:10px 0;}
+#page-demo .hiw-outcome{border-radius:10px;padding:14px 12px;text-align:center;}
+#page-demo .hiw-outcome-icon{font-size:20px;font-weight:800;margin-bottom:4px;}
+#page-demo .hiw-outcome-name{font-family:"Sora",sans-serif;font-size:13px;font-weight:800;margin-bottom:5px;}
+#page-demo .hiw-outcome-cond{font-family:"IBM Plex Mono",monospace;font-size:10px;line-height:1.4;}
+#page-demo .hiw-outcome-green{background:rgba(22,163,74,0.08);border:1.5px solid rgba(22,163,74,0.3);color:#15803d;}
+#page-demo .hiw-outcome-amber{background:rgba(217,119,6,0.08);border:1.5px solid rgba(217,119,6,0.28);color:#b45309;}
+#page-demo .hiw-outcome-red{background:rgba(220,38,38,0.07);border:1.5px solid rgba(220,38,38,0.25);color:#b91c1c;}
+#page-demo .hiw-priv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:10px 0;}
+#page-demo .hiw-priv-card{border-radius:10px;padding:14px;}
+#page-demo .hiw-priv-title{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:700;letter-spacing:.1em;margin-bottom:7px;}
+#page-demo .hiw-priv-examples{font-size:11.5px;line-height:1.6;margin-bottom:8px;}
+#page-demo .hiw-priv-action{font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:600;padding:5px 8px;border-radius:6px;}
+#page-demo .hiw-priv-low{background:rgba(22,163,74,0.07);border:1px solid rgba(22,163,74,0.22);color:#15803d;}
+#page-demo .hiw-priv-low .hiw-priv-action{background:rgba(22,163,74,0.12);}
+#page-demo .hiw-priv-mid{background:rgba(217,119,6,0.07);border:1px solid rgba(217,119,6,0.22);color:#92400e;}
+#page-demo .hiw-priv-mid .hiw-priv-action{background:rgba(217,119,6,0.12);}
+#page-demo .hiw-priv-high{background:rgba(220,38,38,0.07);border:1px solid rgba(220,38,38,0.22);color:#991b1b;}
+#page-demo .hiw-priv-high .hiw-priv-action{background:rgba(220,38,38,0.1);}
+#page-demo .hiw-compliance-row{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0;}
+#page-demo .hiw-comp-badge{display:inline-flex;align-items:center;padding:5px 12px;border-radius:20px;background:rgba(22,163,74,0.1);border:1px solid rgba(22,163,74,0.28);font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:700;color:#15803d;}
+#page-demo .hiw-flow-tbl{border-radius:12px;overflow:hidden;border:1px solid rgba(107,63,160,0.18);box-shadow:0 3px 14px rgba(107,63,160,0.09);}
+#page-demo .hiw-flow-hdr{display:grid;grid-template-columns:42px 100px 1fr 1fr 70px;background:linear-gradient(135deg,#3D1A6E,#6B3FA0);padding:10px 14px;font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:700;color:rgba(255,255,255,0.7);letter-spacing:.1em;text-transform:uppercase;gap:10px;}
+#page-demo .hiw-flow-row{display:grid;grid-template-columns:42px 100px 1fr 1fr 70px;padding:11px 14px;gap:10px;background:#fff;font-size:12.5px;color:#3D2060;align-items:center;border-bottom:1px solid rgba(107,63,160,0.08);}
+#page-demo .hiw-flow-row:last-child{border-bottom:none;}
+#page-demo .hiw-flow-alt{background:rgba(107,63,160,0.03);}
+#page-demo .hiw-flow-n{font-family:"IBM Plex Mono",monospace;font-weight:700;color:#6B3FA0;font-size:13px;}
+#page-demo .hiw-flow-mod{font-family:"IBM Plex Mono",monospace;font-weight:700;font-size:11.5px;}
+#page-demo .hiw-flow-t{font-family:"IBM Plex Mono",monospace;font-size:11px;color:#16a34a;font-weight:600;}
+@media(max-width:900px){
+  #page-demo .hiw-outcome-row{grid-template-columns:1fr;}
+  #page-demo .hiw-priv-grid{grid-template-columns:1fr;}
+  #page-demo .hiw-flow-hdr,#page-demo .hiw-flow-row{grid-template-columns:36px 80px 1fr 80px;}
+  #page-demo .hiw-flow-hdr>div:nth-child(4),#page-demo .hiw-flow-row>div:nth-child(4){display:none;}
+  #page-demo .hiw-detail-label{min-width:90px;}
+  #page-demo .hiw-step-title{font-size:14px;}
+}
+@media(max-width:600px){
+  #page-demo .hiw-flow-hdr,#page-demo .hiw-flow-row{grid-template-columns:32px 1fr 60px;}
+  #page-demo .hiw-flow-hdr>div:nth-child(2),#page-demo .hiw-flow-row>div:nth-child(2){display:none;}
+  #page-demo .hiw-step{gap:12px;}
+  #page-demo .hiw-step-num{width:36px;height:36px;font-size:15px;}
+  #page-demo .hiw-detail-row{flex-direction:column;gap:2px;}
+  #page-demo .hiw-detail-label{min-width:0;}
+}
+
+
+/* Competitor Analysis - mobile card layout */
+#page-demo .comp-mobile{display:none;}
+#page-demo .cmp-row-m{background:#fff;border:1px solid rgba(107,63,160,0.14);border-radius:12px;padding:14px;box-shadow:0 2px 10px rgba(107,63,160,0.07);}
+#page-demo .cmp-feat{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:700;color:#7C4FC0;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(107,63,160,0.1);}
+#page-demo .cmp-grid-m{display:grid;grid-template-columns:1fr 1fr;gap:7px;}
+#page-demo .cmp-cell-m{padding:8px 10px;border-radius:8px;font-size:12px;line-height:1.4;}
+#page-demo .cmp-cell-m.win{background:rgba(22,163,74,0.08);border:1px solid rgba(22,163,74,0.22);color:#15803d;grid-column:1/-1;}
+#page-demo .cmp-cell-m.bad{background:rgba(220,38,38,0.05);border:1px solid rgba(220,38,38,0.14);color:#b91c1c;}
+#page-demo .cmp-cell-m.part{background:rgba(217,119,6,0.06);border:1px solid rgba(217,119,6,0.18);color:#b45309;}
+#page-demo .cmp-cell-m.neutral{background:rgba(107,63,160,0.04);border:1px solid rgba(107,63,160,0.1);color:#4a208a;}
+#page-demo .cmp-co{font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:700;opacity:.65;text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px;}
+@media(max-width:900px){
+  #page-demo .comp-desktop{display:none !important;}
+  #page-demo .comp-mobile{display:block;}
+}
+@media(max-width:500px){
+  #page-demo .cmp-grid-m{grid-template-columns:1fr;}
+  #page-demo .cmp-cell-m.win{grid-column:auto;}
+}
+
+</style>
+
+<div class="page" id="page-demo">
+
+<div class="d-hero">
+  <div class="d-hero-in">
+    <div class="d-badge"><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>Interactive Platform Demo</div>
+    <h1 class="d-h1">Experience AI Remediation Group <span>Working Live</span></h1>
+    <p class="d-sub">Try the EGREE Evidence Gate, DCP-CLM Confidence-Permission logic, INAGOE audit trail generation, ROI calculator, module explorer, and competitor analysis - all using real data from the 10-week UK pilot.</p>
+    <div class="d-proofs">
+      <span class="d-proof g"><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>96.4% Accuracy - Pilot 2026</span>
+      <span class="d-proof v"><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>42% MTTR Reduction</span>
+      <span class="d-proof b"><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>100% Audit Trail - EU AI Act</span>
+      <span class="d-proof a"><svg width="9" height="9" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>5 LOIs Secured Pre-Launch</span>
+    </div>
+  </div>
+</div>
+
+<div class="d-tabs-wrap">
+  <div class="d-tabs">
+    <button class="d-tab on" onclick="dTab('egree',this)">EGREE Simulator</button>
+    <button class="d-tab" onclick="dTab('dcpclm',this)">DCP-CLM Gate</button>
+    <button class="d-tab" onclick="dTab('inagoe',this)">INAGOE Audit Trail</button>
+    <button class="d-tab" onclick="dTab('roi',this)">ROI Calculator</button>
+    <button class="d-tab" onclick="dTab('modules',this)">Module Explorer</button>
+    <button class="d-tab" onclick="dTab('compete',this)">Competitor Analysis</button>
+    <button class="d-tab" onclick="dTab('hiw',this)">How It Works</button>
+  </div>
+</div>
+
+<div class="d-panel on" id="dp-egree">
+  <div class="d-ptag">EGREE - Evidence-Gated Remediation Execution Engine</div>
+  <div class="d-ph2">Select a Pilot Ticket - Watch the Evidence Gate Run</div>
+  <p class="d-pdesc">Pick from 6 real incidents from the 10-week UK pilot. EGREE triangulates multi-source evidence across CMDB, telemetry, identity logs and policy databases, then decides whether to auto-remediate or escalate to AOGM human governance.</p>
+  <div class="dk">
+    <div class="dk-bar"><div class="dk-dots"><div class="dk-dot"></div><div class="dk-dot"></div><div class="dk-dot"></div></div><div class="dk-title">EGREE v2.6 - UK Enterprise Pilot - Evidence Gate Active</div><div class="dk-live"><span style="width:7px;height:7px;border-radius:50%;background:#4ade80;display:inline-block;"></span>Operational</div></div>
+    <div class="dk-body">
+      <div class="d-lbl">Step 1 - Select Incident from Pilot Ticket Queue</div>
+      <div class="tkt-g" id="d-tkt-g">
+        <div class="tkt sel" onclick="dSelTkt(0,this)"><div class="tkt-id">#T-4821 - MFA Reset</div><div class="tkt-nm">MFA Reset from Suspicious Tor IP</div><span class="tkt-sv H">HIGH</span></div>
+        <div class="tkt" onclick="dSelTkt(1,this)"><div class="tkt-id">#T-4820 - VPN Drop</div><div class="tkt-nm">VPN Connectivity Failure - 14 Users</div><span class="tkt-sv M">MEDIUM</span></div>
+        <div class="tkt" onclick="dSelTkt(2,this)"><div class="tkt-id">#T-4818 - Password Reset</div><div class="tkt-nm">Scheduled Batch Password Reset</div><span class="tkt-sv L">LOW</span></div>
+        <div class="tkt" onclick="dSelTkt(3,this)"><div class="tkt-id">#T-4819 - Firewall Change</div><div class="tkt-nm">Perimeter Firewall Policy Change</div><span class="tkt-sv H">HIGH</span></div>
+        <div class="tkt" onclick="dSelTkt(4,this)"><div class="tkt-id">#T-4816 - Shadow IT</div><div class="tkt-nm">Unsanctioned AI Tool on Finance PC</div><span class="tkt-sv M">MEDIUM</span></div>
+        <div class="tkt" onclick="dSelTkt(5,this)"><div class="tkt-id">#T-4822 - Config Drift</div><div class="tkt-nm">Server Configuration Drift Alert</div><span class="tkt-sv L">LOW</span></div>
+      </div>
+      <div class="d-lbl">Step 2 - Execute EGREE Evidence Gate Pipeline</div>
+      <button class="d-run" id="d-run-btn" onclick="dRunEgree()">Run EGREE Evidence Gate</button>
+      <div class="pipeline">
+        <div class="pipe" id="dp1"><div class="p-ic" id="pi1"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div><div class="p-lbl">1. IIR Ingestion - Parsing Incident into Machine-Executable Format</div><div class="p-det" id="pd1">Select a ticket and click Run...</div></div></div>
+        <div class="pipe" id="dp2"><div class="p-ic" id="pi2"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div><div><div class="p-lbl">2. EGREE Multi-Source Evidence Triangulation</div><div class="p-det" id="pd2">Pending IIR...</div></div></div>
+        <div class="pipe" id="dp3"><div class="p-ic" id="pi3"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><div class="p-lbl">3. DCP-CLM Confidence-Permission Gate Decision</div><div class="p-det" id="pd3">Awaiting evidence...</div></div></div>
+        <div class="pipe" id="dp4"><div class="p-ic" id="pi4"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div><div class="p-lbl">4. PS-RPF Privilege Risk Classification</div><div class="p-det" id="pd4">Awaiting gate...</div></div></div>
+        <div class="pipe" id="dp5"><div class="p-ic" id="pi5"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div><div><div class="p-lbl">5. Execution Decision and INAGOE Audit Trail Generated</div><div class="p-det" id="pd5">Awaiting all gates...</div></div></div>
+      </div>
+      <div class="d-res" id="d-res">
+        <div class="d-rt" id="d-rt"></div>
+        <div class="d-rlog" id="d-rlog"></div>
+        <div style="display:flex;align-items:center;gap:22px;margin-top:12px;flex-wrap:wrap;">
+          <div class="d-mttr" id="d-mttr"></div>
+          <div style="flex:1;font-family:IBM Plex Mono,monospace;font-size:11px;color:rgba(107,63,160,0.65);line-height:1.75;" id="d-audit"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="d-panel" id="dp-dcpclm">
+  <div class="d-ptag">DCP-CLM - Decoupled Confidence-Permission Control Logic Module</div>
+  <div class="d-ph2">Confidence Does Not Equal Permission</div>
+  <p class="d-pdesc">The core innovation of AI Remediation. Even a 99% confident AI model cannot execute without policy-based evidence clearance. Adjust the slider and tick gates to see exactly how DCP-CLM decides - the architectural gate that no competitor offers.</p>
+  <div class="gate-g">
+    <div class="gate-c">
+      <div class="gate-ct">AI Model Confidence Score</div>
+      <p style="font-size:13px;color:#6b3fa0;margin-bottom:16px;line-height:1.5;">In traditional tools, this alone determines execution. In AI Remediation, it is the secondary factor.</p>
+      <div class="sl-hdr"><span>Confidence Level</span><span class="sl-val" id="d-cv">60%</span></div>
+      <input type="range" class="d-sl" id="d-csl" min="0" max="100" value="60" oninput="dUpdateGate()">
+      <div class="gate-ct" style="margin-top:16px;">Evidence Gate Clearances</div>
+      <p style="font-size:13px;color:#6b3fa0;margin-bottom:12px;line-height:1.5;">All required gates must pass regardless of AI confidence score.</p>
+      <div class="perm-list" id="d-perms">
+        <div class="perm-row" onclick="dTogPerm(this)"><div class="perm-cb"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="perm-lbl">CMDB configuration state verified against baseline</span></div>
+        <div class="perm-row" onclick="dTogPerm(this)"><div class="perm-cb"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="perm-lbl">System telemetry independently corroborates incident</span></div>
+        <div class="perm-row" onclick="dTogPerm(this)"><div class="perm-cb"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="perm-lbl">Policy database permits autonomous action on this resource</span></div>
+        <div class="perm-row" onclick="dTogPerm(this)"><div class="perm-cb"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="perm-lbl">PS-RPF confirms no high-privilege escalation required</span></div>
+        <div class="perm-row" onclick="dTogPerm(this)"><div class="perm-cb"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="perm-lbl">Active change window confirmed for this service</span></div>
+      </div>
+    </div>
+    <div class="gate-c">
+      <div class="gate-ct">Gate Decision Output</div>
+      <div class="gate-dec idle" id="d-gd">Adjust inputs to see the gate decision</div>
+      <div class="trace-box" id="d-gt">Configure inputs above to generate the reasoning trace.</div>
+      <div style="margin-top:18px;padding:16px;background:rgba(107,63,160,0.04);border-radius:10px;border:1px solid rgba(107,63,160,0.1);">
+        <div style="font-family:IBM Plex Mono,monospace;font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#7C4FC0;margin-bottom:10px;">Why This Matters</div>
+        <p style="font-size:13px;color:#4a208a;line-height:1.7;margin-bottom:10px;">Traditional AI: Execute when confidence is above threshold. AI Remediation: Execute only when confidence is sufficient AND all evidence gates independently cleared.</p>
+        <div style="padding:9px 12px;background:rgba(220,38,38,0.06);border-radius:8px;border:1px solid rgba(220,38,38,0.18);margin-bottom:7px;"><div style="font-family:IBM Plex Mono,monospace;font-size:11px;color:#dc2626;font-weight:700;">Without DCP-CLM:</div><p style="font-size:12px;color:#6b3fa0;margin:2px 0 0;">AI at 99% confidence executes directly - hallucination causes outage or breach</p></div>
+        <div style="padding:9px 12px;background:rgba(22,163,74,0.06);border-radius:8px;border:1px solid rgba(22,163,74,0.18);"><div style="font-family:IBM Plex Mono,monospace;font-size:11px;color:#16a34a;font-weight:700;">With DCP-CLM (AI Remediation Group):</div><p style="font-size:12px;color:#6b3fa0;margin:2px 0 0;">AI at 99% confidence plus 0/5 gates cleared = hard blocked, AOGM human review triggered</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="d-panel" id="dp-inagoe">
+  <div class="d-ptag">INAGOE - Intentional Non-Automation Governance Output Engine</div>
+  <div class="d-ph2">Auto-Generated EU AI Act Audit Trail</div>
+  <p class="d-pdesc">INAGOE automatically generates a human-readable reasoning trail for every action, satisfying EU AI Act Articles 12 and 13 and UK GDPR Article 22. The pilot saved clients an average of 10 hours of manual compliance audit work per quarter. Select a scenario and generate the live trail.</p>
+  <div class="audit-wrap">
+    <div>
+      <div class="d-lbl">Select Scenario</div>
+      <div class="a-sc-list" id="d-a-sc">
+        <div class="a-sc sel" onclick="dSelAudit(0,this)"><div class="a-sc-cb"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="a-sc-lbl">MFA Reset - Suspicious IP - Escalated to AOGM</span></div>
+        <div class="a-sc" onclick="dSelAudit(1,this)"><div class="a-sc-cb"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="a-sc-lbl">VPN Failure - Auto-Remediated in 7 Minutes</span></div>
+        <div class="a-sc" onclick="dSelAudit(2,this)"><div class="a-sc-cb"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="a-sc-lbl">Firewall Change - Hard Blocked - No CAB Approval</span></div>
+        <div class="a-sc" onclick="dSelAudit(3,this)"><div class="a-sc-cb"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><span class="a-sc-lbl">Shadow IT Detected - Proactive Quarantine Executed</span></div>
+      </div>
+      <button class="a-gen" onclick="dGenAudit()">Generate INAGOE Audit Trail</button>
+      <div style="background:rgba(107,63,160,0.05);border:1px solid rgba(107,63,160,0.12);border-radius:12px;padding:16px;">
+        <div style="font-family:IBM Plex Mono,monospace;font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#7C4FC0;margin-bottom:10px;">Regulatory Coverage</div>
+        <div style="display:flex;flex-direction:column;gap:6px;font-size:12px;color:#4a208a;">
+          <div>EU AI Act Article 12 - Traceability</div>
+          <div>EU AI Act Article 13 - Transparency</div>
+          <div>UK GDPR Article 22 - Automated Decisions</div>
+          <div>ISO 42001 AI Management System</div>
+          <div>Cyber Essentials Plus Audit Logs</div>
+        </div>
+        <div style="margin-top:10px;padding:8px 11px;background:rgba(22,163,74,0.07);border-radius:8px;border:1px solid rgba(22,163,74,0.2);font-family:IBM Plex Mono,monospace;font-size:11px;color:#16a34a;font-weight:600;">Pilot: 10 hrs manual audit work saved per quarter per client</div>
+      </div>
+    </div>
+    <div>
+      <div class="d-lbl">Generated Audit Trail - INAGOE Output</div>
+      <div class="audit-log" id="d-alog"><div class="al"><span class="al-t">--:--:--</span><span class="al-m sy">[SYS]</span><span class="al-x" style="color:rgba(196,181,253,0.35);">Select a scenario and click Generate to stream the audit trail...</span></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="d-panel" id="dp-roi">
+  <div class="d-ptag">Business ROI Calculator</div>
+  <div class="d-ph2">Calculate Your Savings with AI Remediation</div>
+  <p class="d-pdesc">Based on the 10-week UK pilot benchmarks: 42% MTTR reduction, 14 hours saved per agent per week, 30% Level-1 ticket volume drop. Enter your parameters to see projected annual savings against Professional Plan cost of 150 pounds per month.</p>
+  <div class="roi-g">
+    <div>
+      <div class="roi-calc">
+        <div class="roi-calc-t">Your Organisation Parameters</div>
+        <div class="roi-row"><label>Number of Support Agents</label><input type="range" id="ra" min="1" max="50" value="5" oninput="dCalcROI()"><span id="va">5</span></div>
+        <div class="roi-row"><label>Tickets per Month</label><input type="range" id="rt" min="100" max="5000" value="500" step="50" oninput="dCalcROI()"><span id="vt">500</span></div>
+        <div class="roi-row"><label>Avg Agent Salary (K GBP/yr)</label><input type="range" id="rs" min="25" max="80" value="38" oninput="dCalcROI()"><span id="vs">38K</span></div>
+        <div class="roi-row"><label>Avg Downtime Cost (K GBP/hr)</label><input type="range" id="rd" min="1" max="100" value="11" oninput="dCalcROI()"><span id="vd">11K</span></div>
+        <div class="roi-row"><label>Downtime Incidents per Month</label><input type="range" id="ri" min="1" max="30" value="4" oninput="dCalcROI()"><span id="vi">4</span></div>
+        <div class="roi-total"><span class="roi-total-l">Projected Annual Net Saving</span><span class="roi-total-v" id="d-roi-v">Calculating</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="roi-cards">
+        <div class="roi-card"><div class="roi-card-v g" id="ra-sv">-</div><div class="roi-card-l">Agent Time Saved/yr</div><div class="roi-card-s">Based on 14 hrs/wk per agent</div></div>
+        <div class="roi-card"><div class="roi-card-v v" id="rd-sv">-</div><div class="roi-card-l">Downtime Avoided/yr</div><div class="roi-card-s">42% MTTR reduction applied</div></div>
+        <div class="roi-card"><div class="roi-card-v o" id="rp-sv">-</div><div class="roi-card-l">Platform Cost/yr</div><div class="roi-card-s">Professional Plan 150/mo</div></div>
+        <div class="roi-card"><div class="roi-card-v g" id="rx-sv">-</div><div class="roi-card-l">ROI Multiple</div><div class="roi-card-s">GBP saved per GBP spent</div></div>
+      </div>
+      <div class="bench-box">
+        <div class="bench-t">10-Week UK Pilot - Actual Results</div>
+        <div class="bench-row"><span class="bench-l">MTTR Reduction</span><span class="bench-v">42%</span></div>
+        <div class="bench-row"><span class="bench-l">Hours Saved per Agent per Week</span><span class="bench-v">14 hrs</span></div>
+        <div class="bench-row"><span class="bench-l">Level-1 Ticket Volume Drop</span><span class="bench-v">30%</span></div>
+        <div class="bench-row"><span class="bench-l">Remediation Accuracy</span><span class="bench-v">96.4%</span></div>
+        <div class="bench-row"><span class="bench-l">False Positive Rate</span><span class="bench-v">&lt;1%</span></div>
+        <div class="bench-row"><span class="bench-l">User Trust Score</span><span class="bench-v">4.6/5</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="d-panel" id="dp-modules">
+  <div class="d-ptag">Platform Module Explorer</div>
+  <div class="d-ph2">6 Proprietary Modules - Click Any Card to Expand</div>
+  <p class="d-pdesc">Six deeply integrated modules form an architecture competitors cannot replicate with simple programming changes. Each solves a specific failure point in current ITSM automation.</p>
+  <div class="mod-g">
+    <div class="mod-c" onclick="this.classList.toggle('open')"><div class="mod-ac">EGREE</div><div class="mod-nm">Evidence-Gated Remediation Execution Engine</div><div class="mod-ds">Synthesises multi-source evidence to verify incident ground truth before any action executes.</div><div class="mod-hint">Click to expand</div><div class="mod-det"><div class="mod-di"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Requires 3+ independent sources before execution</div><div class="mod-di"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>False positive rate below 1% vs 15-20% industry average</div><div class="mod-di"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Blocked 100% of hallucination-driven actions in pilot</div></div></div>
+    <div class="mod-c" onclick="this.classList.toggle('open')"><div class="mod-ac">DCP-CLM</div><div class="mod-nm">Decoupled Confidence-Permission Control Logic Module</div><div class="mod-ds">Patent-pending gate separating AI confidence from execution permission.</div><div class="mod-hint">Click to expand</div><div class="mod-det"><div class="mod-di"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Patent filed - novel confidence-permission decoupling</div><div class="mod-di"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>5 independent evidence checks for high-risk actions</div><div class="mod-di"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Cannot be bypassed by prompt injection</div></div></div>
+    <div class="mod-c" onclick="this.classList.toggle('open')"><div class="mod-ac">AOGM</div><div class="mod-nm">Analyst Override Governance Memory</div><div class="mod-ds">Captures governance reasoning behind every human override, building a corporate risk-appetite model unique to each client.</div><div class="mod-hint">Click to expand</div><div class="mod-det"><div class="mod-di"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Creates proprietary per-client institutional knowledge dataset</div><div class="mod-di"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>AOGM data is fully client-owned - never shared externally</div></div></div>
+    <div class="mod-c" onclick="this.classList.toggle('open')"><div class="mod-ac">INAGOE</div><div class="mod-nm">Intentional Non-Automation Governance Output Engine</div><div class="mod-ds">Auto-generates EU AI Act Articles 12 and 13 compliant reasoning trails for every action.</div><div class="mod-hint">Click to expand</div><div class="mod-det"><div class="mod-di"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>100% audit trail coverage - zero manual logging required</div><div class="mod-di"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Saved clients 10 hours of manual audit work per quarter</div></div></div>
+    <div class="mod-c" onclick="this.classList.toggle('open')"><div class="mod-ac">PS-RPF</div><div class="mod-nm">Privilege-Sensitive Resolution Partitioning Framework</div><div class="mod-ds">Creates a secure DMZ for high-stakes actions, physically separating high-privilege task agents from general triage.</div><div class="mod-hint">Click to expand</div><div class="mod-det"><div class="mod-di"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Classifies 47 privilege risk categories automatically</div><div class="mod-di"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Blocked a live social engineering MFA spoofing attack in pilot</div></div></div>
+    <div class="mod-c" onclick="this.classList.toggle('open')"><div class="mod-ac">CGN</div><div class="mod-nm">Community Governance Network</div><div class="mod-ds">Anonymised sector benchmarking on how peers govern similar incidents without exposing sensitive data.</div><div class="mod-hint">Click to expand</div><div class="mod-det"><div class="mod-di"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>All benchmarks 100% anonymised - no raw client data shared</div><div class="mod-di"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Platform improves for all clients as network grows</div></div></div>
+  </div>
+</div>
+
+<div class="d-panel" id="dp-compete">
+  <div class="d-ptag">Competitive Analysis</div>
+  <div class="d-ph2">Why Competitors Cannot Replicate AI Remediation Group</div>
+  <p class="d-pdesc">A structural architectural innovation requiring fundamental AI redesign. The DCP-CLM confidence-permission decoupling and AOGM governance memory create a defensible moat. No current competitor offers these capabilities to the UK mid-market.</p>
+
+  <!-- DESKTOP: full table (hidden on mobile) -->
+  <div class="comp-wrap comp-desktop" style="margin-bottom:20px;">
+    <table class="comp-tbl">
+      <thead><tr><th>Capability</th><th>Legacy ITSM</th><th>Moveworks</th><th>ServiceNow AI</th><th>Nexthink</th><th>AI Remediation Group</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Primary Function</strong></td><td>Ticket logging</td><td>Conversational NLU</td><td>Workflow GenAI</td><td>DEX observability</td><td><strong>Evidence-Governed Remediation</strong></td></tr>
+        <tr><td><strong>Hallucination Risk</strong></td><td>N/A</td><td class="cx">High - black box</td><td class="cx">High - black box</td><td>N/A</td><td class="ck"><strong>Negligible - gate blocks all</strong></td></tr>
+        <tr><td><strong>EU AI Act Art.12+13</strong></td><td class="cx">None</td><td class="co">Partial</td><td class="co">General only</td><td class="cx">None</td><td class="ck"><strong>Native compliance</strong></td></tr>
+        <tr><td><strong>Governance Memory</strong></td><td class="cx">None</td><td class="cx">None</td><td class="co">RLHF retraining</td><td class="cx">None</td><td class="ck"><strong>AOGM per-client reasoning</strong></td></tr>
+        <tr><td><strong>DCP-CLM Evidence Gate</strong></td><td class="cx">None</td><td class="cx">None</td><td class="cx">None</td><td class="cx">None</td><td class="ck"><strong>Patent-pending - unique</strong></td></tr>
+        <tr><td><strong>UK Mid-Market Pricing</strong></td><td class="co">Variable</td><td class="cx">Fortune 500 only</td><td class="cx">Platform tax</td><td class="co">Mid-large only</td><td class="ck"><strong>From 50 GBP/mo</strong></td></tr>
+        <tr><td><strong>100% Audit Trail Auto-Gen</strong></td><td>Manual</td><td>Weak logs</td><td>Manual</td><td>Measurement</td><td class="ck"><strong>INAGOE auto-generated</strong></td></tr>
+        <tr><td><strong>5 LOIs Pre-Launch</strong></td><td class="cx">No</td><td class="cx">No</td><td class="cx">No</td><td class="cx">No</td><td class="ck"><strong>Yes - validated demand</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MOBILE: capability cards (shown on mobile) -->
+  <div class="comp-mobile">
+    <!-- AI Remediation highlight card -->
+    <div style="background:linear-gradient(135deg,#7C4FC0,#6338A8);border-radius:14px;padding:18px;margin-bottom:14px;">
+      <div style="font-family:IBM Plex Mono,monospace;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:6px;">AI Remediation Group</div>
+      <div style="font-family:Sora,sans-serif;font-size:15px;font-weight:800;color:#fff;margin-bottom:12px;">Evidence-Governed Autonomous Remediation</div>
+      <div style="display:flex;flex-direction:column;gap:7px;">
+        <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:#fff;"><svg width="11" height="11" fill="none" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>DCP-CLM evidence gate - patent-pending - unique</div>
+        <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:#fff;"><svg width="11" height="11" fill="none" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>EU AI Act Art.12 and 13 - native compliance</div>
+        <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:#fff;"><svg width="11" height="11" fill="none" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>AOGM governance memory - per-client reasoning</div>
+        <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:#fff;"><svg width="11" height="11" fill="none" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>From 50 GBP/mo - built for UK mid-market</div>
+        <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:#fff;"><svg width="11" height="11" fill="none" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>96.4% accuracy - 5 LOIs secured pre-launch</div>
+      </div>
+    </div>
+    <!-- Feature comparison rows -->
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div class="cmp-row-m">
+        <div class="cmp-feat">Primary Function</div>
+        <div class="cmp-grid-m">
+          <div class="cmp-cell-m neutral"><div class="cmp-co">Legacy ITSM</div>Ticket logging</div>
+          <div class="cmp-cell-m neutral"><div class="cmp-co">Moveworks</div>Conversational NLU</div>
+          <div class="cmp-cell-m neutral"><div class="cmp-co">ServiceNow AI</div>Workflow GenAI</div>
+          <div class="cmp-cell-m neutral"><div class="cmp-co">Nexthink</div>DEX observability</div>
+          <div class="cmp-cell-m win"><div class="cmp-co">AI Remediation</div>Evidence-Governed Remediation</div>
+        </div>
+      </div>
+      <div class="cmp-row-m">
+        <div class="cmp-feat">Hallucination Risk</div>
+        <div class="cmp-grid-m">
+          <div class="cmp-cell-m neutral"><div class="cmp-co">Legacy ITSM</div>N/A (manual)</div>
+          <div class="cmp-cell-m bad"><div class="cmp-co">Moveworks</div>High - black box LLM</div>
+          <div class="cmp-cell-m bad"><div class="cmp-co">ServiceNow AI</div>High - black box GenAI</div>
+          <div class="cmp-cell-m neutral"><div class="cmp-co">Nexthink</div>N/A (no resolution)</div>
+          <div class="cmp-cell-m win"><div class="cmp-co">AI Remediation</div>Negligible - DCP-CLM gate blocks all</div>
+        </div>
+      </div>
+      <div class="cmp-row-m">
+        <div class="cmp-feat">EU AI Act Art.12+13</div>
+        <div class="cmp-grid-m">
+          <div class="cmp-cell-m bad"><div class="cmp-co">Legacy ITSM</div>None</div>
+          <div class="cmp-cell-m part"><div class="cmp-co">Moveworks</div>Partial only</div>
+          <div class="cmp-cell-m part"><div class="cmp-co">ServiceNow AI</div>General only</div>
+          <div class="cmp-cell-m bad"><div class="cmp-co">Nexthink</div>None</div>
+          <div class="cmp-cell-m win"><div class="cmp-co">AI Remediation</div>Native compliance - INAGOE</div>
+        </div>
+      </div>
+      <div class="cmp-row-m">
+        <div class="cmp-feat">Governance Memory</div>
+        <div class="cmp-grid-m">
+          <div class="cmp-cell-m bad"><div class="cmp-co">Legacy ITSM</div>None</div>
+          <div class="cmp-cell-m bad"><div class="cmp-co">Moveworks</div>None</div>
+          <div class="cmp-cell-m part"><div class="cmp-co">ServiceNow AI</div>RLHF retraining</div>
+          <div class="cmp-cell-m bad"><div class="cmp-co">Nexthink</div>None</div>
+          <div class="cmp-cell-m win"><div class="cmp-co">AI Remediation</div>AOGM per-client reasoning</div>
+        </div>
+      </div>
+      <div class="cmp-row-m">
+        <div class="cmp-feat">DCP-CLM Evidence Gate</div>
+        <div class="cmp-grid-m">
+          <div class="cmp-cell-m bad"><div class="cmp-co">Legacy ITSM</div>None</div>
+          <div class="cmp-cell-m bad"><div class="cmp-co">Moveworks</div>None</div>
+          <div class="cmp-cell-m bad"><div class="cmp-co">ServiceNow AI</div>None</div>
+          <div class="cmp-cell-m bad"><div class="cmp-co">Nexthink</div>None</div>
+          <div class="cmp-cell-m win"><div class="cmp-co">AI Remediation</div>Patent-pending - unique worldwide</div>
+        </div>
+      </div>
+      <div class="cmp-row-m">
+        <div class="cmp-feat">UK Mid-Market Pricing</div>
+        <div class="cmp-grid-m">
+          <div class="cmp-cell-m part"><div class="cmp-co">Legacy ITSM</div>Variable</div>
+          <div class="cmp-cell-m bad"><div class="cmp-co">Moveworks</div>Fortune 500 only</div>
+          <div class="cmp-cell-m bad"><div class="cmp-co">ServiceNow AI</div>Platform tax</div>
+          <div class="cmp-cell-m part"><div class="cmp-co">Nexthink</div>Mid-large only</div>
+          <div class="cmp-cell-m win"><div class="cmp-co">AI Remediation</div>From 50 GBP/mo - built for UK SMEs</div>
+        </div>
+      </div>
+      <div class="cmp-row-m">
+        <div class="cmp-feat">100% Audit Trail Auto-Gen</div>
+        <div class="cmp-grid-m">
+          <div class="cmp-cell-m bad"><div class="cmp-co">Legacy ITSM</div>Manual logs only</div>
+          <div class="cmp-cell-m bad"><div class="cmp-co">Moveworks</div>Weak prompt logs</div>
+          <div class="cmp-cell-m bad"><div class="cmp-co">ServiceNow AI</div>Manual audit</div>
+          <div class="cmp-cell-m bad"><div class="cmp-co">Nexthink</div>Measurement only</div>
+          <div class="cmp-cell-m win"><div class="cmp-co">AI Remediation</div>INAGOE auto-generated every action</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="win-badges">
+    <span class="win-b"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Only platform with DCP-CLM confidence-permission decoupling</span>
+    <span class="win-b"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Only platform with native EU AI Act Art.12+13 compliance</span>
+    <span class="win-b"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Only platform built for UK mid-market from 50 GBP/mo</span>
+    <span class="win-b"><svg width="10" height="10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Pilot: 96.4% accuracy vs 80-85% industry average</span>
+  </div>
+
+
+<div class="d-panel" id="dp-hiw">
+  <div class="d-ptag">How It Works — Complete Platform Walkthrough</div>
+  <div class="d-ph2">From One IT Ticket to a Fully Governed Resolution</div>
+  <p class="d-pdesc">This tab explains exactly how AI Remediation Group works — in plain English — from the moment an IT ticket arrives to the moment the action is completed and the audit trail is generated. No technical background needed.</p>
+
+  <!-- PDF DOWNLOAD BANNER -->
+  <div style="background:linear-gradient(135deg,#3D1A6E,#6B3FA0);border-radius:14px;padding:20px 24px;margin-bottom:28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;">
+    <div>
+      <div style="font-family:IBM Plex Mono,monospace;font-size:10px;font-weight:700;color:rgba(196,181,253,0.6);letter-spacing:.14em;text-transform:uppercase;margin-bottom:5px;">Complete Demo Reference</div>
+      <div style="font-family:Sora,sans-serif;font-size:16px;font-weight:800;color:#fff;margin-bottom:4px;">AI Remediation Group — Demo Guide PDF</div>
+      <div style="font-size:12px;color:rgba(220,210,255,0.75);line-height:1.5;">All 7 tabs explained in detail &bull; Pilot data &bull; Competitor analysis &bull; ROI benchmarks &bull; Regulatory coverage</div>
+    </div>
+    <a id="pdf-dl-btn" download="AI-Remediation-Group-Demo-Guide.pdf"
+       style="display:inline-flex;align-items:center;gap:9px;padding:13px 22px;background:#fff;border-radius:10px;text-decoration:none;font-family:Sora,sans-serif;font-size:13px;font-weight:700;color:#6B3FA0;box-shadow:0 4px 16px rgba(0,0,0,0.18);white-space:nowrap;flex-shrink:0;">
+      <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#6B3FA0" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download PDF Guide
+    </a>
+  </div>
+
+  <!-- STEP-BY-STEP WALKTHROUGH -->
+  <div class="hiw-steps">
+
+    <div class="hiw-step">
+      <div class="hiw-step-num">1</div>
+      <div class="hiw-step-body">
+        <div class="hiw-step-title">IT Ticket Arrives</div>
+        <p class="hiw-step-desc">An IT incident is submitted via any connected ITSM tool — ServiceNow, Jira Service Management, Freshservice, or a custom integration. The EGREE engine immediately ingests the ticket and converts it into a machine-executable <strong>Incident Intermediate Representation (IIR)</strong> — a structured data object containing all relevant fields: user identity, affected systems, error codes, timestamps, and environmental context.</p>
+        <div class="hiw-detail-box">
+          <div class="hiw-detail-row"><span class="hiw-detail-label">What the IIR captures:</span><span class="hiw-detail-val">user_id, source_ip, affected_systems, error_code, priority, geo_risk, failed_login_count, last_change_timestamp</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Time taken:</span><span class="hiw-detail-val">Under 1 second — fully automated, no agent involvement</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Demo tab to try:</span><span class="hiw-detail-val">Tab 1 — EGREE Simulator, Step 1: IIR Ingestion</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hiw-connector"></div>
+
+    <div class="hiw-step">
+      <div class="hiw-step-num">2</div>
+      <div class="hiw-step-body">
+        <div class="hiw-step-title">Evidence Gate Opens — Multi-Source Triangulation</div>
+        <p class="hiw-step-desc">The EGREE evidence gate simultaneously queries <strong>3 or more independent data sources</strong> to verify the incident ground truth. No single source is trusted alone. This multi-source triangulation is what eliminates the hallucination risk that plagues traditional AI ITSM tools — the AI cannot act on a belief, only on verified evidence.</p>
+        <div class="hiw-detail-box">
+          <div class="hiw-detail-row"><span class="hiw-detail-label">CMDB check:</span><span class="hiw-detail-val">Is the configuration state what it should be? Is this a privileged system?</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Telemetry check:</span><span class="hiw-detail-val">Does the live system data corroborate the reported incident?</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Identity logs:</span><span class="hiw-detail-val">Are there anomalous login patterns, unusual source IPs, or Tor exit nodes?</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Policy database:</span><span class="hiw-detail-val">What actions are pre-approved for this resource type? Is a change window active?</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Pilot result:</span><span class="hiw-detail-val">False positive rate below 1% — industry benchmark is 15–20%</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Demo tab to try:</span><span class="hiw-detail-val">Tab 1 — EGREE Simulator, Step 2: Evidence Triangulation</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hiw-connector"></div>
+
+    <div class="hiw-step">
+      <div class="hiw-step-num">3</div>
+      <div class="hiw-step-body">
+        <div class="hiw-step-title">DCP-CLM Gate — Confidence vs Permission Decision</div>
+        <p class="hiw-step-desc">This is the <strong>core innovation</strong> that no competitor currently offers. The AI model generates a confidence score for its proposed action. But the DCP-CLM module evaluates permission separately — based purely on evidence clearances, not on AI confidence. A 99% confident AI is still hard-blocked if the evidence gates are not cleared. This prevents all hallucination-driven actions regardless of model quality.</p>
+        <div class="hiw-outcome-row">
+          <div class="hiw-outcome hiw-outcome-green">
+            <div class="hiw-outcome-icon">&#10003;</div>
+            <div class="hiw-outcome-name">EXECUTE</div>
+            <div class="hiw-outcome-cond">Confidence &ge;70% AND 4+ gates cleared</div>
+          </div>
+          <div class="hiw-outcome hiw-outcome-amber">
+            <div class="hiw-outcome-icon">&#8635;</div>
+            <div class="hiw-outcome-name">AOGM REVIEW</div>
+            <div class="hiw-outcome-cond">Partial gates OR low confidence</div>
+          </div>
+          <div class="hiw-outcome hiw-outcome-red">
+            <div class="hiw-outcome-icon">&#10007;</div>
+            <div class="hiw-outcome-name">HARD BLOCK</div>
+            <div class="hiw-outcome-cond">Gates failed — confidence irrelevant</div>
+          </div>
+        </div>
+        <div class="hiw-detail-box" style="margin-top:12px;">
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Patent status:</span><span class="hiw-detail-val">Filed — novel confidence-permission decoupling architecture for IT remediation</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Demo tab to try:</span><span class="hiw-detail-val">Tab 2 — DCP-CLM Gate (set 99% confidence, leave all gates unticked — it still blocks)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hiw-connector"></div>
+
+    <div class="hiw-step">
+      <div class="hiw-step-num">4</div>
+      <div class="hiw-step-body">
+        <div class="hiw-step-title">PS-RPF — Privilege Risk Classification</div>
+        <p class="hiw-step-desc">Every proposed action is classified by privilege risk level across <strong>47 categories</strong>. This creates a secure separation between routine low-risk actions and high-stakes privileged operations. High-privilege actions are physically isolated from general triage workflows — even if the DCP-CLM gate clears them, they are routed through a dedicated human approval workflow via AOGM.</p>
+        <div class="hiw-priv-grid">
+          <div class="hiw-priv-card hiw-priv-low">
+            <div class="hiw-priv-title">LOW PRIVILEGE</div>
+            <div class="hiw-priv-examples">Service restarts &bull; Config drift correction &bull; Certificate reloads &bull; Batch password resets</div>
+            <div class="hiw-priv-action">Auto-execution authorised if DCP-CLM cleared</div>
+          </div>
+          <div class="hiw-priv-card hiw-priv-mid">
+            <div class="hiw-priv-title">MID PRIVILEGE</div>
+            <div class="hiw-priv-examples">Workstation quarantine &bull; Network isolation &bull; Shadow IT removal &bull; User account suspension</div>
+            <div class="hiw-priv-action">Auto-execution with mandatory notification</div>
+          </div>
+          <div class="hiw-priv-card hiw-priv-high">
+            <div class="hiw-priv-title">HIGH / CRITICAL</div>
+            <div class="hiw-priv-examples">Admin account changes &bull; Firewall rule changes &bull; Production server access &bull; Domain controller actions</div>
+            <div class="hiw-priv-action">Always escalated to AOGM — no exceptions</div>
+          </div>
+        </div>
+        <div class="hiw-detail-box" style="margin-top:12px;">
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Pilot result:</span><span class="hiw-detail-val">Zero high-privilege actions executed without AOGM approval across entire 10-week pilot</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Security win:</span><span class="hiw-detail-val">Blocked a live social engineering MFA spoofing attack during the pilot deployment</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hiw-connector"></div>
+
+    <div class="hiw-step">
+      <div class="hiw-step-num">5</div>
+      <div class="hiw-step-body">
+        <div class="hiw-step-title">Execute and Generate INAGOE Audit Trail</div>
+        <p class="hiw-step-desc">The approved action executes. Simultaneously, <strong>INAGOE generates a full EU AI Act-compliant reasoning trail</strong> — every evidence source queried, every gate clearance decision, every confidence score, every human approval — all logged automatically with timestamps. Zero manual audit work required. The trail satisfies EU AI Act Articles 12 and 13, UK GDPR Article 22, ISO 42001, and Cyber Essentials Plus in a single auto-generated document.</p>
+        <div class="hiw-compliance-row">
+          <div class="hiw-comp-badge">EU AI Act Art.12</div>
+          <div class="hiw-comp-badge">EU AI Act Art.13</div>
+          <div class="hiw-comp-badge">UK GDPR Art.22</div>
+          <div class="hiw-comp-badge">ISO 42001</div>
+          <div class="hiw-comp-badge">Cyber Essentials+</div>
+        </div>
+        <div class="hiw-detail-box" style="margin-top:12px;">
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Coverage:</span><span class="hiw-detail-val">100% of all actions — both autonomous and human-governed — logged automatically</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Pilot saving:</span><span class="hiw-detail-val">Clients saved an average of 10 hours of manual audit work per quarter</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Demo tab to try:</span><span class="hiw-detail-val">Tab 3 — INAGOE Audit Trail (click Generate to stream a live trail)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hiw-connector"></div>
+
+    <!-- AOGM explanation -->
+    <div class="hiw-step">
+      <div class="hiw-step-num" style="background:linear-gradient(135deg,#d97706,#b45309);">&#8635;</div>
+      <div class="hiw-step-body">
+        <div class="hiw-step-title">When Escalated: AOGM Human Governance Loop</div>
+        <p class="hiw-step-desc">When the DCP-CLM gate routes an action to AOGM, a named senior approver receives an alert with the full evidence package and reasoning trace. Their decision — approve or deny — is captured by AOGM along with the <strong>governance reasoning</strong> behind it. Over time this builds a per-client institutional knowledge model unique to each organisation, so the platform learns the risk appetite of each business.</p>
+        <div class="hiw-detail-box">
+          <div class="hiw-detail-row"><span class="hiw-detail-label">AOGM captures:</span><span class="hiw-detail-val">Not just the decision (approve/deny) but the full reasoning — "this was denied because it was outside a change window on a production server"</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">Data ownership:</span><span class="hiw-detail-val">All AOGM data is fully client-owned — never shared with or used by other organisations</span></div>
+          <div class="hiw-detail-row"><span class="hiw-detail-label">IPR classification:</span><span class="hiw-detail-val">Trade secret — creates a proprietary per-client institutional knowledge dataset</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- COMPLETE FLOW SUMMARY TABLE -->
+  <div style="margin-top:32px;">
+    <div style="font-family:IBM Plex Mono,monospace;font-size:11px;font-weight:700;color:#6B3FA0;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px;">Complete Flow Summary</div>
+    <div class="hiw-flow-tbl">
+      <div class="hiw-flow-hdr"><div>Stage</div><div>Module</div><div>Input</div><div>Output</div><div>Time</div></div>
+      <div class="hiw-flow-row"><div class="hiw-flow-n">1</div><div class="hiw-flow-mod" style="color:#A78BFA;">EGREE</div><div>Raw ticket from ITSM</div><div>Machine-executable IIR</div><div class="hiw-flow-t">&lt;1 sec</div></div>
+      <div class="hiw-flow-row hiw-flow-alt"><div class="hiw-flow-n">2</div><div class="hiw-flow-mod" style="color:#A78BFA;">EGREE</div><div>IIR + data source queries</div><div>Multi-source evidence verdict</div><div class="hiw-flow-t">1–3 sec</div></div>
+      <div class="hiw-flow-row"><div class="hiw-flow-n">3</div><div class="hiw-flow-mod" style="color:#60a5fa;">DCP-CLM</div><div>Confidence score + evidence verdict</div><div>EXECUTE / AOGM / BLOCK decision</div><div class="hiw-flow-t">&lt;1 sec</div></div>
+      <div class="hiw-flow-row hiw-flow-alt"><div class="hiw-flow-n">4</div><div class="hiw-flow-mod" style="color:#fb923c;">PS-RPF</div><div>Proposed action type</div><div>Privilege classification + routing</div><div class="hiw-flow-t">&lt;1 sec</div></div>
+      <div class="hiw-flow-row"><div class="hiw-flow-n">5a</div><div class="hiw-flow-mod" style="color:#4ade80;">INAGOE</div><div>Approved action (autonomous)</div><div>Action executed + full audit trail</div><div class="hiw-flow-t">2–7 min</div></div>
+      <div class="hiw-flow-row hiw-flow-alt"><div class="hiw-flow-n">5b</div><div class="hiw-flow-mod" style="color:#fbbf24;">AOGM</div><div>Escalated action</div><div>Human review + reasoning captured</div><div class="hiw-flow-t">5–30 min</div></div>
+    </div>
+  </div>
+
+  <!-- KEY NUMBERS -->
+  <div style="margin-top:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+    <div style="background:#fff;border:1px solid rgba(107,63,160,0.15);border-radius:12px;padding:16px;text-align:center;box-shadow:0 3px 12px rgba(107,63,160,0.09);">
+      <div style="font-family:Sora,sans-serif;font-size:30px;font-weight:800;color:#16a34a;line-height:1;">96.4%</div>
+      <div style="font-size:12px;color:#6B4A90;font-weight:600;margin-top:5px;">Remediation Accuracy</div>
+      <div style="font-family:IBM Plex Mono,monospace;font-size:10px;color:#9B7AB0;margin-top:3px;">10-week UK pilot</div>
+    </div>
+    <div style="background:#fff;border:1px solid rgba(107,63,160,0.15);border-radius:12px;padding:16px;text-align:center;box-shadow:0 3px 12px rgba(107,63,160,0.09);">
+      <div style="font-family:Sora,sans-serif;font-size:30px;font-weight:800;color:#6B3FA0;line-height:1;">42%</div>
+      <div style="font-size:12px;color:#6B4A90;font-weight:600;margin-top:5px;">MTTR Reduction</div>
+      <div style="font-family:IBM Plex Mono,monospace;font-size:10px;color:#9B7AB0;margin-top:3px;">Mean time to resolve</div>
+    </div>
+    <div style="background:#fff;border:1px solid rgba(107,63,160,0.15);border-radius:12px;padding:16px;text-align:center;box-shadow:0 3px 12px rgba(107,63,160,0.09);">
+      <div style="font-family:Sora,sans-serif;font-size:30px;font-weight:800;color:#16a34a;line-height:1;">100%</div>
+      <div style="font-size:12px;color:#6B4A90;font-weight:600;margin-top:5px;">Audit Trail Coverage</div>
+      <div style="font-family:IBM Plex Mono,monospace;font-size:10px;color:#9B7AB0;margin-top:3px;">Zero manual logging</div>
+    </div>
+    <div style="background:#fff;border:1px solid rgba(107,63,160,0.15);border-radius:12px;padding:16px;text-align:center;box-shadow:0 3px 12px rgba(107,63,160,0.09);">
+      <div style="font-family:Sora,sans-serif;font-size:30px;font-weight:800;color:#d97706;line-height:1;">&lt;1%</div>
+      <div style="font-size:12px;color:#6B4A90;font-weight:600;margin-top:5px;">False Positive Rate</div>
+      <div style="font-family:IBM Plex Mono,monospace;font-size:10px;color:#9B7AB0;margin-top:3px;">Industry avg: 15-20%</div>
+    </div>
+  </div>
+
+  <!-- SECOND PDF DOWNLOAD -->
+  <div style="margin-top:28px;padding:18px 22px;background:rgba(107,63,160,0.06);border-radius:12px;border:1px solid rgba(107,63,160,0.2);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+    <div>
+      <div style="font-family:Sora,sans-serif;font-size:14px;font-weight:700;color:#1A0A30;margin-bottom:4px;">Keep this guide for your records</div>
+      <div style="font-size:13px;color:#6B4A90;line-height:1.5;">The PDF contains all 7 tabs explained in detail, all pilot data tables, competitor comparison, regulatory coverage, and contact information.</div>
+    </div>
+    <a id="pdf-dl-btn2" download="AI-Remediation-Group-Demo-Guide.pdf"
+       style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;background:linear-gradient(135deg,#6B3FA0,#8B5CC8);border-radius:9px;text-decoration:none;font-family:Sora,sans-serif;font-size:13px;font-weight:700;color:#fff;box-shadow:0 3px 14px rgba(107,63,160,0.38);white-space:nowrap;flex-shrink:0;">
+      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download PDF Guide
+    </a>
+  </div>
+
+</div>
+</div>
+
+</div>
 </div><!-- /main -->
 
 <!-- BACK TO TOP -->
@@ -2059,10 +2832,11 @@ var pageNames = {
   financials: 'Financial Plan',
   founder: 'Founder Fit',
   esg: 'ESG and Jobs',
-  contact: 'Contact and Demo'
+  contact: 'Contact and Demo',
+  demo: 'Live Platform Demo'
 };
 
-var mbTabs = ['home', 'technology', 'pricing', 'financials', 'contact'];
+var mbTabs = ['home', 'technology', 'pricing', 'financials', 'contact', 'demo'];
 
 function nav(id) {
   // Hide all pages
@@ -2126,6 +2900,7 @@ function nav(id) {
   if (id === 'home') { setTimeout(initHomeCharts, 150); }
   if (id === 'growth') { setTimeout(initGrowthChart, 150); }
   if (id === 'financials') { setTimeout(initFinChart, 150); }
+  if (id === 'demo') { setTimeout(function(){ if(typeof dUpdateGate==='function') dUpdateGate(); if(typeof dCalcROI==='function') dCalcROI(); }, 200); }
 }
 
 // ===== CHART INSTANCES =====
@@ -2509,7 +3284,7 @@ function ftSubscribe() {
 
 // ===== COPY EMAIL =====
 function copyEmail() {
-  var email = 'hello@airemediation.co.uk';
+  var email = 'airemediationgroup@outlook.com';
   if(navigator.clipboard) {
     navigator.clipboard.writeText(email).then(function(){
       showToast('Email copied!', email, '<path d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2"/>');
@@ -2522,6 +3297,351 @@ document.addEventListener('DOMContentLoaded', function() {
   animateBars();
   initHomeCharts();
 });
+
+
+/* =====================================
+   LIVE DEMO - ALL JS (clean, no multi-line strings)
+===================================== */
+
+function dTab(id, el) {
+  document.querySelectorAll('.d-panel').forEach(function(p){ p.classList.remove('on'); });
+  document.querySelectorAll('.d-tab').forEach(function(t){ t.classList.remove('on'); });
+  var p = document.getElementById('dp-' + id);
+  if (p) p.classList.add('on');
+  if (el) el.classList.add('on');
+  if (id === 'roi') dCalcROI();
+  if (id === 'dcpclm') dUpdateGate();
+}
+
+/* Ticket data - NO multi-line strings, all \n for display */
+var dTkts = [
+  { id:'#T-4821', nm:'MFA Reset from Suspicious Tor IP', sv:'HIGH',
+    p1:'Ticket #T-4821 ingested. User: john.smith@client.co.uk. MFA reset from IP 195.201.xx.xx. IIR compiled: user_id, source_ip, geo_risk_score, failed_login_count.',
+    p2:'CMDB: account PRIVILEGED - admin access to Srv-Finance-01\nTelemetry: 7 failed logins in 90 mins (threshold: 3) - ANOMALY\nThreat Intel: IP matches Tor exit node list - HIGH RISK\nVerdict: SUSPICIOUS origin - 3/3 sources flag risk.',
+    p3:'Confidence: 94%\nPermission gate: FAIL - PS-RPF classifies as HIGH-PRIVILEGE\nDCP-CLM DECISION: Confidence irrelevant - gate BLOCKED\nReason: Privileged admin account plus Tor exit node.',
+    p4:'PS-RPF: HIGH-PRIVILEGE - admin credentials involved\nRouting to AOGM human governance queue\nAssigned to: IT Security Lead - SLA: 15 minutes',
+    p5:'RESULT: ESCALATED TO AOGM - Human governance required\nAOGM alert sent to: it-security@client.co.uk\nReasoning captured: Tor exit node plus admin account = social engineering risk\nINAGOE: full 5-stage pipeline logged with timestamps',
+    out:'esc', mttr:'12 min (human review)',
+    audit:'EU AI Act Art.12 - reasoning trail generated\nUK GDPR Art.22 - human review mandated\nAOGM memory updated: social engineering pattern stored' },
+  { id:'#T-4820', nm:'VPN Connectivity Failure - 14 Users', sv:'MEDIUM',
+    p1:'Ticket #T-4820 from Jira SM. 14 users reporting VPN drop. IIR: affected_users: 14, error_code: TIMEOUT_GW, last_config_change: 14 mins ago.',
+    p2:'CMDB: Srv-VPN-02 config changed 14 mins ago via auto-patch\nTelemetry: throughput dropped 78% at exact patch time - CORRELATION CONFIRMED\nVPN logs: certificate chain reload failure post-patch - ROOT CAUSE IDENTIFIED\nVerdict: CLEAR - standard rollback procedure available.',
+    p3:'Confidence: 97%\nGates: CMDB rollback pre-approved, telemetry corroborates, policy permits, low-privilege\nAll 4 gates cleared\nDCP-CLM DECISION: APPROVED for autonomous execution',
+    p4:'PS-RPF: LOW-PRIVILEGE - service restart on pre-approved command list\nNo human escalation required',
+    p5:'RESULT: AUTO-REMEDIATED\nCertificate chain reload triggered on Srv-VPN-02\n14 users reconnected within 2 minutes\nRollback snapshot taken pre-action stored for 30 days',
+    out:'res', mttr:'7 min (fully automated)',
+    audit:'INAGOE: all 5 gates logged with timestamps\nRollback snapshot stored - 30 day retention\nEU AI Act Art.12 traceability record generated' },
+  { id:'#T-4818', nm:'Scheduled Batch Password Reset', sv:'LOW',
+    p1:'Ticket #T-4818. Requestor: IT-Helpdesk. Scheduled quarterly batch password reset for 23 standard user accounts.',
+    p2:'CMDB: all 23 accounts STANDARD - non-privileged verified\nPolicy DB: quarterly reset is pre-approved scheduled batch\nVerdict: CLEAR - routine operation, zero anomalies.',
+    p3:'Confidence: 99%\nAll gates cleared: policy pre-approved, PS-RPF standard accounts, no anomalies\nDCP-CLM DECISION: APPROVED - fast-track execution',
+    p4:'PS-RPF: STANDARD - non-privileged accounts only\nFast-track authorised: pre-approved scheduled operation',
+    p5:'RESULT: AUTO-REMEDIATED\nBatch password reset executed for all 23 accounts\nEmail notifications sent to all affected users\nCompleted in 2 minutes - zero agent involvement',
+    out:'res', mttr:'2 min (fast-track)',
+    audit:'Batch operation log: 23 accounts confirmed reset\nINAGOE: quarterly compliance record updated\nZero admin credentials accessed during execution' },
+  { id:'#T-4819', nm:'Perimeter Firewall Policy Change', sv:'HIGH',
+    p1:'Ticket #T-4819. Requestor: Dev-Team-Lead. Request: Open port 8443 on perimeter firewall for API endpoint. Server: Srv-API-Prod-01.',
+    p2:'CMDB: Srv-API-Prod-01 is PRODUCTION CRITICAL - risk tier 1\nPolicy DB: Perimeter firewall changes require CAB approval - NOT FOUND\nChange Calendar: No approved change window for 48 hours\nTelemetry: No deployment artefacts for claimed API endpoint\nVerdict: BLOCKED - multiple prerequisites unmet.',
+    p3:'Confidence: 71%\nCAB approval: NOT FOUND - gate failed\nChange window: NOT ACTIVE - gate failed\nPS-RPF: perimeter firewall = CRITICAL-PRIVILEGE - gate failed\nDCP-CLM DECISION: HARD BLOCK - 3 gates failed, confidence irrelevant',
+    p4:'PS-RPF: CRITICAL-PRIVILEGE - perimeter firewall\nManual CAB approval required - AOGM notified',
+    p5:'RESULT: HARD BLOCKED - Policy prerequisites not met\nNo action taken on production firewall\nAOGM notification sent to: CAB Chair and IT Security Lead\nBlocked: potential unauthorised port exposure on production server',
+    out:'esc', mttr:'CAB process (24-48 hrs)',
+    audit:'INAGOE: block reasoning documented - EU AI Act Art.13 satisfied\nCAB reference number issued for requestor\nSecurity team notified of out-of-process change attempt' },
+  { id:'#T-4816', nm:'Unsanctioned AI Tool on Finance PC', sv:'MEDIUM',
+    p1:'Proactive detection. EGREE telemetry scan detected: UnsanctionedAI-Tool-v2.exe on WS-Finance-047. User: finance.analyst@client.co.uk.',
+    p2:'Software inventory: app NOT on approved list - SHADOW IT\nNetwork logs: outbound connections to unclassified AI API endpoint\nCMDB: WS-Finance-047 handles financial data - GDPR SENSITIVE\nVerdict: MEDIUM RISK - data exfiltration risk on finance workstation.',
+    p3:'Confidence: 89%\nShadow IT quarantine: pre-approved runbook action - cleared\nPS-RPF: workstation quarantine pre-approved - cleared\nGDPR: data risk justifies immediate action - cleared\nDCP-CLM DECISION: APPROVED with mandatory user notification',
+    p4:'PS-RPF: MID-PRIVILEGE - workstation quarantine\nPre-approved: Shadow IT quarantine in standard runbook',
+    p5:'RESULT: AUTO-REMEDIATED\nApp quarantined on WS-Finance-047\nOutbound AI API connections blocked at endpoint firewall\nUser and manager notified with policy reference: AUP-2024-11',
+    out:'res', mttr:'4 min (proactive detection)',
+    audit:'GDPR Art.25 - Privacy by Design: proactive data risk mitigation logged\nShadow IT register updated\nINAGOE: full chain of custody for finance workstation logged' },
+  { id:'#T-4822', nm:'Server Configuration Drift Alert', sv:'LOW',
+    p1:'Ticket #T-4822 from CMDB drift monitor. Server: Srv-App-03. Drift: 14 configuration lines from approved baseline (NTP and logging config).',
+    p2:'CMDB: drift confirmed on 14 lines - NTP and logging config\nChange Log: no approved change matching modifications\nTelemetry: no active sessions on affected config paths\nVerdict: CLEAR - standard drift correction, pre-approved procedure exists.',
+    p3:'Confidence: 99%\nCMDB drift correction: pre-approved runbook - cleared\nPS-RPF: configuration restore is low-privilege - cleared\nDCP-CLM DECISION: APPROVED for autonomous correction',
+    p4:'PS-RPF: LOW-PRIVILEGE - config restore standard runbook action\nNo escalation required',
+    p5:'RESULT: AUTO-REMEDIATED\n14 configuration lines restored to baseline\nNTP sync restored - server time accurate to UTC\nCMDB drift register cleared for Srv-App-03',
+    out:'res', mttr:'3 min (auto-correction)',
+    audit:'INAGOE: before/after config diff logged\nCMDB drift register cleared\nChange record created retrospectively for audit trail' }
+];
+
+var dSelIdx = 0;
+
+function dSelTkt(idx, el) {
+  dSelIdx = idx;
+  document.querySelectorAll('.tkt').forEach(function(t){ t.classList.remove('sel'); });
+  if (el) el.classList.add('sel');
+  dResetPipe();
+}
+
+function dResetPipe() {
+  for (var i = 1; i <= 5; i++) {
+    var el = document.getElementById('dp' + i);
+    var ic = document.getElementById('pi' + i);
+    if (el) { el.classList.remove('active','done'); }
+    if (ic) { ic.classList.remove('active','done'); }
+  }
+  var res = document.getElementById('d-res');
+  if (res) res.classList.remove('on','res','esc');
+  var btn = document.getElementById('d-run-btn');
+  if (btn) { btn.disabled = false; btn.textContent = 'Run EGREE Evidence Gate'; }
+}
+
+function dSetStep(n, state, txt) {
+  var el = document.getElementById('dp' + n);
+  var ic = document.getElementById('pi' + n);
+  var det = document.getElementById('pd' + n);
+  if (el) { el.classList.remove('active','done'); el.classList.add(state); }
+  if (ic) { ic.classList.remove('active','done'); ic.classList.add(state === 'done' ? 'done' : 'active'); }
+  if (det && txt) det.innerHTML = txt.split('\n').join('<br>');
+}
+
+function dDelay(ms) { return new Promise(function(r){ setTimeout(r, ms); }); }
+
+async function dRunEgree() {
+  var btn = document.getElementById('d-run-btn');
+  if (!btn) return;
+  btn.disabled = true;
+  btn.textContent = 'Running evidence gate...';
+  dResetPipe();
+  await dDelay(80);
+  var t = dTkts[dSelIdx];
+
+  dSetStep(1,'active','<span class="p-tag run"><span class="spin"></span>Parsing IIR...</span>');
+  await dDelay(1100);
+  dSetStep(1,'done', t.p1 + '<br><span class="p-tag ok">IIR compiled</span>');
+
+  dSetStep(2,'active','<span class="p-tag run"><span class="spin"></span>Triangulating evidence...</span>');
+  await dDelay(1400);
+  var badge2 = t.out === 'res' ? '<span class="p-tag ok">Evidence cleared</span>' : '<span class="p-tag blk">Evidence flagged</span>';
+  dSetStep(2,'done', t.p2.split('\n').join('<br>') + '<br>' + badge2);
+
+  dSetStep(3,'active','<span class="p-tag run"><span class="spin"></span>Checking confidence vs permission...</span>');
+  await dDelay(1200);
+  var badge3 = t.out === 'res' ? '<span class="p-tag ok">Gate CLEARED</span>' : '<span class="p-tag blk">Gate BLOCKED</span>';
+  dSetStep(3,'done', t.p3.split('\n').join('<br>') + '<br>' + badge3);
+
+  dSetStep(4,'active','<span class="p-tag run"><span class="spin"></span>Classifying privilege risk...</span>');
+  await dDelay(1000);
+  dSetStep(4,'done', t.p4.split('\n').join('<br>') + '<br><span class="p-tag ok">Classification complete</span>');
+
+  dSetStep(5,'active','<span class="p-tag run"><span class="spin"></span>Executing decision...</span>');
+  await dDelay(1300);
+  dSetStep(5,'done', t.p5.split('\n').join('<br>') + '<br><span class="p-tag ok">INAGOE audit trail generated</span>');
+
+  var res = document.getElementById('d-res');
+  var rt  = document.getElementById('d-rt');
+  var rlog = document.getElementById('d-rlog');
+  var rmttr = document.getElementById('d-mttr');
+  var raudit = document.getElementById('d-audit');
+
+  res.classList.add('on');
+  if (t.out === 'res') {
+    res.classList.add('res');
+    rt.textContent = 'Evidence Gate CLEARED - Autonomous Remediation Executed';
+    rt.className = 'd-rt ok';
+  } else {
+    res.classList.add('esc');
+    rt.textContent = 'Evidence Gate BLOCKED - Escalated to AOGM Human Governance';
+    rt.className = 'd-rt wt';
+  }
+  rlog.innerHTML = '<span class="vt">' + t.id + ' - ' + t.nm + '</span><br>' + t.p5.split('\n').join('<br>');
+  rmttr.innerHTML = t.mttr + ' <span>MTTR</span>';
+  raudit.innerHTML = t.audit.split('\n').join('<br>');
+  btn.disabled = false;
+  btn.textContent = 'Run Again';
+}
+
+/* DCP-CLM Gate */
+function dTogPerm(el) {
+  el.classList.toggle('ck');
+  dUpdateGate();
+}
+
+function dUpdateGate() {
+  var sl = document.getElementById('d-csl');
+  var cv = document.getElementById('d-cv');
+  var dec = document.getElementById('d-gd');
+  var trace = document.getElementById('d-gt');
+  if (!sl) return;
+  var conf = parseInt(sl.value);
+  sl.style.setProperty('--pct', conf + '%');
+  if (cv) cv.textContent = conf + '%';
+  var checks = document.querySelectorAll('#d-perms .perm-row.ck').length;
+  var total  = document.querySelectorAll('#d-perms .perm-row').length;
+  var lines = [
+    'CONFIDENCE: ' + conf + '% (' + (conf >= 90 ? 'HIGH' : conf >= 60 ? 'MEDIUM' : 'LOW') + ')',
+    'EVIDENCE GATES CLEARED: ' + checks + '/' + total,
+    'MINIMUM REQUIRED: 4/' + total,
+    '-----------------------------'
+  ];
+  if (checks >= 4 && conf >= 70) {
+    lines.push('GATE LOGIC: Sufficient evidence clearances obtained');
+    lines.push('CONFIDENCE: ' + conf + '% is above 70% minimum');
+    lines.push('DECISION: EXECUTE AUTONOMOUSLY');
+    if (dec) { dec.textContent = 'EXECUTE - Evidence gates cleared, confidence sufficient'; dec.className = 'gate-dec allow'; }
+  } else if (checks >= 2) {
+    lines.push('GATE LOGIC: Partial evidence - insufficient for autonomous action');
+    lines.push('CONFIDENCE: ' + conf + '% - irrelevant while gates are failing');
+    lines.push('DECISION: ESCALATE TO AOGM HUMAN REVIEW');
+    if (dec) { dec.textContent = 'AOGM REVIEW - Insufficient evidence (' + checks + '/' + total + ')'; dec.className = 'gate-dec review'; }
+  } else {
+    lines.push('GATE LOGIC: Evidence gate FAILED - ' + checks + '/' + total + ' cleared');
+    lines.push('CONFIDENCE: ' + conf + '% cannot override failed evidence gates');
+    lines.push('DECISION: HARD BLOCK - Action cannot proceed');
+    if (dec) { dec.textContent = 'BLOCKED - Evidence gate failed (' + checks + '/' + total + ')'; dec.className = 'gate-dec block'; }
+  }
+  if (trace) trace.innerHTML = lines.join('<br>');
+}
+
+/* INAGOE Audit Trail */
+var dAudIdx = 0;
+
+var dAudScns = [
+  { nm:'MFA Reset - Escalated to AOGM', lines:[
+    {t:'08:14:22',m:'[SYS]   ',c:'sy',x:'[TICKET] #T-4821 MFA Reset from ServiceNow - Priority: HIGH'},
+    {t:'08:14:23',m:'[EGREE] ',c:'eg',x:'[INGEST] IIR compiled: user_id, source_ip, geo_risk, login_failures'},
+    {t:'08:14:24',m:'[EGREE] ',c:'eg',x:'[EVIDENCE-1] CMDB: john.smith is <span class="wn">PRIVILEGED</span> - admin access Srv-Finance-01'},
+    {t:'08:14:24',m:'[EGREE] ',c:'eg',x:'[EVIDENCE-2] Telemetry: 7 failed logins/90 mins - threshold 3 - <span class="wn">ANOMALY</span>'},
+    {t:'08:14:25',m:'[EGREE] ',c:'eg',x:'[EVIDENCE-3] Threat Intel: IP 195.201.xx.xx matches Tor exit node - <span class="er">HIGH RISK</span>'},
+    {t:'08:14:25',m:'[EGREE] ',c:'eg',x:'[VERDICT] 3/3 sources flag risk - ground truth: <span class="wn">SUSPICIOUS</span>'},
+    {t:'08:14:26',m:'[DCPCLM]',c:'dc',x:'[CONFIDENCE] Model: 94% (fix: approve MFA reset)'},
+    {t:'08:14:26',m:'[PSRPF] ',c:'ps',x:'[CLASSIFY] Account PRIVILEGED - Action HIGH-RISK - <span class="er">Auto-execution: BLOCKED</span>'},
+    {t:'08:14:27',m:'[DCPCLM]',c:'dc',x:'[GATE] 94% confidence IRRELEVANT - PS-RPF gate failed - <span class="wt">ESCALATE</span>'},
+    {t:'08:14:27',m:'[AOGM]  ',c:'ag',x:'[ESCALATION] Routing to IT Security Lead - SLA 15 mins - reasoning captured'},
+    {t:'08:14:28',m:'[INAGOE]',c:'in',x:'[ART12] Traceability record: all 5 pipeline stages logged with timestamps'},
+    {t:'08:14:28',m:'[INAGOE]',c:'in',x:'[ART13] Transparency report: Decision=ESCALATE Reason=privilege+threat-intel'},
+    {t:'08:14:28',m:'[INAGOE]',c:'in',x:'[GDPR22] Human review triggered - right to explanation: satisfied'},
+    {t:'08:26:41',m:'[AOGM]  ',c:'ag',x:'[OVERRIDE] Security Lead: account locked - Tor+admin=social engineering pattern'},
+    {t:'08:26:42',m:'[AOGM]  ',c:'ag',x:'[MEMORY] Override reasoning saved to client governance model'},
+    {t:'08:26:42',m:'[INAGOE]',c:'in',x:'[CLOSED] #T-4821 MTTR 12 min - <span class="hi">HUMAN-GOVERNED. SECURE.</span>'}
+  ]},
+  { nm:'VPN Failure - Auto-Remediated 7 min', lines:[
+    {t:'09:15:33',m:'[SYS]   ',c:'sy',x:'[TICKET] #T-4820 VPN Drop - 14 users - Source: Jira SM'},
+    {t:'09:15:34',m:'[EGREE] ',c:'eg',x:'[INGEST] IIR: affected_users=14, error=TIMEOUT_GW, last_change=14 mins ago'},
+    {t:'09:15:34',m:'[EGREE] ',c:'eg',x:'[EVIDENCE-1] CMDB: Srv-VPN-02 patched 14 mins ago via auto-update'},
+    {t:'09:15:35',m:'[EGREE] ',c:'eg',x:'[EVIDENCE-2] Telemetry: throughput -78% at exact patch time - <span class="hi">CORRELATION CONFIRMED</span>'},
+    {t:'09:15:35',m:'[EGREE] ',c:'eg',x:'[EVIDENCE-3] VPN log: certificate chain reload failure - <span class="hi">ROOT CAUSE FOUND</span>'},
+    {t:'09:15:36',m:'[DCPCLM]',c:'dc',x:'[CONFIDENCE] 97% - certificate reload will resolve issue'},
+    {t:'09:15:36',m:'[DCPCLM]',c:'dc',x:'[GATES] Certificate reload: pre-approved - all 4 gates cleared'},
+    {t:'09:15:37',m:'[DCPCLM]',c:'dc',x:'[GATE DECISION] <span class="hi">APPROVED</span> - all gates cleared, 97% confidence'},
+    {t:'09:15:37',m:'[SYS]   ',c:'sy',x:'[ACTION] Certificate chain reload triggered on Srv-VPN-02'},
+    {t:'09:17:22',m:'[SYS]   ',c:'sy',x:'[VERIFY] 14/14 users reconnected - VPN throughput <span class="hi">RESTORED</span>'},
+    {t:'09:17:23',m:'[INAGOE]',c:'in',x:'[ART12] Action log: before/after state, evidence chain, timestamps recorded'},
+    {t:'09:17:24',m:'[INAGOE]',c:'in',x:'[CLOSED] #T-4820 MTTR <span class="hi">7 min - AUTO-REMEDIATED - 14 USERS RESTORED</span>'}
+  ]},
+  { nm:'Firewall Change - Hard Blocked (No CAB)', lines:[
+    {t:'14:02:11',m:'[SYS]   ',c:'sy',x:'[TICKET] #T-4819 Firewall Rule Change - Dev-Team-Lead - Priority: HIGH'},
+    {t:'14:02:12',m:'[EGREE] ',c:'eg',x:'[INGEST] IIR: server=Srv-API-Prod-01, action=open_port_8443, env=PRODUCTION'},
+    {t:'14:02:13',m:'[EGREE] ',c:'eg',x:'[EVIDENCE-1] CMDB: Srv-API-Prod-01 = PRODUCTION CRITICAL - risk tier 1'},
+    {t:'14:02:13',m:'[EGREE] ',c:'eg',x:'[EVIDENCE-2] Policy DB: firewall changes need CAB approval - <span class="er">CAB: NOT FOUND</span>'},
+    {t:'14:02:14',m:'[EGREE] ',c:'eg',x:'[EVIDENCE-3] Change Calendar: no approved window for 48 hrs - <span class="er">CLOSED</span>'},
+    {t:'14:02:15',m:'[DCPCLM]',c:'dc',x:'[CONFIDENCE] 71% - change may be legitimate'},
+    {t:'14:02:15',m:'[DCPCLM]',c:'dc',x:'[GATE-1] CAB approval: <span class="er">NOT FOUND</span>'},
+    {t:'14:02:15',m:'[DCPCLM]',c:'dc',x:'[GATE-2] Change window: <span class="er">NOT ACTIVE</span>'},
+    {t:'14:02:16',m:'[PSRPF] ',c:'ps',x:'[CLASSIFY] CRITICAL-PRIVILEGE - perimeter firewall - <span class="er">HARD BLOCK</span>'},
+    {t:'14:02:16',m:'[DCPCLM]',c:'dc',x:'[GATE DECISION] <span class="er">HARD BLOCK</span> - 3 gates failed - 71% confidence irrelevant'},
+    {t:'14:02:17',m:'[INAGOE]',c:'in',x:'[ART12] Block reasoning: 3 failed gates documented with evidence'},
+    {t:'14:02:18',m:'[INAGOE]',c:'in',x:'[CLOSED] #T-4819 - <span class="hi">BLOCKED - PRODUCTION SERVER PROTECTED</span>'}
+  ]},
+  { nm:'Shadow IT Proactive Quarantine', lines:[
+    {t:'10:31:05',m:'[EGREE] ',c:'eg',x:'[PROACTIVE] Telemetry scan: unsanctioned app detected on WS-Finance-047'},
+    {t:'10:31:06',m:'[EGREE] ',c:'eg',x:'[EVIDENCE-1] Software inventory: UnsanctionedAI-Tool-v2.exe NOT approved - <span class="wn">SHADOW IT</span>'},
+    {t:'10:31:06',m:'[EGREE] ',c:'eg',x:'[EVIDENCE-2] Network: outbound to unclassified AI API endpoint detected'},
+    {t:'10:31:07',m:'[EGREE] ',c:'eg',x:'[EVIDENCE-3] CMDB: WS-Finance-047 handles financial data - <span class="wn">GDPR SENSITIVE</span>'},
+    {t:'10:31:07',m:'[DCPCLM]',c:'dc',x:'[CONFIDENCE] 89% - quarantine is appropriate action'},
+    {t:'10:31:08',m:'[DCPCLM]',c:'dc',x:'[GATES] Shadow IT quarantine: pre-approved runbook - all gates cleared'},
+    {t:'10:31:09',m:'[DCPCLM]',c:'dc',x:'[GATE DECISION] <span class="hi">APPROVED</span> - 3/3 gates cleared, 89% confidence'},
+    {t:'10:31:09',m:'[SYS]   ',c:'sy',x:'[ACTION] UnsanctionedAI-Tool-v2.exe quarantined on WS-Finance-047'},
+    {t:'10:31:10',m:'[SYS]   ',c:'sy',x:'[ACTION] Outbound AI API connections blocked at endpoint firewall'},
+    {t:'10:31:10',m:'[SYS]   ',c:'sy',x:'[NOTIFY] finance.analyst notified - manager copied - policy: AUP-2024-11'},
+    {t:'10:31:11',m:'[INAGOE]',c:'in',x:'[GDPR25] Privacy by Design: proactive data risk mitigation logged'},
+    {t:'10:31:11',m:'[INAGOE]',c:'in',x:'[CLOSED] Proactive MTTR 4 min - <span class="hi">AUTO-REMEDIATED - DATA PROTECTED</span>'}
+  ]}
+];
+
+function dSelAudit(idx, el) {
+  dAudIdx = idx;
+  document.querySelectorAll('.a-sc').forEach(function(i){ i.classList.remove('sel'); });
+  if (el) el.classList.add('sel');
+}
+
+async function dGenAudit() {
+  var log = document.getElementById('d-alog');
+  if (!log) return;
+  log.innerHTML = '';
+  var sc = dAudScns[dAudIdx];
+  for (var i = 0; i < sc.lines.length; i++) {
+    var l = sc.lines[i];
+    var row = document.createElement('div');
+    row.className = 'al';
+    row.style.opacity = '0';
+    row.style.transition = 'opacity 0.28s';
+    row.innerHTML = '<span class="al-t">' + l.t + '</span>' +
+                    '<span class="al-m ' + l.c + '">' + l.m + '</span>' +
+                    '<span class="al-x">' + l.x + '</span>';
+    log.appendChild(row);
+    log.scrollTop = log.scrollHeight;
+    await dDelay(75);
+    row.style.opacity = '1';
+  }
+}
+
+/* ROI Calculator */
+function dCalcROI() {
+  var elA = document.getElementById('ra');
+  var elT = document.getElementById('rt');
+  var elS = document.getElementById('rs');
+  var elD = document.getElementById('rd');
+  var elI = document.getElementById('ri');
+  if (!elA) return;
+
+  var agents    = parseInt(elA.value);
+  var tickets   = parseInt(elT.value);
+  var salary    = parseInt(elS.value) * 1000;
+  var downCost  = parseInt(elD.value) * 1000;
+  var incidents = parseInt(elI.value);
+
+  function sv(id, v) { var e = document.getElementById(id); if (e) e.textContent = v; }
+  sv('va', agents);
+  sv('vt', tickets.toLocaleString());
+  sv('vs', elS.value + 'K');
+  sv('vd', elD.value + 'K');
+  sv('vi', incidents);
+
+  var hrly        = salary / 52 / 37.5;
+  var agentSave   = agents * 14 * 52 * hrly;
+  var downSave    = incidents * 12 * (0.75 - 0.75 * 0.58) * downCost;
+  var platCost    = 150 * 12;
+  var total       = agentSave + downSave;
+  var net         = total - platCost;
+  var mult        = (total / platCost).toFixed(1);
+
+  sv('ra-sv', 'GBP ' + Math.round(agentSave / 1000) + 'K/yr');
+  sv('rd-sv', 'GBP ' + Math.round(downSave / 1000) + 'K/yr');
+  sv('rp-sv', 'GBP ' + (platCost / 1000).toFixed(1) + 'K/yr');
+  sv('rx-sv', mult + 'x ROI');
+  sv('d-roi-v', 'GBP ' + Math.round(net / 1000) + 'K/yr');
+}
+
+/* Init */
+document.addEventListener('DOMContentLoaded', function() {
+  dUpdateGate();
+  dCalcROI();
+});
+
+
+/* Set PDF download links */
+(function(){
+  var b64 = "JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNSAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwKL0NvbnRlbnRzIDE1IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFyZW50IDE0IDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAvVHJhbnMgPDwKCj4+IAogIC9UeXBlIC9QYWdlCj4+CmVuZG9iago1IDAgb2JqCjw8Ci9CYXNlRm9udCAvQ291cmllci1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMyAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL0NvbnRlbnRzIDE2IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFyZW50IDE0IDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAvVHJhbnMgPDwKCj4+IAogIC9UeXBlIC9QYWdlCj4+CmVuZG9iago3IDAgb2JqCjw8Ci9Db250ZW50cyAxNyAwIFIgL01lZGlhQm94IFsgMCAwIDU5NS4yNzU2IDg0MS44ODk4IF0gL1BhcmVudCAxNCAwIFIgL1Jlc291cmNlcyA8PAovRm9udCAxIDAgUiAvUHJvY1NldCBbIC9QREYgL1RleHQgL0ltYWdlQiAvSW1hZ2VDIC9JbWFnZUkgXQo+PiAvUm90YXRlIDAgL1RyYW5zIDw8Cgo+PiAKICAvVHlwZSAvUGFnZQo+PgplbmRvYmoKOCAwIG9iago8PAovQ29udGVudHMgMTggMCBSIC9NZWRpYUJveCBbIDAgMCA1OTUuMjc1NiA4NDEuODg5OCBdIC9QYXJlbnQgMTQgMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAgL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL0NvbnRlbnRzIDE5IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFyZW50IDE0IDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAvVHJhbnMgPDwKCj4+IAogIC9UeXBlIC9QYWdlCj4+CmVuZG9iagoxMCAwIG9iago8PAovQ29udGVudHMgMjAgMCBSIC9NZWRpYUJveCBbIDAgMCA1OTUuMjc1NiA4NDEuODg5OCBdIC9QYXJlbnQgMTQgMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAgL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjExIDAgb2JqCjw8Ci9Db250ZW50cyAyMSAwIFIgL01lZGlhQm94IFsgMCAwIDU5NS4yNzU2IDg0MS44ODk4IF0gL1BhcmVudCAxNCAwIFIgL1Jlc291cmNlcyA8PAovRm9udCAxIDAgUiAvUHJvY1NldCBbIC9QREYgL1RleHQgL0ltYWdlQiAvSW1hZ2VDIC9JbWFnZUkgXQo+PiAvUm90YXRlIDAgL1RyYW5zIDw8Cgo+PiAKICAvVHlwZSAvUGFnZQo+PgplbmRvYmoKMTIgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdlcyAxNCAwIFIgL1R5cGUgL0NhdGFsb2cKPj4KZW5kb2JqCjEzIDAgb2JqCjw8Ci9BdXRob3IgKEFJIFJlbWVkaWF0aW9uIEdyb3VwKSAvQ3JlYXRpb25EYXRlIChEOjIwMjYwNTI5MDE0NjQ0KzAwJzAwJykgL0NyZWF0b3IgKFwodW5zcGVjaWZpZWRcKSkgL0tleXdvcmRzICgpIC9Nb2REYXRlIChEOjIwMjYwNTI5MDE0NjQ0KzAwJzAwJykgL1Byb2R1Y2VyIChSZXBvcnRMYWIgUERGIExpYnJhcnkgLSBcKG9wZW5zb3VyY2VcKSkgCiAgL1N1YmplY3QgKFwodW5zcGVjaWZpZWRcKSkgL1RpdGxlIChBSSBSZW1lZGlhdGlvbiBHcm91cCBcMjA0IEludGVyYWN0aXZlIERlbW8gR3VpZGUpIC9UcmFwcGVkIC9GYWxzZQo+PgplbmRvYmoKMTQgMCBvYmoKPDwKL0NvdW50IDcgL0tpZHMgWyA0IDAgUiA2IDAgUiA3IDAgUiA4IDAgUiA5IDAgUiAxMCAwIFIgMTEgMCBSIF0gL1R5cGUgL1BhZ2VzCj4+CmVuZG9iagoxNSAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAyNzQxCj4+CnN0cmVhbQpHYiIvKGdNWWNjKDRHcFlDX1IvSiJTUygkaUsvRjpIcjs+N2xeVGVnTVAqNEAtdSg8PGshXlNxMzwmZl1BcD1vITk9Qk8iLVNMM2tPW0lIK2NlYSNOXW5ZUC1pSjUlayxVYEg3UF5cKSNNJG9iWSZtJWNTb1JiQWM4LGpZI1ksQUlrTl5VZlc3bT9OdGUvM3NqNUZcJzA+IzVtWTEuLjx1KUc3O1dGXT5rSjNOOCtIMFQ4PVRaOnVSSlhtUkMkKnNDPFNIX2BNdDY3QDEuLXVpMHJbJXJhOVcmVCo4TVlXZlNSI21IZ1JNYmREVWNDLlVcSTlgYCRZS0plKlMqPj1VRz9yZWlsSDBTVUomQDljWVprQGZlUCliZ0tnTyQrJD9FN1JaaGg3cVk/QyEmX2MyO3FeVi4+MGpqX3RRPUVlVV8pPGkzUExLLWQyI1JZaG0+bFpcbW5JXV5DIyNMcTYqST4wXWxHLWowQzhRKG5GTmpcSG9KPyJNcitEQDFxPFNBY00vZ2BbSUksSmBRKThxcHUhND0nUmJAPnBwZylJS1ovUiZLRjBoK0pzU2x1SSw7bUtQQV1CNGBvNklIV25mITBGR1JKYSJgVjJSaS1zYUArKj1pKkBjdUx1XE9pV2UxcGlIQWM5QS5JO15DTWRGbnNdaUtwZ0VTXGdgT20wQHIoUDpbLTFWREQnKl41OU5TWEpMTD5fSXIxRWxrYkAsaj8nTV9gVT1GYzxtcjszVjcxMCQqJlxvVz1sVEZQPEAzNmRoXHFxJTxMSU1SbEgzXUM6K18mOTlNPC5gaiNMZHI3JXVbSFJNPiQqQzohU1s6PCxwP15UKzFhNm5yZD1fJk9kTTElQC08LiNkVCFhLjNKdEswQT5PVFw3ZzZGYUdwQSYyJTdpTGg7P0BqQy5lPycyVWo4ZT8uZWlJIkRKPkAsYG1rXD1baUVkaiZvKWg/V0w9Imc5YTIqSWwwcmpBcGwic0tUXyRkK04pY1wrZ0YkKk5rXigocDxoJVtmMTJBLEZGQGlzSmNxOEUlYWRLOkwnbCRLPVYtPFlVQiFMSzI+TE42Q2Y7aztjRjlQWl05QDosZk9cQE4uJUNUXVpSVW91WjpYOmFcIUJoRktWUE87PlBcNSsrMltwZmMmRmUtVTdwL3IiVmxALWgpbCRRODQxVEw+RDJZWS8xLmI5L14vdEgqYydSNk9AZmVOM0otbSdxczU4QEBtQnAiYl9dPEMiL2tyOCEkPUouI2lUSzcpMFZCVEdnb0w4ZjpzK3RfTFpXWWkiOSc7QjA2SVhGPUVXIkVyaWg4I2hBZSlMXzwyW1wxYTVJVUw4RyEmcHExdG00aUVfRGcxQjlcIzchaiZYK3RIZ1xsUTNHXkViWDdiamFLM21uPzhNTEJoQEwrOFttNENnTDdVMFY4Llw5RkY+MyJwa0QhLGUjOSM4aFdRLFxxQUxicyQmN2FBZFk5VilRbGZxZ0k5SF9nXVB0Jyg9KG1TYTxnWTVbNCZYKylXYFBcdDVmLzlyZWpOaCZbPWNpSXU8IVhkP0lpYFhCKyMzXkxRR2YhZGQ5QjRYZ2ppY1VBN3BQbl9cO0c7IzRGQz8pbEhxaV1LPWhaUFhkR1BLJFtAJUdkbFNyZEhyP0d0ZGNXW3A+KjZEXFJAZHVaPjJERFVnS1s7N1VHaThFLE5VOG8tSC1GK1FwKStlLzUyLicqZ1hyKTBEJ2VjRkxsYVgwI1glajdnZUc7aDk2TGxzUiVNRWAyV2oxb1ViIykpTzgmYV9DZU4yITE9cypLO0ZmMClxPTdmKlxYMDpcXiRDSyFHNl05XDlSVC0/MnU1aEo7R0w+OiE9Vj4tPT1OdWEpKWxZRF1AKShRSVRMM3AkTjgtZythOnNSZClvK1EiOj9cNykqZWAlXUJbZmBqQ1BCSEh0VW9NVC5QLGIoPUpYXFxtL24kJUhQPkpCb1puLlEuTkZDOjFlSlRqZm4iYjdVbkJFUkFRak5FX1ldPmIjR0BqWTVPWTUjMiRTXlVdZWcmamE8JlYiN1RFOiRyXkR0ZVEjZChYO1wnM1M1R0w0TD0oOTZsZTkuQVVmbGE6NERuUC08VFwwTXBKLmxOXFk/azxUWmJocVlVQF08IUs3XVVUbUAjTkFBMkcuMkljLWFRQ09FS0tzKlswbCY0amdgPmxCcGAvVklLLiNxPGopcnBSNj1zUi4xQHVqQVc/KVBwWylwMjc3cDFCcClWcSM5bmg5P0ttLlZnVCNkRD9VZVVOODheZU4wTERiX2VQLW1bYkU7STRNblcqP0lyVSQ2Rk4lQTZhPFpoPzg0RVQiJCUyNnQ2KDombGokYC1AcUVkb2daSSI6TWszVCRaMW5YM2ZCMUpQc3NGWUMyREExLl0uTicmcFE0KzxFcURqIjNwJUpVcl4zRVUyNmJeYUotMF04cyFdUVQtLFcsLCMmWDs9ZSZfS09IaWtHUFZzMjBlXzs0Uj9BLC41QEhYTF8oS1NvVkpUbEFyPkx1XV4yOyE2MitDJFQzSFo3RFcjWy51W01gISEpLDllO0prXk00cytYSEBiV2BKIlxQLmE/ZyYpN0VrMSIqNiUvLSNfQUs2XiN1XUhmcmRkJSkqM1kiVGQ4OTErJlMhJ1Q5IzwyKjYxYDVtT2MxaS9oUSY+JWNvZlkvTFwyZzYmZEVYNjhrMihRdE1hQSUhcEhqZD4zYE1VOz5UWz9EM2BBc19MWlxOTkA7Omc2W00yazEzLzswMkAlIXFRXkVkMFolKDooUjNjbFZrZlNcU21QKydFVUJOYSEvXFNBVmY4RUAyczkyXTNBJFlgYzVzK3EvMWlaUmwjNEk8LEZYTCZWYSU1YUpSdFg9amhOQyU/OU48XnFYYlB1ZCVRcixQSVFpbGVpKE82TEpwMFY9cypLJT5SUF9vJ2NfU1Q6dDoiZipQMGsiRWVJaCEsKGBnMkw1R0UvJz4hMylMZyIwKTpbdE4jXy9KRVM/RnEkOE9GJ1VnLlRYNWg3KW8yMjohbFxDMmdwSDFHMiheRTtFclctZWlqJGlvQF5JS0pHTyJKR05VITUnYCcvI3MrMSJ1Qz5SOl50NXFNXnE3PVAsY19LSicuKS9lalRadUA8R1VmJS9rOnFeTTxWRVBwQSg5LkteZ25wWnMtSWtCcUpSSFwxKmxral9KMyEnVDRkSyYxXilUKTpuJEheVV9QZUo9TjVWKXBxXWcnYzRBUFRsYikzMHEhXFZLbUFWYURSVDJGb11zVElLNChlNFgnMlMsIy8iWVV0TzRoNl1cP1UwaSVBaygjXWoxVTAmLWkrU1lRNC45R3A/bUVWQ2JgJi8hIVFvJFQ6TlwibzlLWDppQ2BrRDgzVkhdXk1ZPFxQJ0ooXCsyVXBYUlNhcHItKWVbUD9kRyhbMFwpaFdwLUFxLDAnKldDMmFaP2M+NDsiRzNRZy1JdDtdQU4ray9MVzhiMzNhTEFkNDohUEFYcSl0ZUguR0o5c01eQ2MsLVBTKFgoc2lFc0sxYydxLmlXWShhbnE8bDwrST1VP009PDViRGFwRiNEKzdFImNzTl82LlY7NXNJKi5jRWpgT2lfZDg0cEk6Pl9rTCVjJTRbTF8sPzRARWhoVEFCU1xFbnUqVzZNQzYzQ1d+PmVuZHN0cmVhbQplbmRvYmoKMTYgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggMzE3OQo+PgpzdHJlYW0KR2F1MEU+QmVpMyZVcj84UXVkVEkxZWhJXCEtbW4jK3RKXGJuS2pMTF1edUIlK0dnQ1gkODdfRG1sTFZMK1Fcaz5dQipxVTdSQComKHNFSFxOPk4pbyYoPyNgJCxGU0FyOFNGbWBhUVJfQW03MTteVkZBRHBiY0koOHNgYiJeXU9lNGJIKWonMCgnWys0aEFFaFt0KGpvSUxSaFwhbVkmVGZUNjdoIjNWSFJHUVJJLyEyWC1vOl9ZP0UrWlxJYSdUcnR1YC06ZzQhWTZuYFAvMUJVJE1ZLnAqZGspYW4wZCFUVztJZjpdPikyWyNMKSlTRmhTbiZqOipddUZkV1xeaSxmK3VENSNOWCREaCJHJD8/bEkmQjwrQE9RcCpYZlQqMFU+Nmw0ZW09NV5xKjRqQkJoVUU/SCV1MGtnQGdWO0s/VEVjWC1cYChYSWgxZiUyakgjcUU3UENYOE11SWFTcFxAW2deMSVVR1ZBcEJYQzQ6V1tgL1lqYF1RWFlJKWNbV2xRLF5eVkFSI1ZGKGgyYm9UITg+LGMjTVI8WDRIWWtYPyRoMGZeR1AtRm5jJEpOTGZmP2VmMTJGYVMtNkZFbTolMyctS2w9ajVvcnFuTjguSWVqUEZaL14mIVEsOXFebUZuXkdHcDx1Rkhtb2BDLG0qJW5WO0Y1O0tQOmIhOXN1UUleYSRTPnI0cVtwPnM2IlAvPkZjYENwN190LnMpdG5nWVU5YF5pSHR1NDVIQV1HM1opZD5EdFJJP2xcSG5JKWloNmBjOFAhLEhnTkBnTTpmXkJhcUxzRUVzIzhcW25ELD9rdCVnL0JdUy9Wa1JlVEc/S1k+LW8hNTMoSV1lKSRJaEdNPCwmOj0vUD85JUJXTCxAYEBsS1BXaEtLTVZOcnQ5SF5wP3RAYnNwLWA2bEkvUEkwVWxjQzpmI1U6L3FSSllFcjpjW0Y/WVpBI0wuaiNucEkqYnM/Tm5fTTFaYjtFT3VObTtATWZlUUo1RnJQUCsuPjFqOEM2VTowJSRfZFMxYVI7LGQ8X3A4OmxkKi1hOT51Z1EoK2opPkdIa1ZQLkFNTGtPZFQjM2EyTl1NQHRkYHBaTSRpWGEiXjlVM0RVJzNlMFdFKUo9M0I5USpDJVtoQlRZYkdeKT4vdS8zM2hPQk0yJmZpa3JeRWtPZWFZdHNUIzVDV1MtLzFEQkJoOGU/QTguOjJkL1x0MWc+PF1CcVheNUdwUDc3OT8lYVxtSCdJXDpxYiFcNzVCTiNvRlJAXHJBRzwtPl5DSFwvZ0Y4KG0qNTNuYDFqZXJeJ2ctJi0lVSROM0JpSVhvaVAtLm00KzxpS2UuVS1TLydLJmdIcERmajpfZmYhM2dWREVeR2gibkoiRmo1YyZuQCc+VzcrOzVhZy4tVmNDJTxFU3BWOWxYNGMwZVtKYGZiXVVAcVlhVXRCRFc8OUxrN2xjaEMwImpEVElMOWBdWmhbJGI1O1BZJTlNY0NkRVU0L2g5MmI0cGNrXDZrKEwjNUAkczJlRzA2L0lASi4tcWwqPjZgTUU2QEVJV1sxKyNUNy02WCJtIitML0JHXFZdbjBBSF9YcyxSVltzYCIhcmtQUSlKOGlJMk9HSWFCV0c3XT9WSkkvamstZSEmTFhGNlpuVVs1K29vXUUyK0p0OXBHVz5VWnBwQkhSNSRUJCpNWiM5TGEvWWdPJVokYSpCZnFrVzFVY1VVJSxScU9YNWRpJjNBTSVxO05IKFEwWGw0NEckaDFCKEVvbnVRIzUrQnJQc1czaE4xX21jIjY8YHUkRCVQP1dfLk9eIlAudWFDSWZtMjY4UWN1YlhpWV1XW0UmdD9WLWFCMWtpVnUrSFFBXzFzaExXKToxQ1IrP0pObE9LXz5WcCJFYVdQJDZBTzdAMFNaIlMibDFVSVJPTjZsTE0xQHVZayU2WGlHXyM4MjBXXVFvP0RyMCtHOC4jXl5oXktITkNZNj1IJyUwSzo3Pjw0Tl5VV0xaWmpTU0pTZStYLU1obD9wREUoTVFeIyhaVFE4U2IzLEtsJGJAUmxJJS02YFNnP0EhWzhCN2skWCFFTDUsNDBrZmw8Mi5yYz89LEEsUmlRLUp1aFluU2cuJDlMY3FfQFk+WiwiLikuNVhLdVFAZlsrYHBwS20iUFtjXmVSVSE2N11KZVtwMVpIVzomXyIuSD5Ec2hnQSFtczBocyhpQ2oialpFLDVnOmksbCdnbjNAZyhoRjMkSldnTUs6Jm5bKm5HUC9JcDdXTW4ta19JPl9fSCNHT1A/RWZzal5dP1BMSz9XQWcsOjVdYF5YTkgtMCFtJUVhOktqVzpMc2hBN0Jybl8zQTQkWDQwQWM7bXJPKEtWUlpkUSJDQWQyMC5wdG1bLSdiJDU7IUxAKmdVZ0VuPDckTV5naHAsbDkyPWRmTVhwUUI/b01OXGBdSygrUzxyWUxpIVk6JidPZS5EcVRpNEtfOmRTRi0oTGFdUlJOOWFERmhfS1pHb2NtXSQuVCk1WTlJLEpXRD4zSVo3b3Q9XVRnNmtiWWsoWi9EQmwxM1EiSFE6KUhyOzNiXllsQmcoKCRXaiwvMXRMO001OHQyNDAoS2RCIXQzUzIkPDo0Y1AzRCJyJTRKI0AoNiEhMihFJmctQkU9I0BgcWhOPTFvSEsuW0leTEUvMVVdTCk/TWEuPy1oXi5nLCNQZS5RKytoSEFDLzlYaFklTjJjbFo+RVQnWW9JcmZJZDNbMFomVTNAL1czVUlSbEtlQjVsNmxeQFEzbk5daDBUQk9aZVMzLzdXMGA7MGVVMkNxZC1DVE9FdWJXLzk3SVZZbGgkYU5LQ2g2X1lpYV5LREJKOGdnJU1bLlZuNnU6UDBSSj9tW0c9XklNVTxwSEJGRElyOTBdQ3BaJFhLRiYkbD1jdGU8cmVCUEthRkprSkdsUlJAQEtaZVhSX2kzI048J0hqJHIwVj5IQl4zbHRCaS5oOmsial9GLG9sWjZmJjc0TUZibWApLFNrJHFiQ14jcTBDb1MrazZHaWE/WG1PImVJUWEibkw/Wz9qVltkPWUjVWY1LkNpZGNEYCk3VVk8UyQ5RCg8bjtxUTY+aGBBUyd1WD1AVjw6WlYwOU4uKTVdQTJZS1cpOWpPcTZ1PkUmPTRcNTNaN3MvVlZZJWNlcDtNLTVqUSVdJkVpIUM+KDQ8N3RiVSomOGprMGE9YmdpbSg5RDU0NFVRciZbbFdTIklAJjpHPlo8ZENTIiJNIykqa11sbyM2MCFpM1c0LVddOmZaNF5bSCZKUz5AWzcvcGI8OEpQWiVuPCNET2VEVG1pUmBGN3JoUigzWFpraEglL2lkTzNcQ1NQPDlwKW80PzhqP2BvUSddbEokTCspaDJcSUtaSHEwOyZrc2xNJTwpJjI2N1VyVitvMydbT2JqUV9kLkJHNSdnZFxQMlRQKlkvInVIJF1EU1BwXy87JChuMmk+MHA5REdIZF0vcy4wOEcvPGxVcUxSaCIqMj1KXUpcKUJYdEsiVF8sR2VfMSt1V0s1PSlgU0wqO2hELnA4KVE9P0t0QG1hRkBbR0A3JjlobExKO3MsPGFkXyFgcnAtKCdAK3BrN21EN200KWcvPDdScChpTnJyNTRiWVkxNjFjVWlUJDlabmFEWjckWjdeOk8kOiJvQ21BI2JQM2VEYi8sYWYrZWtBKGZGND4jQW5tP2xJJmBVU1VEVTJKMl8jSERkY0c0cCYkXmthQFRpNyNMcF1QLl9PY1dAQC0uQiU2R041I2FAdDlUWE5ub1xjOU11V3AyUywjREMtOWIxN3U+R1hNMl9SL0BcdWR1TyUpMTMoTzRpKi9ibm9NZ0UoWkFIZ21ET0lwLG9KVTpKTEM8PSxFO2hpKm8oJzpedEBCVDdXdFJKcVZNWGFgUGFMY3V0Yj0xWCRzT0csI20/KSwnO280SGBfU2o+YG02ZlNDY0tTS0InXyFURE1EK2kxN2gkTDpQVSJPbT1fSlp1J3I4O3Q6NTk6LSQyQm4hXnMnRzo7aC0oYkRbMzlYLUQqTV5zXExYY1ttZXVuWW0rV0lwW09WWD1bMmFhcTpoKjNCKDM7WF5bWlRgVzAoVXJIL09CL2pXLSxeZT5ycFUpV1kmSG5vcXVYNVQ7NkguOiQsXXNydWFTVTtKV1Aja0xCITM2XTg0WDBsaEFlbiojJlIoTDszRy9pUzMyKT4rLj9xVSRQLSFfUCY6RihIM2QoTz5WTD42fj5lbmRzdHJlYW0KZW5kb2JqCjE3IDAgb2JqCjw8Ci9GaWx0ZXIgWyAvQVNDSUk4NURlY29kZSAvRmxhdGVEZWNvZGUgXSAvTGVuZ3RoIDI4NDcKPj4Kc3RyZWFtCkdiIi8oOTY4aUknIys2RW9IZ286TjVbKzwnX2diQjkmYzckNExSI3U2YE8jcSN0WiEqVGBJRzBxWS9fUjtDIVBdTU9hNFw/PGYrQCdGP1Ztb21RJVkodGVXKGJcKkZIXUdlXSY/U2MoIk4yT0hSYkNmPUgobF8+ajRDUUsqNUksWWFvRSxBZUQ6c3BnaSZsRGNATm9EPiNMK1dxISR1KGBFQE1iUFxYQV82KEMkMmNmS09hVV0uXm1aaGpUSTVPWSErb3BsNiduKm8zSmU3Ui48JXEidGNxUDg+RT0qXDtuISxEUUcxMHExVDQiM1liUiluTVxTQXBvb2NtKkgpQmk1NVEwLWlxZWAtV106Xyg/LVUwbDNAbylBcW1jPkVNKzZaL2AxYEhoQ1JFW0stVCEuWkFrV0wjQXRIM2xkX1RDNisoWyVfSE0vcVE0TiFhQU4xN0svSUhKaGE9NElSbEtTU1Zuc0xvNi9Gb0VAciEvMGZQNFtaJFk/TSU4WTtJP09sWj9IUEhuUFFFNzNAN0coOk5PTykrOy88YSlfOkNXbWkzcEJpWmlQaiEtLzk0LyQpX01APUJWXHNLXHM6Yjg7Om47QzZjMyFMVFtucEAnTF1bU29AKFZuV0BUNFUzV2I/UElvMlxCLDZkJnVxQS02aCZkVVA2aVksLlNKLiw4Tm45cG1AOGEoOyxxVzloSXQ8U1VkXlNsRG1WKD4sYygxV0U9UDVNX2o7Py40MFU6Xj0mXEZiaWc6OS5iKihbOC1FbWpSSjxXb1ZfUj1GV0RzXSE4cjpMP2lSX0grcyxSZ0Q1a2lxQT1NRXRRZDE/dCVMY09EL2Mnb0BUZUZKYHMwciQ5UUUmIXQ9aVwhXE5fYkEraCFbIzg/MSFHOSMlNFR0KGBsNEciMzRbaVNUXkspJDg0alwxXE8wOTROc0l0JGxZSjNvKWVoR3FmYlAtO1toOjVXMHAqLCgjam45UnFKWCFFK0UzKmNQbVlrXzZqO15OO1pZYi8mR1FcTCJSXTJiIVFzYy0hNUJMRCJaV2BdSnAsXy87I3EndUVJaFc5a2ZxQGMiSl48MTllOUhaTjBXSyJYQGk8RzVuVF4jTyE2dWUjTCFJXklvXG0tOzFfR29POzZzcFIzdUhwRT9UdV8+XVpqWz4hYVtFLmItV3Q3OS0zOHB1NDhBQ1dqXW9iPyRBZCZQKzNIM0NBbiZuMiZFOCdxKkVgQV9zOVNeMUFeVU46NXElRTVPW1s6JCU+YDNXaGAlO1FoMnBBbkIiI0tSTWpkNz9QYDtBSFlcTy40ZEdTZG9PTWouV3NWTWVDLyosMSxFIjdXR0FBZy5TajckODFBaXAnLzpkPG45YkMxMl0qNmoscVAvO1V0NVBOW0wlT1tbTCdlbGdDWDgvOCVdL0NBKFV1bzg4SnJhKlNWXSlIWWcjcHBebDBzT1JIYk1fIkEyRE4/Olg5S3VYNSYpJzB0QC1lXydLWHAoLi5mN1QhKm4pOGxINTNeXShUZic/Vz5WPTJAaDQyMkZTR21Ua2FuWlpsOUhxbzdQcjErLit0QCo/NDg9YzQxJT9GVG9WR1ovS20qZjE7bjsrL2slWksoO2g2MWAwYldsZWFGUVxtXWtHQ05IOW1dWDhJTVZRJnMxUnRkUm1HT2pGbWYwVk9POmxxKFNFI0hzLCciJFFQYyghPixhKz1dIkZVa0pfalRwY1IuUjgoVCM4a15TQDZTRUtWLCY1LCJMYShjNzVLJ1YxLWMxUGtePHE5Um9AYi9CWywzP2xXO101VGVBXV1DOWtdWWFrZC9dayQ9aSJSTCtYZ0xNPW4jSjtrKEUpMTRnIXMpRTFbcT4iPkljODopc25zMWdUcD1BPSxKQU5jRik8VXNSZ3RAaWwnW2laMmlhI2l0LmpobjRfaVExNWkrIm5rREcmSV1DSVEiVWJZcVE8cmdlImomYS9JWCgvNkldL2MmZTFEIT4pNjdrYUdVSSIuQiRJT0JDOiFhR0hnUS4xTEBrZ1xgO3ApJG0wXUhGaFk6TFwubDNEV1dJWChXdDRCMzUqIj5Vaz5gYCE1PVpuclJJXyxVWzVyPTswJiI0SFZFTjpzKTNkKE1VRlA3J04qTkpJP2xwUmw+bmpaIzlJbG5SQ2ZcXCZWZDNYWy9sTnVuUFpZPWlhYDpGRyMxYUAoPyQzODc2b040I25obF4lYEJrMCtRcUJmTD4yYCI4RUtRWSVMdFZKMGUuXU1iPW5Lb0RhInI+MUxIP0JJMmg2PGhKRVFTUks6dVluSXUkQS4rdD1UVkMpbkQiOy4sL0hubS0kUyY2Wm5aMWkxQ21Wa0RpXkl0LzdsKXUyPyRFQGBIS0EoU2lKLWZDQC1JKFM9b1hSa0NZSUdfJ2VxSjwnRUxMS0RNQEcmcWNocidTJ0FeaUBGKT1FOWs3TTtEJ1gmT2dfOGUmVXJXL2hMTFteWlx1QzluPXI8JzZMTmN0T1Q9ZzcyNy4zUzMoQUBhY1RlWWYrVFRgZE5PV1JHWEY9Yl03I2hCYF5rJ3BDTHBKKkhDZWFISjdrUF9MYDolV2c+O2pRQzpRJy5dKUZaSzQ2a1ZNVVt1KEc/UmhwI2JRUiI5ST5DTlgjbSMhK2EpUF1jQiNwJEQ8KCpXU0ddZnRQMyxjJCViOlM+QFZzbGVYa2QxXTIpJkk/amBcSnFSZmRYK0tuWW46TVUuNHRiaD5OTjFbaFxENmIja1w3UHQ7IUprbnUsO1JGaipkMTwsNipdcGVgVnRQWW5uQjRUdHBzcD0vOk1caWlgY2xNTUw7YkBtbUJZNVtPN1drJ1lpbGVraDUnZm1iKzBtLmtuc3JKX0BvayozbiRNJmRrVlwhPTBhNjhaLjY+WGc/UjxUQGRJYTFqN3VGaE5GRDVKTmxGNDlYXWN1LDdPJDlrNiZcKV8sJl4nTWpRT0BSTWJpQTFaVCRhIklfUWVMNHNSaFY0aG5PRCFWUGE2YSw9O2NaLnJuZClzJiRUUEZabVNab2U0Z25gSicoRHRRTW9LS3UmcW9VSmpYMlo3JDdQbSthLmhNYiRhUj5iUVdXNFNoYWJGSFY5bl8zc0lBNmU8Jz1xVGI5STliMTolJGRaUVAiREpeRVZ1RWI7WFtSLExYXlUxcitOcyhVcSlfM2JjOW9rQEwncm5OKCouSj47SSkrcSwsPUtsU25ZbVY0UkZANmAwVV9QMWxVWFBFTyE/SSJLPFNLSytxOVRlVS0taj0lPEJfc1w5UGJeVltOcy0rYWAnIjYidSc0bUA4TVpSJTZSWisrXy9HSlQ1RCpQcnNXZko3ZUxITm9UNmZxO0A2UVdYJCpjKFRxQ2RqQkxMSjdbLUAzT2AyQVtRRG1DbSNSZTxiTiJyISFgNHBtVjFBYi0xQl5NOTZdVCg1L1hELSl1NTxYTFouO0AzW2JPWyJCXlc2OzAhaWZkdC1gOD8uNlZQLnMqI2ZgVjhCcTo3S2E6I0BrIjZxRVxxbEA6TigpVzRJbkBdQHJuNl4+JWNCcTFoVG8rUDRCcENuNWhFOixnRW00UWUjUlFvNW1MOT9oWytZdFJTUWs4V2FFP2IwTyRJT1U7YiJtOiJNTCE8PUM2ck5hVFhFOFRYTCJZTDMvP0UiJ1EqXlJpViFMVURiM1Q0YXEoXj4/WFxAM0NHZzlvWmpMTXI+JCJZJytgMStzQz4sN2BiUms1OElMS1l0TG1UTGwoPGorcXEwMip0RyxBYkVuWlJsVUNEWXJRXmhtVSx0Z1thLFhsZS1IQig/Kz4oU1Rvbkd+PmVuZHN0cmVhbQplbmRvYmoKMTggMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggMzE5Ngo+PgpzdHJlYW0KR2IiLyk5NjhpVycjKls1b0hnbmU5I0xkYEdILFxWQVAsdUk+O0YxOShMO2RST0chYz0xYGtZXkM0SC8xMU8vSTZNTWRcUTlDL3I0QkdzI3NoOiNfXGg2Sz0tcllrJztZVSJOWlZMTXFrQTIicUphS1JMWmBdI15vVDcmcFsuUzhDSEQhJ0ZdXF1pRUJBaWIvSWI8Sl8+NEgoYFBQPVNNIkp0LkVAPmIvayFYWC4sUVVHOFkjR19rJlliSkkzTl8pLywhaHMrX2lSZDglNTlWMkJfK0pLJGZyTClaT1QwdGZ0Z0kxV1JoPVc+SUklMHBJWEpeMENHKHFuXmYzSS1RKjl1US0nZj5nYDlGPWBDYnBqSydjZGxwTW4yY2BEZylROWA+QkpzQltjXD9jJShvaGs2TSMkTHBJTVYxcixHPSkjXEkoP041amElTkwqSmFDOEllLEMxclc/UkFPNDI6VDY6X14ldC1saUxlYD5ZTz8wJk5RKzFdSXAzJVZJKTReaycmVGBiakInbmRkcT1EJlJfYGdgLWRAPFc/IjsyIV9fJyxhSyU/Q0kqRGM5ZzdqT1xDV0pDWEIlbUFLJkMhTGReXz1gRFhAZiNTU0RGWUJkblo3bkFMYVpEKV4uOl0kOD48KFFmNVhqOEFtbDcuKF1iOmFjR01YIWNuJWNTNmhQXGQtWlFGY01NdWVBTEluU3AtbjQ0MEdzW0V1YV5eYmU6RWtlL2d1M1QnJERIISdHP2pWVnJkQixHITJIU04iIzN1J19fLy0pcEM5VDVPNHRwNSZdOEhAOVVGSC08N2FkV0onLilcW0RmcU1NJl1vbEQpc1FoMTxqbydaOnJOWzxBbF0+MlxOLGpRMz5zU1NfWjcjZU0wVzY7PydhcDphQGhfZjFaXWZaPkVzR1FYZD5XTkoiUT0qP0cjMUc3c18jZi82YygwMzo1ImZSSjJEKl1tJjpAI1tJVGlBTkNdalVfbl5ZNSZTPCpRMCtWXEpCZDE9TUUpR08tPHRtZFRqdDZASGNgWm9SWWxWZ2c5cDhUWzotY2hoc2dmQFAoSVgkOicsWUBoNz9Oa05PZjk9W3BONyIlIW44Q1dNWWxkIjVtZSdzZlMob0MsPT4hJDw3T0BiUDNcbXJNQS0ldGFYKyEnY2Y9J0w9bi5PdVNFYFBjJmJXanJ0UWlvTScmKlUkTCRXWDR1U2YoY3BhWHJ0PmFRQCoxXFZGPCNyUmEkMGhyKjxHYTghU2NrM1BfIW5zaSNGYW1LMzZkW28yJWdIVUJWV0Jva2g7KUxANXMtNTo2I2xIaGg4MmFtWzt1QSVLZ2wwcVNGXSpaL3QhNCYxRTspV2lrVzNILyFcNVsxbnFQLnJgb0cwR1MuKlE4JDZMJ2UjNDcnYChUUHBNU0EvOXI5QDRAMGg4cSQ+UEpaQGtDc0ckOlUxRzNYWnJKQiFDZWRoJUsuLDBWPGM7XkNwbTJHJDMmJi5LYmAoSGRJUlcvNTNfIzdbaE0hMTRqWSVmcSMmb1B0V0chKiMlMj0mSSZUQ3ErTGBcUWI6RE51OkNGVUY/KS5qXFc9S2VqTnB0LF5RQ2JURnRRO1pZJWVuQCpcIkBPbF9rRDNbcGRQVHJQNkNBNlA1W1RBWS5oWT9acG0qakNcITU+IkQzOmx1KDpvPy5HZVVDPVBXRzthc1QuX19iOTJUaj9QJWRIMW9ZIlNMNVAlP1AmZGZCJTk2QkVzcy9SMUg+JDojQV9SJj1BVTw8RGgnNGQrYGAoRihaWEJ1T1FvSl4sSTBPNldXQFpiLUJVS18iKlgkMT4zS2tBPzkpJl80PlYqaiYkcEU/SDpyJVFRIS9yMXJYZVxhSjUrcy07Y2A2Sjo4QEtcYHUhUkJWcVxIWTNXLTVjKkZlOys5YzdvQFZwU1NuSCxhKiteTW9SJ2hVN2g2WjIkO0loZHBZMExhPF91cV4ySSg9YHNMTC0nMThXaV8hQTFJSlFGK2tYVzsnazwoMWVnQ01BdUZhdWBOM1xfLk07UzNnY1QtaFRQT3NncUlULF9HPUIqW2ZtXWRWZVMkcXQ0bDYiK3I7M0ZTZE46KzBxQTIpXz9CdVphLWZCM2BQM2RAIVFHLHRGTGBwJ2RfVFZNWi4/RVlyVm5xI3RxdTVnSUVxZE9PKjNcLCMvU0ZiNGdGSHBabXBmVVIxLyN0Z0FAKWo8ImBFIzRjMGJLITZbU0UoJT4scVkuciNbLUBbJWsrWTBhKjpHXVxQblZYKG91K2NuJj4rbW5rKVRrVnBsKHU+Y11CbmlVZjAhNSUmZ0dKXmhwMGhqaFckKXFTRl9WXTtZK21YX1FFLFh0QzVPKWxyTC1eP20rWjB1SV91QC1oKVpnVkpeNTJkZ14+TGFOby8hM2VcLmQsQiE5VmdNLjdIKFlLNGNlQyRtbTtTS09cMzFiO0AsZCwnMGNiWUJRSlApYFB1Vj1vVmgyOlYiIjFZcEcwTDtVQzg/UjsyUWNLVHNgLThBLENqRDpCUk8rYThoTCZfJmc0RSdOY0E5OFAuOUBDOHA0SjkvREVNYFpgamFdZkUnNyExNUwpQ2ksbDMnRDIpVzVxdSd0JzEoUDJIYD00PWReOyhrY3FsLSdiQ2ZIXCNvdVpTWWZvRlkqQFJJdW40ck0/WUlRImhbKVw0SnRjOCJIVjFPJVtFdDhccFxJIT1bXmsiLjxAV1ZJZ1YmaWJWc1ZHSm05TUU5UW1xOldFUks0IjI7cDlbKnApckJTW1k6Kj90M2MrZmEmbEgyIV5aSllrLTclKzUuIzZAVThIQE4lal9dRl5na2FLIWxDQFA7YWZTXzdPV2wmbko+YENcS0o+UjxBIVRpOURCZ2NuSSZqQVxfVjhLN2hSS0hmaztUYEl0R2MuO2hmb1JbNyVMbD5aLzcrJFs/JCJibyEhV1ZhTU1aV0JnLmdrRm43XE5fMCk1XmwmbVlpYjZXcG0jWkksc09WaE5wMXFLZVYiV0Z1IVZIQXNwO3UoUERKIz0obTJXOl5FMG89a1dSQWgnc3AjX3JtUjsjcGxwYCx1RCU/YkkmO2pXQ25fWEteNWhzKltjNG1nVSU+Z10mWSE3RFxgPT9oW1kyMFtLMz5XMERINiE2ZGprZ00uRHVMSyJfcD0xYW9RTHAoPkJzNDVPPSVtblxYWFMpZ1MqXDtRNSgiKG9VcmksNTtLY0JCTSddZTxOR11bNXNpSTA7S3AsM05ncDo+WyFYOSEjVyNFJlZPQ0MpJCw6KUYhXCFlIjpJUTtpdWUqKHAzRU0+W2NJdTY+Kk9hZl0+TkVbYFVWQm4qMD1PQjMldElsNDBfUk83ZFQlMjdeJkZWZzhCOGtVYllrPzlqcUcvRSFMNFlhbTZKUC5pYWAsdV1ybExAOkUsUTBaW15ddFE7KEhnc2VbZCosblNwOi9DVUlWMnQ3Wz9rXFlmSEYrX09rbmw5WDwtJWQtNUVMVVZdRkpfVT1HW2MyJE8xcmNPXFRNJiVQJiY9X0M/SE8/IjVeb3FUYVlPbiFNOCYrJlZNJExEb0dMTThfZ1pBKmQmKXQ7SFliUURXXUs3OmpeYmFPVlI/MmZTNjx0PV0oSj9aX0VVYDU+K2YwJWxtTGdFKHUrLFA3VGFZRFRVbTJcSFBjZUkuKDRdNCMoTCMiS1daT0BvMGIwVlspPzhdX1lbbiQ4WihXakBDUEktLCUzOT5fTFA7ISghNS5tWmoqaCdVLFYtS09tR2AlWWViNUxrQjZCTD4/JT9hOGFLK2A8R2JSW110U1ouc1ltci1UQWxhZTg2cHIkW1BBZ3IzZUgsJUlBWiVUcDMicT46QUYtcE5AJT0rMmM+bShkOjoxJW4lSCQ2dTs8PTgmNGksNTtOPDUpaFVOKzRxaEojMFlLSC9vJTBYY0M4Lkg3SXI8JF9pWlRSMS8iXUJyNjJlalpPLV8wRTNJLURgXUgrRC5MLi5JdSEtcS4hKkhANlUnbVJJazlJdEZ0REkzRFRDciRMMUMuUEYpa2RWNTp1Zy5TRDVVaWMwNGtpL3BKKHAuSklqVW1aaUVFcDhYPyxMSEJqWCJQSnJWbikkbUlFSC9nNTJLSEJtWFE/KmhjSnBUVzxWXXU+YEonaHBBPyQyckJaajU+VVEoZHFiS0JqZSxkJzdpJFFfMUlPUlhcNGolUTUhQTYlMD8xOiU2aDhKQF1TUSJuVUU3ZCNOXz9PUUJQJzZQJFo4UFRyW21VRjooJVgnMzlGUzdxKlAmUSF+PmVuZHN0cmVhbQplbmRvYmoKMTkgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggMjcxNAo+PgpzdHJlYW0KR2IiLylnTiklLiZxL0E1b1NdYz9lLVtOZkpzVWIoQXQ0Zj1uU0gzR0FubkNFNjtydWIwZVpeOkFGJl5ZITJNJS5BbTYtYVNtOEYjIjlFWChcb0gpcDQ2Qyk0TFJbMHU5KFpPW0ItMC1SNikrYStMSC4zZjY1UUU1cnMkLEFrbUhQVywyaE5STWNtbz9uTkJRJUAwX0NyYDQzYmdRUDRGVkRMNDhWcEIvTHRTSm10ZS45KSwiJEU0YzFOaSVbWmBTJT5xVyhjM1UuYSJDP2RIRTUlXiI6dGZhM1ZtMCkpKkwlbCZvXGk0VVkkUWU6IWlhKCNDNm8kNUhQVC0xUGY1UjtccV9HVjBaSE9yLElGSmFNYyNvPi1qWHFuQE42UkAqLmsmUGltKjdSVFJBcVhaal1LK2pOMFwoISwsYDUqNmxKOEdbTmNiUXFOP2doPyshMjFBZi9fP2pDU2RSdU5wWGtULDBlOFFSUidSZmtFVHRVJTZIXjRtXEMtJk4xOzRFK185bEg/R1c1dF1qViY7ZkI/PltrLm0tPm1yVUMubywjPF1oZGxVUSs1LCJIbDJUcSM5Y0w0YjZRJFltOCpRT1E5RCZybSkqVSdwcGZDPzpsbGVuW1E2W2UoMmspWWFdZm4oaEg8NDsnWlVSaTZIJUJHQmAwVDQsWU1YdWUoQEVJXldOMkJSL0YmZydnUlVULGMxSz8hLjRhZztwSkwzZ1dkTUZjQmFjS0cnPSpcTytZVDgpZTJ1YGI1P25ROSkmNWhbXy50QXVMaG5saGNxVTlzZEg5Py4oNkhscnBKMDw0UV5kTyVySWMwL05HdF5paFBBI2AjRXVxK0w2VFZhMUk/SVs4YnUlNC1MQklrYCYqPmpDZC8odCI2W2BKSnAtYl9yVFhgWVxuSSMjVmg0XF42LzZ1PmtfPUMrM0VZTSJTV1xTNFZZNEFaX3JaY1tjWTZKOjRlS2tVJ04hVj5lUDwpXiZEIU01PCh0WGxOLEpxKHI9T2lrL1dcPnI7VSltYGBRJDglU0w9bURgIW1Lc2E4Slo0ZTQ7PEgkU3Q2MVxFOEVqaSFDSDYvJG5nTUMlYDdoSi5aZltaTig+bTkmZihrZDRvTzAsbTgiaDxTaDVpU0c7IlFTXStcTSs6NCFkOl5RZjAqYzcnKmFXKHQzJTskQUVRWyZRYVEyJVBtU2tyYy0rcDJfSUhTPl5Na2ZGMUsrST1wTHAwR09HMShlV1w3S0FobEVpQGsiOjxsTSY0VENdQUJfVnQsRTMnOVpuXVplQjw9VE5NTkNLQ29zYiEtUHUwX2opM0ErXS5FIUc4QCEnbGFQYylNSycuVmFwaUByK2BjYVBwPnMnaEBPclQsLEs0a0o0TjJDK25BLEdaOiFWXyg4Nj8rV3FAUyYrIVtqUyouVTtjJnFlNTIyKiMhMyhPLCM4Uy04aCFBPzwoLS9OR0YuaDJRQmwkIWlOW2YuMjBaWywhS1hfcT9TdEpSUlZHMFxBOyZWSmddQihwQStlJzxlRz8+VEMvcmo8MTEuU1ElIjNXWm1JcGtxZEgva2NMcFs9T1NLR1hmKWhNZS89QTg0aGYhQUwsUChhNitrVjMkV09DOT9qNHMsW2JGLEVMOV9RVVIzPz9BS0htVWtvUm9zTC4pdVpLNSI9Lj1MLTpzLjlGQD1iYlcyPFZdaikzLTpLOSxja2hwbEwqMGw2U2E/U2grX2xiZi1rbEFhYlJLTStTcEEkZlUoakM+I10xOi1UMTo5MUhJVGFuQis2IS1ITCQ8U18yI1gpbTFELUU9cUBKNiNHQCYpXzJRVThsSUVRbmJxbV5aK1FbW2xYWDVPJWNIaisiTVFyO3QmU05jZmM1OVpWLDdKcE4sQUpwTUlIaHQuay1gU18rSSRiSVVBN2dEIjNqckpwRm8rcWtBRGVWTmdHbDgpJEw+VCdmQSxcWT1lKmA6PWYkSTtKLjZHTENRcyJlKXRMZU5FO2NEJVxjTlotPWVgQSE0dTJpKzdaIkpLUC9kI3NUK25rQGN0cXNULUhKLXByMzgpKj9lJHJFMXQsOGdjdW5sYnI2Qig5a2pIMEo0SV5WXmpUUW4+QzJjMFNvMCchWyZGRDlfb1xEIk86VmpDaHI8dDduI19mPU9LJkNiY0BYbFxLTicrI2UzWV8hP0xUaCYzQHNcQF0wQiF0KEw8ckxOPUtUUmBvUl0zPEk6ZTBWLEQoPD1ZcycsaypAJTIoMVJlRmZFS1hEcSFTTWFlTDtjTTVGTTdBJiQoLD81SGhGZF5GMkA8Ty9bdSNqZ1A3N0VOYV0oMDRLJTdDY0ViOGAyTCJLcCxMYkZBZjouRlxiSTJmOidhMnAkRmJpPEdeUmRnZSRMY2QhbEcqalInVmRgW1tXOFFPV2xCJSIkX0twJDAnJFxjUy9sXmNEYCVcTkYsbVIzOWppcSQ/Vk9uRyxcL3JPPjw/S2ktXiprWktAJm4hbyhtQGRkIy5mPi1EZEg/R285XVI+Z1lER19ORGFfLmYrYDJLVz5qQExFQSNiZ2hKLG86I3IyLzluL09CMV06NTRaUWh1OGVScilWTC4hUWQ+RFokMS5WZUlDUmpdcU0qSltbUl9kJl4zZmI4ZyoqRlxDOTxMMzRSWHBVOGJwRSJ0S0hlZGtkcEQ+YVVcXGZBWWxDP0g4UktUUE9LYlpHWWRJWjElMi9hXztSVSwxUkRRb1dxXUsxKDw+Tl0pKCxfVGxzYl1eQlgpZylSOmFCW1M4RGojKEhTc29RPDsobUBsWCE9RydgOGshWGZ0Sz9KXFE6LnNmK3FURWdaa2AkUFxxJWBddT8rcTAsLW9DcDU6L1Vda1xfV0NGZDFiaDZ0Kz1IcEAsVElJNU1gPyskJEplUiNDQl9qVmU4ZyswZ2daWXRRZWtVSVwrKz5GWy5aTlIzVD89bWEnRio/Oi1DaWM4Q2suVCdcV1dxNjRKNGReJUZXS3IhJStlL2Iyc3A0ZFg+QD0qbEdgNlk7Kj9eT28pK1tJcS8vYlZdMU87IVUxbWtgVXQjWTZaXyVuOUE+R1wrOy05My9dbT8tJCtFT2ZqZlA3QShkVjBJZVRZIl1JTlxzSE9LL21AJjFbSldsPG9KTWlnQF9tNmtDOXRNLHNCLj5ic3QscG5WR0IoQmtdIktKZzVCRytCKDFxJDYhQlg3M2ZFSTlLR0txKjRWWk5vJHRFKmEwYWo/aip0QlRwW0k8YEAnaVRJNUwrXFtrPTkjQ14lY1x0RU5vcW1FLilkKCdKSHAubSY2PDxWTDVoPSx1YTsiYEg3ZjMrQjdkSDpXVmteWzZvMy9VbllHR2FxL2RJZVBlcjczTDlPLmxVNC5gWEQjbiVcTm1FdTklL250RllQZCpfMWotYkMzQWJDNCcrajU9YGg+NVxoRVZYTFY5WGUuQU1WYTJncHNvVDVsdEk5T3RTQiwuXmlBRzpMXjMsK201cCI8YEs6M2U+TkpmKGpPX2QuR2t0MD5hKGxMXDk7RTVEX3FBU2pUPS45LU8tU2xYLyUjSm1RbzUxRlglXHAqdFVuQVxKI0g8O14hQmMvQTZWamZTUj1oPF9iQEhbZ1Y+cWdcbk4jSyorcU0/fj5lbmRzdHJlYW0KZW5kb2JqCjIwIDAgb2JqCjw8Ci9GaWx0ZXIgWyAvQVNDSUk4NURlY29kZSAvRmxhdGVEZWNvZGUgXSAvTGVuZ3RoIDMxNzQKPj4Kc3RyZWFtCkdiIi8pPkJBT1slWHVhLV5yci5mbC4uQ1c7N0ZTJkQ6N2RtbTNGXkhmcSNrKDEyWChTLSEtN25IQFBtQlBcYG9kWFlgJTBBdUBHUTlJblFwIT4kQTshZyFTKnIvJ189QkxfWG5NVl0/WiZzQkU7LFNYMSFGXEVtXEcvIUAiJ3I7aik9OEsnaTRxQUtzTmVfYkVyYlo8cUVEISZLLUFIT1NQbllQN0htYyRzYnQuWE9QRU5OcCxqaUQ/MGo2XmNaYjVkaVBIMSk+LkpsRC88JiRwVzh0WSE7XSg7Q183bUA4ZlRhVlo4QXRhMGtsL0VTLGdeYmcqPDpbbFMncFllXiJyUUVVYGMmKCdxY0FuOlpePV8/QUtwY2AlT0o7WCE5TW9vXUo+TkZfKS4jcFlIPlZUR2pwNk48J0dMbkBcMzRXLm9vPjNAcyRcWWVJNStsJnUpaEVBXWZCRCFiKDhxN15XJiRzKlYmI3ImXDI0VjVsTyM0UWBkbjo9ZTszS1s2SCI7R1RRVTVPbUBqamZTN25mJU91PmksR2BLRTMudUEjRjVSP15fYFtZKlxlZ0QibmBvMl9tZW51Kj48IkJIIic3TVQ7Q1JtQUNBTy1jOnBLXE1eJEdFcWVfYTYjcCFaQjMyMlVRWnEqbGVXJjdsImdvQSM2WSJPdEVLL3JpSVZcPk0sODszSnQ+YUtXSEc9NTxHVCNRJTYsUDBfWk1wZEtNMnByTzw6Um1IKEFIUipkRFglc1BiTnFccyczdURuakw3Uko2ZyZIVGRrbVhpI0MwUVpQRSUzL0skaDstZSNdQD1VI0MkcE1aVC1cLS1bVFY/OilHLztcPzttZ1ElIWZNMThsVlFqNUVlUzNVL2Q0RztWMEpBWnRcRUpXbDZoVyctIyQkWTVpTmEjLC0uRjE8OFxCSyhYKFo/Wy5pcyJMaTlJVzc7bzBjRUdITV8nVikvX08mZ0xJUGZcZEgnZjRyaVxmPFhXVCJPUnNOPD0pXyxZbGdVPXVNPSZLWUR1SFpJXFQ/N0hvNy4jSGtpPVNhb11KLi1ucyZrVT9bKEdPOzMtPl9CLGMwbWJqISFyaFV1PEY8MUBxXiRXTUpQOjZuPT9CL18wYCE9TyI6aURaYS5UVV9CUFE3bWBAViNiNDZKS29qJ2RkRmlAUV0nVzUxaGclUjdNZjNCK19rXGZKMCR0OWFkNGhpYl1ISjE5JTcmYDAmaVouMkBVWUxrPzJdbWMhbnNgY2ZfMGEwcSlZdVBINkBSLnROVThyakZMW0FuNiE/W0FPLCJgbE9VMTdfNyhgKEdvR0RhYDk2cmFET3A0SEEvMiYjRjdJdW1ZPClJOnA3K3EnIVNhMjwjcU90Kk0uW3FFL0FNV14rOmxXVilJcDIzaFszSmMtakdiVTxJNVw4by1Ob0ZnYF5dTWlwOSRuR2ZycDhUPVlKbCw+JidXUV1MVCErckg5OkNNWjZkXG0sNjQ8bSw+IV5gJmQxOWpaXzo0YTxnbDVPN24yMjJncm8kX0U7KFIwcDI5LklxVSZwOV0qZi9EbGZEW1csJi1GWEUrXC88ODpgZkdXJj5cdSxEaHBQa11kLEJjTyRlaWNzKjVvPS5GRW4pMkYiVWMibElRJWJmKzM/NDpmPiIvZUI3c0RxO3BQb3I4QFNWOyEzK08nLjdDJCMrJFlnaVxKNSZGQ0MlWFdOMzREP3BKTm09XExpc291cE5jZkUrcUlhSF1AX0tMVEFkK2NpPy4taVtsZ1liS1khRyZnbD9daGJydClROUdcWWxdaDdNPy0sQl9FWDVnPVhPSCQ8NlZbYj5pZXNzV01BYmBVLjEmdVVtcj9sYSU7I11CZzRtKChLVkhNSSRBWlA0XVAmajc4UmZgamBYUCppJkIqKlgnVXFSKElCVjFoaUNhWmowKSNIJmtGPC40UCRtL0c0dU1DZ0o2ODxlQj9rJElRIVtoQE9kYCNdXW1xMTRgSWNwQidGPU9nWU5HMFchIVM+OWM/YD0za3IsTTs1SSI5bGtZRzxhayVnXCglRWhNRkE/Zm9nITE1OVY7JkxKW1QmRmM1MGpTSllaUU5nJFV1UHA6cGhUQC8mPmgjMklVQkMhJ2lGMj1JIidpQTlnNm8jKjpiYjZiUVBIcUs3bGpKX2A0MEMnaURgVW9IZi85cmI7UlhhZzFUIjhjZyFsQGdicGk0JUZDSTEjTnRxX2s2MGxtN0g6I1ExLDdAVUlaaiVvN0YuTGE5SFxcVTEwLmpPTVkwITNDSmEjYzUsYyZmNGJJbTJdSyZOXC5pUmdeM0YyZCw8S2QxdF5zQV0mOjBXVTRnS20uTTBkJ21YX2tnJSRxKG43JDA8cUNMZEU5QG8yTmJFNElZWTFRIzhhPS5WIytVYUoydU1tPnIkYFtIYjZXMU1zcGRSZS84YGVKaCtwLFczaGxDT2NPYjdoMSRETksuNlYpMHNIRmReSlxlXyk/J2spIUQyJ3MhPl1oVUwuRTc1ckRFYUBiWz5tYSo1MFNyaVI+cEZqOVtWdE1UajJwaT5WYXBjdU86aFVETyw/cWtHXF0vKGRKISYjSDc/cSFuPnFCaU5iLW1uTStcNkhHaGRKXzNJTCVgZTgpMDNLQjdbOE8kWmJvQ0tYLzAzbFh0VzVnPFlpbktXQDE0IlRIOmthbzVkYTxOcDtrQEwjZjVZIS5SPyZcX21kJGZoWGpmKmY3QStwWmskUUJhXmtMRTZxbCsxZXRXMGAnYWNqVjpZIUBbZEtMPls0bG1daSpWSzJnSiRwLiVbLiw7alAuRidNI1FSO10/XzxyVk5PViQ7JicnOj00bm5HVDwqKG4/aS9CZVdLMjxdYWVUWkAtOCNFWDs7a0dNMm1tJW9QQGtYT05gITFqInI4XUUlVGlBXiI/J2o8KzptKjc3MlE9bnNfVG9WWzBIPVVbO2g6JVprbzVGclJAQUhUQCk3bFExKT1aY14tOGw6aGlTWExULyQvPGc9SlBQVC1SKW1LSVhoK29GbSgvXlVRK0VgOCtWKDNnaW1Qa0tPRHQzXC8kKGpOaShBXzlZR2IyWShsUzFBQmtNLHVbOCxnb3BWXUtWKEtpQCNmIzgnJjdBKSgha1k4MylPXWpOQUliJi91QTVnVlpHcjxAP0AmLWMwQF1oY2x1TSdxZ0kxIWYicyk2VD5jRDZLdG8tMC46RG8ycjNjSi1EWShBVTlmQVZUMTlbaDQ+JDlgKVJcWFA5LyUwKD4sYW8pdTtwY1JOKiZiUTZuY1JNOSYpPitbcy44Ok5LQ2taLV9JYzRlMWVUaFlfS2lFLUsiS1hmbSdNTmNRLClwR2cyMCEiZTQhJWpANUtFXmYpaSVlN08uVmg1NWJWMnRRZyw9YUgualxDU1pvdElEUyhcTVVZJCxoXkhySCFdLDNeaU4wR0oyRVlIW28kOTVcaz9KUkl1NC0yVyFZbUlAO3QpSkdDaCdoMWtnaG1qK0xMKk5tMDpPNiNzWipYdGxFZ3BQMWVnZDBLT00wQDpdT0AvPi5ALDFmNU0rdEsjK1U5WF9wUkgzZTg8ZElQVmpbZVBNKFhxOmNCJzwjbiU1dTUsYCNtXVktSF9IV0JQU3NCPUxXVSdtMC5YSXUhJCgzZGNHVkRPKkdUMVMiLSdbOSgmZlxbKFtGcUhWdTcrW1heMzNONj87b0psdU5hOkZmLHFRblQkcDNmYkVxUDQ2LUpVQVNlKT5YYVg7alNFcWEhKyMzUGE5VyM6SDIlPmxhQi5GPSpJWyVwPVZSNF41dVNcNSEoN1g0PyVuJl1oInBfVUppYiJIKyF1bjBAMm4tRWAnLVBfK3RBV00pLypmNU5oNTlURD5xZVtbJD5yNHBeUFxpMnM8YnJjbSxUckxkY05Xckd0YD1gI20tOCpibmsvWjpdZChjPStUPkNiR1RIM1JTZS1TU1lQTyIuLi1oTnVMXVdbaD5eWj1SK0U+WT5RaCUhLTMzLyV1bk5gTkdhSj1KMzEma0Y0YiFPJzJyN2piUlpjKTBHIjwmXSRmN3E9VURPRG9zZ3NoY0AoYXEkL2tMMkxBZDQpcWVuUiQrUkozSVRjKV01cCdzMHE7I3BwVlxSUXFrMU5Xc1dMY0UxY0VqJ2w6LVlvb15NO3NpWENjW2YkR0c3SFRzayEuWCFNX3RRZ0NUJ2hQdUcyOVxoUD9tXFlEIU5JIlJQazwlNHI8SiNEbiM7LVciRjh+PmVuZHN0cmVhbQplbmRvYmoKMjEgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggMzAyMQo+PgpzdHJlYW0KR2IiLyg+PnM5SyZxOSJGb0xsMlQoPS8rNEdGayonX1ZsSnRZaSZKcTpaWSM5QHA5MUBqNi1SN3JxY1M+LGctNyowJWlzai1qbl5sVkl0NCRxWVUrNVJrNEtqanRpRD1dY0dSP21xbz9WTkAvOEtfUFFjTypLPjlXbUZeNWM/T0IjXE9cTEQ2S0klV1xFZDAuMicxcHErQDgicSs4MnUxaCJ1X2FxKkRDMkFYI00vW2tOcm5KPWkwMiZHL2xDLV5adWgiV1RmPG5ZOj9SNDkzUlNWM19OSUEwZFYuW2FBb0ErM2llXS9WamZaXFdiOC9HVkRIWDZXWmVPJjNcKHBzbyFrOlRFX19mcmNRUUcmYEFDWTwxOFsqKlkjUEBnYGRjSjQlSU0vSFI5ZWhyZV84KT9aMnRdWzlxI0wtODxnLiZHdUpAZSY/TTJvTmdbNUosJ0MkMSx1cT9WOmZgW2c4T2xsLVgoRz1GTU1pY2QySFdzWidoNi9EQzhVVCVRMlM6JFYkczsnYWZOUHIvPnUya0Y+NnRWMFtHcm1UVmQ1VkFnZ1AuKltjKkVVX3VqSkUnaWAmWTBuazVoPDVcRj1PN0tyOXJ1cF1IMlMsIylwWlpnUztoL25mb14zOkUjbVs+U0dTKW1Tc2Bpb2BWUmVAQGdIbGJSTUJZIkhHYCY6RHEzJGhLSTZsSi1mNWc8ZF02InVqZ2hzRDg4OmNmQ3A/blVXQiVNPzA7UHM7PmliMlkwPkxUXixtRFZLVCwpXlRKMSdtdThWcmlYVlxzby42Y0k+JCJrMj02Nyg9cSkncD1ZckAhUV4lP08hWkcqMT5GIVNAN2VqLWhLX0RpO3QmWkgqXF8+Zjx0YnUnJ0FpYUxxO1JEOC45VFojLDEpUiIiREVsZGkqUmAjXkhyJCtcQz9qIyh1LCdXLFJFaiIpPWBRYlEyIlJPNHNJZl4/dFwjbS5kVTdINzY1Z1sjVWA1Q2huYWtCVjw2RCgkXlAkUVBCaDI+aCMiUz5GTmBcPG5BZilTN0ItLGpgUWxmTzg8SUxybEU2LE8ibkkpOHAhcWc+VlBNVEkuNzRzZVtaZkk/LClTdWo3QiNqISRCTFwuJUBdPTpyJXFYVCpmQC88RTFpcCkrOUNtWDozdEVVK0kwaCE1S11Obz9IPCtMOGRaLV0xU09DMGh0YmFUK25bX10raz1dIm0+dXI+Nz51OjRaUFAmcUtgaFNya1NRazQyUWQ3LzRtXiI0WSksKjdBMG1bZGVXRW5uRUIjJlVaIz1sb3RkR3EtVG9IRCEhdChvKyleM0tmPHJeNF4yODhDVEhVaVRPZSVFVDMqUDJ0OnMmTmtySUVEdSRpaE8wT2BxVTpiXFZvV2snLTw+WidDLUBoWko8UCw2MTFkTjo5YV82MTMyNmE0MkE6LE8oVC9xVTdiR15QRVkvakYxbERSM0I7WnFmKT1SJWwjZS8+Y1onMCpaPCUxb29hPllYbWZrJVduPHRFamByYXFjMV9YQik5Tj5YQj9ASTo4Sy1YZWledEJgY15QcCU7c0MxJVFSN0hSbDxBbFwhPTsxaFxWZEYrT1kmcWJgUClmJC8pP0VyKmVQMEI0ZC06VzZwNzM0VCMuQFxcXCo3QWUyKSVRZExCYW5DWFNGYSYrVz1kZ0AuRTY6U242P3BFJCIxLnQiJUNUMGBlLjRycUAhKW5lPzNFMTc6SDxLXkAkaidQLlpTNGstNVNhMDg6IkdFZmczamI7Pko4ISNdV1dZUiMuckMnXzdFQTg6LlJDV2BrQlhmT2VaZylnR3M7VEg/Y0tVVyJNSiM4QywsbFpwOG04dTtATGFMbFNyZmxjOSFNMFVxcmlAW2hCOS5UdW1lcmMrRy9KRSdpQiRhMitcNiVqbS4kYEZWKkFiVl5vajw7Iio5Y2ZQRFNJQChnVTJnRjs4I0MlRDxMX2FPLlNKTCIvM2tINiJUPXNdYXJmJDEpPllXZyhHYUhIOWJsaFRuckNfdVY7PGlrPEpCbyEtPlopaTwuXydjN2AuMVRfLl5TQ0laMlJxI0ZTSiJnYzo3K2lYYDAhXDRcazBDWiMwc3EkLFYjdTgwXDQ1MmRkPUxScDhzIz9RNC9qRUMvQVomJUlgWVw6PTs0MDEuKEAjPyddOCwiQjcyWlh0NmgtPTpebiIqTTtNO2drdTwpYSRrMERscCFdVSQkOmBvImw1PkFkbTo2KmJHZy5vTnJIcVZkcERdJDRCY21TI0VwRC1HIWtjI01gT1lFPmBFYllOKEtNRSdwZEFiQm9NSy1NVmgpcjk8RUdsWDYqLDlIJT09a1ZGUzUjS2EzJDtKMWdeQ2QmJWMoLFBAIi8yIkhOTGF1YnUyP1dESFRbX3RFQEczIytIWDZOUTpKS1ErQHJJSThuRGk3MCRnV2E8QlpfN0pRTSMiS1VqTz4/Vlw5LlpoRkooQCFKMHBiIThkajVYSS1tYFE9MS89X19KN0VEcXBDQShyRVQwSy4+JSYhYC80L1xpaDZjcDNnV21odUJYaGY1dEdpWl9qTXE8cE06NDJuWSxkR0I9WlRsIWJGK3FNKjskPmg+I3FOaG1oNjw6KjJGck1jNiRkbCI6QVc+aUY6VGQyU0lyMlAxaypVbSR0Wy82L2hHRDNnXDJdNiJsQzRbR18/YW5haSJebSxYIkhlIi5VPi5Ea1VpJmo0ZD9HJjpnU0hgNTxdaW4qJ08zY2FAVGlmI0FmQy8sZW9oVCRwMSZmYTsiRldWUStHM2tOK2lZX2E7cnRfY0E7VnNyVy43TEo1bmwyKUMvN1dFVkd1bXFTVm0iJ2o2WXBdIk9CZGEiYz5YIzpLKDBFPT9CMGJIVWtlS0dQYzhuOmE6Q0oxVyZQWmZxRSViXXFdZmglPVY+TUltTGslI0J1Jmc9IWt0LTQuUFMnR3RGNktTcmxFKG10U2pCR0pfcTAnTHNpTnA5TVVfU2JkV1FRSExjT2kmLSIudT9XOmRoLiNYb11cLVdWS19YZUpLdEorQ3EjVGk9NU9vcmVWR0EyX2EqM0lqSy5Dbkw6cHVdWTAjOj49KU5CKj8uaGxbbGo/UHROOUZXXms5PCxaP3FkJiNxaiY/TyU+JmZdRiEwaCRWJFQ9Rk0xbVF0RFBYN1NXNHNddFJsPGpMTDM9K0dvPC5RPTs6O2JiYnRZZiVQNkNDR15eWEBsNUlhMF4yNlAhPTNqXHJzZ2hMIzFQM2svZ1drU2EnV0EuRUwsbmphSGJbSDFjaHNmIzxaWk5ZTkBVOUtyMWJjXlUhKk07NiRzUyFOTXA8MDNzLm5cbVpoJEsuZCNqLWghcDZaR1hBRSw7bDhYZy5oOGlya0EjQWclcyJkLThkXz9BLk0mK0BkLE4+N181NiYvaHMpOzguNWg9UT0jVFEtYFhPMnA8bi5HMzknVzUpUlY6KFE6SilhMkQ4KjkkWm5YYSs6SDU3Tzk0bzVbajQiS3RsUjhzYU9pW2cuR1k1K1Q4YEdpa0pwTWVZcCovNkJJMzEoS1lNaj1EPlxLYTM3cGolQG9ITileLCQhRUUhWnB0Lk9MK15lI0poVFQ5KV4yNSY+STIkKGwuYVBGJVFjbSRIJkM+Oi48Oi1MUjdrRic3Z107Vj0qSEtHLiJBaD9hWkNyJW1CMEI8Ym44J1hybXVyT3EzXypSJGdXTlEnVSJNTEhHWnE4b0JWN2xraSc8JExPaG1LY2BOQEg1LT51U0tnK0doaDJTVy86WzwrTEZsXDwlRThiZjtlYmMhWW5hXldlNmtkYlleVWlWYlomakk8MXBDRT5jal8hKCk1ZyRMZzoqZSFhKVJOZDtvTG5XLkZLVSFebExaLCk7USg/VmtrVT9pO3M+W1tDaGhFNEByMUlVJ0MrN15YTWFOYzVZUlRHWVcqZDVHcD9EXT8xRG4lbF0yJFxQP2ZmVVE/Jm0sPC07PGgla05bMUBwWGBHNHFpbD5JTzsyKEUhSmQ1SG0qYyQoSi1kL0g2OXFBXz1uaUc1X2pTPG5rcX4+ZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgMjIKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDYxIDAwMDAwIG4gCjAwMDAwMDAxMTIgMDAwMDAgbiAKMDAwMDAwMDIxOSAwMDAwMCBuIAowMDAwMDAwMzMxIDAwMDAwIG4gCjAwMDAwMDA1MzYgMDAwMDAgbiAKMDAwMDAwMDY0NiAwMDAwMCBuIAowMDAwMDAwODUxIDAwMDAwIG4gCjAwMDAwMDEwNTYgMDAwMDAgbiAKMDAwMDAwMTI2MSAwMDAwMCBuIAowMDAwMDAxNDY2IDAwMDAwIG4gCjAwMDAwMDE2NzIgMDAwMDAgbiAKMDAwMDAwMTg3OCAwMDAwMCBuIAowMDAwMDAxOTQ4IDAwMDAwIG4gCjAwMDAwMDIyNzEgMDAwMDAgbiAKMDAwMDAwMjM2OSAwMDAwMCBuIAowMDAwMDA1MjAyIDAwMDAwIG4gCjAwMDAwMDg0NzMgMDAwMDAgbiAKMDAwMDAxMTQxMiAwMDAwMCBuIAowMDAwMDE0NzAwIDAwMDAwIG4gCjAwMDAwMTc1MDYgMDAwMDAgbiAKMDAwMDAyMDc3MiAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9JRCAKWzw3Y2E4MTNhYmQ3N2ZlNDVhY2E3NTU1MWFmNzg5Y2Y0NT48N2NhODEzYWJkNzdmZTQ1YWNhNzU1NTFhZjc4OWNmNDU+XQolIFJlcG9ydExhYiBnZW5lcmF0ZWQgUERGIGRvY3VtZW50IC0tIGRpZ2VzdCAob3BlbnNvdXJjZSkKCi9JbmZvIDEzIDAgUgovUm9vdCAxMiAwIFIKL1NpemUgMjIKPj4Kc3RhcnR4cmVmCjIzODg1CiUlRU9GCg==";
+  var url = "data:application/pdf;base64," + b64;
+  var btns = ["pdf-dl-btn","pdf-dl-btn2"];
+  btns.forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.href = url;
+  });
+})();
+
 </script>
 </body>
 </html>
